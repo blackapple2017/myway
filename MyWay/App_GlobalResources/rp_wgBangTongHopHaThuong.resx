@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="Detail.Name" xml:space="preserve">
+    <value>Detail</value>
+  </metadata>
+  <metadata name="xrTable5.Name" xml:space="preserve">
+    <value>xrTable5</value>
+  </metadata>
+  <metadata name="xrTableRow5.Name" xml:space="preserve">
+    <value>xrTableRow5</value>
+  </metadata>
+  <metadata name="xrt_stt.Name" xml:space="preserve">
+    <value>xrt_stt</value>
+  </metadata>
+  <metadata name="xrt_hoten.Name" xml:space="preserve">
+    <value>xrt_hoten</value>
+  </metadata>
+  <metadata name="xrTableCell15.Name" xml:space="preserve">
+    <value>xrTableCell15</value>
+  </metadata>
+  <metadata name="xrTableCell16.Name" xml:space="preserve">
+    <value>xrTableCell16</value>
+  </metadata>
+  <metadata name="xrTableCell17.Name" xml:space="preserve">
+    <value>xrTableCell17</value>
+  </metadata>
+  <metadata name="xrTableCell18.Name" xml:space="preserve">
+    <value>xrTableCell18</value>
+  </metadata>
+  <metadata name="TopMargin.Name" xml:space="preserve">
+    <value>TopMargin</value>
+  </metadata>
+  <metadata name="BottomMargin.Name" xml:space="preserve">
+    <value>BottomMargin</value>
+  </metadata>
+  <metadata name="ReportHeader.Name" xml:space="preserve">
+    <value>ReportHeader</value>
+  </metadata>
+  <metadata name="xrRichText2.Name" xml:space="preserve">
+    <value>xrRichText2</value>
+  </metadata>
+  <data name="xrRichText2.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABmAGIAaQBkAGkAcwBcAGEAbgBzAGkAXABhAG4AcwBpAGMAcABnADEAMgA1ADIAXABkAGUAZgBmADAAewBcAGYAbwBuAHQAdABiAGwAewBcAGYAMABcAGYAcgBvAG0AYQBuAFwAZgBwAHIAcQAyAFwAZgBjAGgAYQByAHMAZQB0ADIAMwA4AHsAXAAqAFwAZgBuAGEAbQBlACAAVABpAG0AZQBzACAATgBlAHcAIABSAG8AbQBhAG4AOwB9AFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuACAAQwBFADsAfQB7AFwAZgAxAFwAZgByAG8AbQBhAG4AXABmAHAAcgBxADIAXABmAGMAaABhAHIAcwBlAHQAMAAgAFQAaQBtAGUAcwAgAE4AZQB3ACAAUgBvAG0AYQBuADsAfQB7AFwAZgAyAFwAZgByAG8AbQBhAG4AXABmAHAAcgBxADIAXABmAGMAaABhAHIAcwBlAHQAMQA2ADMAIABUAGkAbQBlAHMAIABOAGUAdwAgAFIAbwBtAGEAbgA7AH0AewBcAGYAMwBcAGYAbgBpAGwAIABUAGkAbQBlAHMAIABOAGUAdwAgAFIAbwBtAGEAbgA7AH0AfQANAAoAXAB2AGkAZQB3AGsAaQBuAGQANABcAHUAYwAxAFwAcABhAHIAZABcAGwAdAByAHAAYQByAFwAZgBpADIAOAA0AFwAcwBhADEANgAwAFwAcwBsADMANgAwAFwAcwBsAG0AdQBsAHQAMQBcAGwAYQBuAGcAMQAwADMAMwBcAGIAXABmADAAXABmAHMAMgAyACAAQwBcACcAZQAzAG4AIABjAFwAZgAxAFwAdQA3ADkAMQAzAD8AIAB2AFwAJwBlADAAbwAgAGIAaQBcACcAZQBhAG4AIABiAFwAdQA3ADgANAAzAD8AbgAgAHMAXAB1ADcAOQAyADEAPwAgAHYAaQBcAHUANwA4ADcAOQA/AGMAIAB0AHIAbwBuAGcAIAB0AGgAXAAnAGUAMQBuAGcAIAAxADAALwAyADAAMQAzACwAIABIAFwAdQA3ADgAOQA3AD8AXABmADAAIABpACAAXAAnAGYAMABcAGYAMQBcAHUANwA4ADkAMQA/AG4AZwAgAEsAVABLAEwAIABUAFQAIABHAGEAbQBlAHMAIAB4AGkAbgAgAFwAZgAwAFwAJwBmADAAXABmADEAXAB1ADcAOAA3ADMAPwAgAHgAdQBcAHUANwA4ADQANQA/AHQAIAB0AFwAdQA3ADgAOQA5AD8AXABmADAAIABpACAAVABHAFwAJwBkADAAIABoAFwAZgAxAFwAdQA3ADgANAAxAD8AXABmADIAIAAgAHQAaABcACcAZgBkAFwAZgAxAFwAdQA3ADkAMAAzAD8AbgBnACAAYgBcAHUANwA4ADUANwA/AG4AZwAgAHQAaQBcAHUANwA4ADcAMwA/AFwAZgAyACAAbgAgAHYAXAAnAGUAMAAgAFwAJwBmADAAaQBcAGYAMQBcAHUANwA4ADcANQA/AFwAZgAwACAAbQAgAFwAJwBmADAAXABmADEAXAB1ADcAOAA4ADkAPwBpACAAdgBcAHUANwA4ADkAOQA/AGkAIABjAFwAJwBlADEAYwAgAEMAQgBOAFYAIABjAFwAdQA3ADkAMAA5AD8AIAB0AGgAXAB1ADcAOAA3ADUAPwBcAGYAMgAgACAAbgBoAFwAJwBmAGQAIABzAGEAdQA6AFwAYgAwAFwAZgAzAFwAZgBzADIANABcAHAAYQByAA0ACgB9AA0ACgA=</value>
+  </data>
+  <metadata name="xrLabel9.Name" xml:space="preserve">
+    <value>xrLabel9</value>
+  </metadata>
+  <metadata name="xrLabel8.Name" xml:space="preserve">
+    <value>xrLabel8</value>
+  </metadata>
+  <metadata name="xrLabel7.Name" xml:space="preserve">
+    <value>xrLabel7</value>
+  </metadata>
+  <metadata name="xrLabel6.Name" xml:space="preserve">
+    <value>xrLabel6</value>
+  </metadata>
+  <metadata name="xrLabel3.Name" xml:space="preserve">
+    <value>xrLabel3</value>
+  </metadata>
+  <metadata name="xrLabel2.Name" xml:space="preserve">
+    <value>xrLabel2</value>
+  </metadata>
+  <metadata name="xrLabel1.Name" xml:space="preserve">
+    <value>xrLabel1</value>
+  </metadata>
+  <metadata name="xrRichText1.Name" xml:space="preserve">
+    <value>xrRichText1</value>
+  </metadata>
+  <data name="xrRichText1.SerializableRtfString" xml:space="preserve">
+    <value>ewBcAHIAdABmADEAXABmAGIAaQBkAGkAcwBcAGEAbgBzAGkAXABhAG4AcwBpAGMAcABnADEAMgA1ADIAXABkAGUAZgBmADAAewBcAGYAbwBuAHQAdABiAGwAewBcAGYAMABcAGYAcgBvAG0AYQBuAFwAZgBwAHIAcQAyAFwAZgBjAGgAYQByAHMAZQB0ADEANgAzACAAVABpAG0AZQBzACAATgBlAHcAIABSAG8AbQBhAG4AOwB9AHsAXABmADEAXABmAHIAbwBtAGEAbgBcAGYAcAByAHEAMgBcAGYAYwBoAGEAcgBzAGUAdAAwACAAVABpAG0AZQBzACAATgBlAHcAIABSAG8AbQBhAG4AOwB9AHsAXABmADIAXABmAG4AaQBsACAAVABpAG0AZQBzACAATgBlAHcAIABSAG8AbQBhAG4AOwB9AH0ADQAKAFwAdgBpAGUAdwBrAGkAbgBkADQAXAB1AGMAMQBcAHAAYQByAGQAXABsAHQAcgBwAGEAcgBcAGYAaQA0ADIANgBcAHMAYQAxADYAMABcAHMAbAAzADYAMABcAHMAbABtAHUAbAB0ADEAXABsAGEAbgBnADEAMAAzADMAXABmADAAXABmAHMAMgAyACAASABcACcAZgA0AG0AIABuAGEAeQAsACAAbgBnAFwAJwBlADAAeQAgADIANAAgAHQAaABcACcAZQAxAG4AZwAgADEAMAAgAG4AXAAnAGUAMwBtACAAMgAwADEAMwAsACAAdABcAGYAMQBcAHUANwA4ADQAMQA/AFwAZgAwACAAaQAgAFYAUAAgAEMAaABpACAAbgBoAFwAJwBlADEAbgBoACAAUwBcACcAZQAwAGkAIABcACcAZAAwAFwAZgAxAFwAdQA3ADgAOQAxAD8AbgBnACAALQAgAEMAXAAnAGYANABuAGcAIAB0AHkAIABDAFAAIABUAGgAXAB1ADcAOAA3ADEAPwAgAGcAaQBcAHUANwA4ADkAOQA/AGkAIABnAGkAXAB1ADcAOAA0ADMAPwBpACAAdAByAFwAJwBlAGQALAAgACAAYwBoAFwAJwBmAGEAbgBnACAAdABcACcAZgA0AGkAIAB0AGkAXAB1ADcAOAA3ADEAPwBuACAAaABcACcAZQAwAG4AaAAgAGgAXAB1ADcAOAA4ADUAPwBwACAASwBUAEsATAAgAHQAXAB1ADcAOAA5ADMAPwBuAGcAIABrAFwAdQA3ADgANwAxAD8AdAAgAHQAaABcACcAZQAxAG4AZwAgADEAMAAvADIAMAAxADMAIAB2AFwAdQA3ADgAOQA5AD8AaQAgAG4AaABcAHUANwA5ADEAOQA/AG4AZwAgAG4AXAB1ADcAOAA5ADcAPwBcAGYAMAAgAGkAIABkAHUAbgBnACAAYwBoAFwAJwBlAGQAbgBoACAAbgBoAFwAJwBmAGQAIABzAGEAdQA6AFwAZgAyAFwAZgBzADIANABcAHAAYQByAA0ACgB9AA0ACgA=</value>
+  </data>
+  <metadata name="xrlReportTitle.Name" xml:space="preserve">
+    <value>xrlReportTitle</value>
+  </metadata>
+  <metadata name="xrLabel5.Name" xml:space="preserve">
+    <value>xrLabel5</value>
+  </metadata>
+  <metadata name="xrLabel4.Name" xml:space="preserve">
+    <value>xrLabel4</value>
+  </metadata>
+  <metadata name="xrl_chinhanh.Name" xml:space="preserve">
+    <value>xrl_chinhanh</value>
+  </metadata>
+  <metadata name="xrlTenCongTy.Name" xml:space="preserve">
+    <value>xrlTenCongTy</value>
+  </metadata>
+  <metadata name="PageHeader.Name" xml:space="preserve">
+    <value>PageHeader</value>
+  </metadata>
+  <metadata name="xrTable1.Name" xml:space="preserve">
+    <value>xrTable1</value>
+  </metadata>
+  <metadata name="xrTableRow1.Name" xml:space="preserve">
+    <value>xrTableRow1</value>
+  </metadata>
+  <metadata name="xrTableCell1.Name" xml:space="preserve">
+    <value>xrTableCell1</value>
+  </metadata>
+  <metadata name="xrTableCell2.Name" xml:space="preserve">
+    <value>xrTableCell2</value>
+  </metadata>
+  <metadata name="xrTableCell3.Name" xml:space="preserve">
+    <value>xrTableCell3</value>
+  </metadata>
+  <metadata name="xrTableCell5.Name" xml:space="preserve">
+    <value>xrTableCell5</value>
+  </metadata>
+  <metadata name="xrTable2.Name" xml:space="preserve">
+    <value>xrTable2</value>
+  </metadata>
+  <metadata name="xrTableRow2.Name" xml:space="preserve">
+    <value>xrTableRow2</value>
+  </metadata>
+  <metadata name="xrTableCell4.Name" xml:space="preserve">
+    <value>xrTableCell4</value>
+  </metadata>
+  <metadata name="xrTableCell6.Name" xml:space="preserve">
+    <value>xrTableCell6</value>
+  </metadata>
+  <metadata name="xrTableCell7.Name" xml:space="preserve">
+    <value>xrTableCell7</value>
+  </metadata>
+  <metadata name="xrTable3.Name" xml:space="preserve">
+    <value>xrTable3</value>
+  </metadata>
+  <metadata name="xrTableRow3.Name" xml:space="preserve">
+    <value>xrTableRow3</value>
+  </metadata>
+  <metadata name="xrTableCell8.Name" xml:space="preserve">
+    <value>xrTableCell8</value>
+  </metadata>
+  <metadata name="xrTable4.Name" xml:space="preserve">
+    <value>xrTable4</value>
+  </metadata>
+  <metadata name="xrTableRow4.Name" xml:space="preserve">
+    <value>xrTableRow4</value>
+  </metadata>
+  <metadata name="xrTableCell12.Name" xml:space="preserve">
+    <value>xrTableCell12</value>
+  </metadata>
+  <metadata name="GroupHeader1.Name" xml:space="preserve">
+    <value>GroupHeader1</value>
+  </metadata>
+  <metadata name="ReportFooter.Name" xml:space="preserve">
+    <value>ReportFooter</value>
+  </metadata>
+  <metadata name="xrThoiGian.Name" xml:space="preserve">
+    <value>xrThoiGian</value>
+  </metadata>
+  <metadata name="xrLabel11.Name" xml:space="preserve">
+    <value>xrLabel11</value>
+  </metadata>
+  <metadata name="xrLabel10.Name" xml:space="preserve">
+    <value>xrLabel10</value>
+  </metadata>
+  <metadata name="xrlNguoiKy.Name" xml:space="preserve">
+    <value>xrlNguoiKy</value>
+  </metadata>
+  <metadata name="xrLabel15.Name" xml:space="preserve">
+    <value>xrLabel15</value>
+  </metadata>
+  <metadata name="PageFooter.Name" xml:space="preserve">
+    <value>PageFooter</value>
+  </metadata>
+  <metadata name="xrPageInfo1.Name" xml:space="preserve">
+    <value>xrPageInfo1</value>
+  </metadata>
+  <metadata name="$this.Name" xml:space="preserve">
+    <value>rp_wgBangTongHopHaThuong</value>
+  </metadata>
+</root>

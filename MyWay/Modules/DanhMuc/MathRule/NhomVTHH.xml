@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MathRule>
+  <Column AllowBlank="false" DataType="String" DefaultValue="" DisplayOnGrid="True">
+    <DataBase>MA_NHOM_VTHH</DataBase>
+    <Excel>Mã nhóm vật tư (*)</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DefaultValue="" DisplayOnGrid="true">
+    <DataBase>TEN_NHOM_VTHH</DataBase>
+    <Excel>Tên nhóm vật tư (*)</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DefaultValue="" DisplayOnGrid="true">
+    <DataBase>GHI_CHU</DataBase>
+    <Excel>Ghi chú</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DefaultValue="CreatedUser" DisplayOnGrid="false">
+    <DataBase>USERNAME</DataBase>
+    <Excel>USERNAME</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DefaultValue="CreatedDate" DisplayOnGrid="false">
+    <DataBase>DATE_CREATE</DataBase>
+    <Excel>DATE_CREATE</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DefaultValue="" DisplayOnGrid="false">
+    <DataBase>MA_DONVI</DataBase>
+    <Excel>MA_DONVI</Excel>
+  </Column>
+</MathRule>

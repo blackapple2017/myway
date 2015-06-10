@@ -1,0 +1,106 @@
+﻿*
+{
+    margin: 0px;
+    padding: 0px;
+}
+div#unlicensed
+{
+    display: none !important;
+    width: 10px !important;
+}
+body
+{
+    background: url(images/Background.jpg) no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+div#LoginHeader
+{
+    height: 31px;
+    background: #b3d3ff;
+    border-bottom: 1px solid #7ea3d4;
+}
+div#WrapperLogin
+{
+    width: 950px;
+    margin: 0px auto;
+}
+div#InsideLoginHeader
+{
+    width: 950px;
+    margin: 0px auto;
+    line-height: 31px;
+    font-family: Tahoma;
+    font-size: 11px;
+}
+h1#copyright
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #fff;
+    font-weight: normal;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+div#logo
+{
+    background: url(images/Logo.png) no-repeat;
+    width: 256px;
+    height: 155px;
+    margin: 0px auto 19px;
+}
+div#LoginBox
+{
+    width: 300px;
+    margin: 0px auto;
+    margin-top: 50px;
+    overflow: hidden;
+}
+div#BoxLogin
+{
+    width: 298px;
+    background: #b7d6ff;
+    border: 1px solid #70a1ff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+p#ptitle
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 24px;
+    height: 24px;
+    width: 168px;
+    margin: 0px auto;
+    background: url(images/title.png) no-repeat;
+}
+table#table
+{
+    margin: 0px auto 5px;
+}
+.alink
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    padding-top: 6px;
+    text-decoration: none;
+}
+.alink:hover
+{
+    font-weight: bold;
+}
+.btnLogin
+{
+    float: right;
+}
+.combo-selected
+{
+    background: red !important;
+    color: White;
+    font-weight: bold !important;
+}

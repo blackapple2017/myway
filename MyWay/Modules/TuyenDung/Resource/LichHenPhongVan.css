@@ -1,0 +1,28 @@
+﻿.south-panel .x-layout-collapsed-south
+{
+    background: url(../../../Resource/Images/ket_qua_phong_van.png) no-repeat center;
+}
+.west-panel .x-layout-collapsed-west
+{
+    background: url(../../../Resource/Images/ChonKeHoachTuyenDung.png) no-repeat center;
+}
+.panelGeneralInformation .x-panel-body
+{
+    background: #DFE8F6 !important;
+}
+
+div#wdReportHoSoUngVien .x-tab-panel-header
+{
+    display: none !important;
+}
+
+div#pnlKeHoachTuyenDung-xsplit
+{
+    border-left: 1px solid #98C0F4;
+    border-right: 1px solid #98C0F4;
+}
+
+div#GridPanel1 .x-grid3-cell-inner, .x-grid3-hd-inner
+{
+    white-space: nowrap !important;
+}

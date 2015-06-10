@@ -1,0 +1,1326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="contract_type" xml:space="preserve">
+    <value>Contract type</value>
+  </data>
+  <data name="day_probation" xml:space="preserve">
+    <value>Day probation</value>
+  </data>
+  <data name="EmailNoiBo" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="identity_number" xml:space="preserve">
+    <value>Identity number</value>
+  </data>
+  <data name="MaCanBo" xml:space="preserve">
+    <value>Staff code&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+    <comment>mã cán bộ</comment>
+  </data>
+  <data name="number_line_per_page" xml:space="preserve">
+    <value>Number of lines on a page:</value>
+  </data>
+  <data name="official_day" xml:space="preserve">
+    <value>Official day</value>
+  </data>
+  <data name="SoHieuCanBo" xml:space="preserve">
+    <value>Staff numbers</value>
+    <comment>số hiệu cán bộ</comment>
+  </data>
+  <data name="SoNgayHocViec" xml:space="preserve">
+    <value>Days probation</value>
+  </data>
+  <data name="staff_address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="staff_birthday" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="staff_code" xml:space="preserve">
+    <value>Staff code</value>
+  </data>
+  <data name="staff_gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="staff_level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="staff_name" xml:space="preserve">
+    <value>Staff name</value>
+  </data>
+  <data name="staff_phone" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="staff_section" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="ThoiGianThuViec" xml:space="preserve">
+    <value>Probationary</value>
+  </data>
+  <data name="training_school" xml:space="preserve">
+    <value>Training school</value>
+  </data>
+  <data name="utility" xml:space="preserve">
+    <value>Utility</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>Add new employee</value>
+  </data>
+  <data name="Asset_Allocation" xml:space="preserve">
+    <value>3.Asset Allocation</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="contract_type" xml:space="preserve">
+    <value>Contract type</value>
+  </data>
+  <data name="day_probation" xml:space="preserve">
+    <value>Day probation</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Double_data" xml:space="preserve">
+    <value>Duplicating data</value>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="enter_from_excel" xml:space="preserve">
+    <value>Import data from excel file</value>
+  </data>
+  <data name="Formats_file_is_not_valid" xml:space="preserve">
+    <value>Format file is not valid</value>
+  </data>
+  <data name="guide" xml:space="preserve">
+    <value>Guide</value>
+  </data>
+  <data name="HR_profile" xml:space="preserve">
+    <value>Human Resource Profile</value>
+  </data>
+  <data name="identity_number" xml:space="preserve">
+    <value>Identity number</value>
+  </data>
+  <data name="Labour_Contract" xml:space="preserve">
+    <value>2. Labour Contract</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="mass_update_image" xml:space="preserve">
+    <value>Mass update image</value>
+  </data>
+  <data name="maximum_characters" xml:space="preserve">
+    <value>You may only enter a maximum of 50 characters</value>
+  </data>
+  <data name="notify" xml:space="preserve">
+    <value>Notify</value>
+  </data>
+  <data name="number_line_per_page" xml:space="preserve">
+    <value>Number of lines on a page:</value>
+  </data>
+  <data name="official_day" xml:space="preserve">
+    <value>Official day</value>
+  </data>
+  <data name="personal_information" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="Please_wait" xml:space="preserve">
+    <value>Please wait</value>
+  </data>
+  <data name="Profile_information" xml:space="preserve">
+    <value>1.Profile Information</value>
+  </data>
+  <data name="report" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="Select_Image" xml:space="preserve">
+    <value>Select Image</value>
+  </data>
+  <data name="software_only_accept_image" xml:space="preserve">
+    <value>software only accept image formats jpg, png, gif, bmp, jpeg!</value>
+  </data>
+  <data name="staff_address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="staff_birthday" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="staff_code" xml:space="preserve">
+    <value>Staff code</value>
+  </data>
+  <data name="staff_gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="staff_level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="staff_name" xml:space="preserve">
+    <value>Staff name</value>
+  </data>
+  <data name="staff_phone" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="staff_section" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="training_school" xml:space="preserve">
+    <value>Training school</value>
+  </data>
+  <data name="utility" xml:space="preserve">
+    <value>Utility</value>
+  </data>
+  <data name="are_you_sure" xml:space="preserve">
+    <value>Are you sure ?</value>
+  </data>
+  <data name="description_record" xml:space="preserve">
+    <value>From {0} to {1} / {2} rows</value>
+  </data>
+  <data name="first_page" xml:space="preserve">
+    <value>First page</value>
+  </data>
+  <data name="last_page" xml:space="preserve">
+    <value>Last page</value>
+  </data>
+  <data name="next_page" xml:space="preserve">
+    <value>Next page</value>
+  </data>
+  <data name="no_data" xml:space="preserve">
+    <value>No data for display</value>
+  </data>
+  <data name="no_selected_record" xml:space="preserve">
+    <value>Please choose an employee to delete</value>
+  </data>
+  <data name="page_size" xml:space="preserve">
+    <value>Page size</value>
+  </data>
+  <data name="prev_page" xml:space="preserve">
+    <value>Previous page</value>
+  </data>
+  <data name="warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="DatePayment" xml:space="preserve">
+    <value>Date payment of insurance</value>
+  </data>
+  <data name="grade" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="LastUpdate" xml:space="preserve">
+    <value>Last update</value>
+  </data>
+  <data name="MaritalStatus" xml:space="preserve">
+    <value>Marital status</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="positions" xml:space="preserve">
+    <value>Positions</value>
+  </data>
+  <data name="Provinces" xml:space="preserve">
+    <value>Provinces</value>
+  </data>
+  <data name="Seniority" xml:space="preserve">
+    <value>Seniority</value>
+  </data>
+  <data name="Specialized" xml:space="preserve">
+    <value>Specialized</value>
+  </data>
+  <data name="Specialized1" xml:space="preserve">
+    <value>Specialized&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="staff_birthday_required" xml:space="preserve">
+    <value>Date of birth&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="staff_name_required" xml:space="preserve">
+    <value>Full name&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Stt" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="TypeOfContract" xml:space="preserve">
+    <value>Contract type</value>
+  </data>
+  <data name="Alias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="cbx_phongban1" xml:space="preserve">
+    <value>Department&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="classification" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="Company_Telephone" xml:space="preserve">
+    <value>Company Phone</value>
+  </data>
+  <data name="Contact_Information" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="Contact_Person" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="Current_address" xml:space="preserve">
+    <value>Current address</value>
+  </data>
+  <data name="date_of_receipt" xml:space="preserve">
+    <value>Date of receipt</value>
+  </data>
+  <data name="day_id_card" xml:space="preserve">
+    <value>Date of issue</value>
+  </data>
+  <data name="education_level" xml:space="preserve">
+    <value>Education level</value>
+  </data>
+  <data name="Enter_key_word_to_search" xml:space="preserve">
+    <value>Enter key word to search</value>
+  </data>
+  <data name="experience" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+  <data name="Family_composition" xml:space="preserve">
+    <value>Family composition</value>
+  </data>
+  <data name="form_of_work" xml:space="preserve">
+    <value>Form of work&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="hometown" xml:space="preserve">
+    <value>Hometown</value>
+  </data>
+  <data name="Home_phone" xml:space="preserve">
+    <value>Home phone</value>
+  </data>
+  <data name="id_card" xml:space="preserve">
+    <value>ID card number</value>
+  </data>
+  <data name="Informatics" xml:space="preserve">
+    <value>Informatics</value>
+  </data>
+  <data name="Job_Information" xml:space="preserve">
+    <value>Job Information</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="Marital_status" xml:space="preserve">
+    <value>Marital status&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="nation" xml:space="preserve">
+    <value>Nation&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Official_Date" xml:space="preserve">
+    <value>Official Date</value>
+  </data>
+  <data name="Other_Email" xml:space="preserve">
+    <value>Other Email</value>
+  </data>
+  <data name="Permanent_residence" xml:space="preserve">
+    <value>Permanent residence</value>
+  </data>
+  <data name="place_of_birth" xml:space="preserve">
+    <value>Place of birth</value>
+  </data>
+  <data name="Place_of_issue" xml:space="preserve">
+    <value>Place of issue</value>
+  </data>
+  <data name="qualifications" xml:space="preserve">
+    <value>Qualifications</value>
+  </data>
+  <data name="religion" xml:space="preserve">
+    <value>Religion</value>
+  </data>
+  <data name="Staff_code1" xml:space="preserve">
+    <value>Staff code</value>
+  </data>
+  <data name="staff_profile" xml:space="preserve">
+    <value>staff's profile</value>
+  </data>
+  <data name="Status_myself" xml:space="preserve">
+    <value>Status myself</value>
+  </data>
+  <data name="timekeeping" xml:space="preserve">
+    <value>Timekeeping ID</value>
+    <comment>Mã chấm công</comment>
+  </data>
+  <data name="Years_of_experience" xml:space="preserve">
+    <value>Years of experience</value>
+  </data>
+  <data name="Year_of_graduation" xml:space="preserve">
+    <value>Graduation</value>
+  </data>
+  <data name="Year_of_graduation_Empty" xml:space="preserve">
+    <value>Year of graduation</value>
+  </data>
+  <data name="association" xml:space="preserve">
+    <value>Association infomation</value>
+  </data>
+  <data name="date_of_expiry" xml:space="preserve">
+    <value>Date of expiry</value>
+  </data>
+  <data name="insurance_information" xml:space="preserve">
+    <value>Insurance information</value>
+  </data>
+  <data name="passport" xml:space="preserve">
+    <value>Identy card, Passport</value>
+  </data>
+  <data name="political" xml:space="preserve">
+    <value>Political infomation</value>
+  </data>
+  <data name="Relationship" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="So_Dien_Thoai" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="So_Ho_Chieu" xml:space="preserve">
+    <value>Passport No</value>
+  </data>
+  <data name="staff_list" xml:space="preserve">
+    <value>3. Staff list</value>
+  </data>
+  <data name="Ability" xml:space="preserve">
+    <value>Ability</value>
+  </data>
+  <data name="Assets" xml:space="preserve">
+    <value>Assets</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="bank" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="Bank_card" xml:space="preserve">
+    <value>Bank card</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="company_pension" xml:space="preserve">
+    <value>Company pension</value>
+  </data>
+  <data name="Course_code" xml:space="preserve">
+    <value>Course code</value>
+  </data>
+  <data name="Course_name" xml:space="preserve">
+    <value>Course name</value>
+  </data>
+  <data name="Date_of_interview" xml:space="preserve">
+    <value>Date of interview</value>
+  </data>
+  <data name="Delegate" xml:space="preserve">
+    <value>Delegate</value>
+  </data>
+  <data name="Discipline" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="family_relationships" xml:space="preserve">
+    <value>Family relationships</value>
+  </data>
+  <data name="Graduated" xml:space="preserve">
+    <value>Graduated</value>
+  </data>
+  <data name="ID_Topics" xml:space="preserve">
+    <value>ID topics</value>
+  </data>
+  <data name="insurance" xml:space="preserve">
+    <value>Insurance</value>
+  </data>
+  <data name="job" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="Job_Position" xml:space="preserve">
+    <value>Job position</value>
+  </data>
+  <data name="Labor_accidents" xml:space="preserve">
+    <value>Labor accidents</value>
+  </data>
+  <data name="learning_evolutions" xml:space="preserve">
+    <value>Learning evolutions</value>
+  </data>
+  <data name="More_information" xml:space="preserve">
+    <value>More information</value>
+  </data>
+  <data name="participated" xml:space="preserve">
+    <value>Participated</value>
+  </data>
+  <data name="point" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="ratio" xml:space="preserve">
+    <value>Ratio</value>
+  </data>
+  <data name="recruitment_profile" xml:space="preserve">
+    <value>Recruitment profile</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Reward" xml:space="preserve">
+    <value>Felicitation</value>
+  </data>
+  <data name="salary" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="salary_evolutions" xml:space="preserve">
+    <value>Salary evolutions</value>
+  </data>
+  <data name="salary_rate" xml:space="preserve">
+    <value>Salary coefficient</value>
+  </data>
+  <data name="staff_paid" xml:space="preserve">
+    <value>Staff paid</value>
+  </data>
+  <data name="CacKhoanPhuCap" xml:space="preserve">
+    <value>Allowances</value>
+  </data>
+  <data name="Subsidy" xml:space="preserve">
+    <value>Allowances</value>
+  </data>
+  <data name="The_process_of_moving" xml:space="preserve">
+    <value>Transfer process</value>
+  </data>
+  <data name="The_training_process" xml:space="preserve">
+    <value>The training process</value>
+  </data>
+  <data name="Topics" xml:space="preserve">
+    <value>Topic</value>
+  </data>
+  <data name="Total_points" xml:space="preserve">
+    <value>Total points</value>
+  </data>
+  <data name="unit" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="using1" xml:space="preserve">
+    <value>Using</value>
+  </data>
+  <data name="Work_experience" xml:space="preserve">
+    <value>Work experience</value>
+  </data>
+  <data name="work_experience1" xml:space="preserve">
+    <value>Work experience</value>
+  </data>
+  <data name="Ability1" xml:space="preserve">
+    <value>Ability&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="career" xml:space="preserve">
+    <value>Career</value>
+  </data>
+  <data name="Choose_file" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="decider" xml:space="preserve">
+    <value>Decider</value>
+  </data>
+  <data name="Decisions_Day" xml:space="preserve">
+    <value>Decisions day</value>
+  </data>
+  <data name="decision_code" xml:space="preserve">
+    <value>Decision code</value>
+  </data>
+  <data name="download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="formality" xml:space="preserve">
+    <value>Formality</value>
+  </data>
+  <data name="formality1" xml:space="preserve">
+    <value>Formality&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Gender&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="ID_Topics1" xml:space="preserve">
+    <value>ID_Topics&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="namsinh" xml:space="preserve">
+    <value>Birth year</value>
+  </data>
+  <data name="positions1" xml:space="preserve">
+    <value>Positions&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="prorogue" xml:space="preserve">
+    <value>Prorogue</value>
+  </data>
+  <data name="prorogue1" xml:space="preserve">
+    <value>Prorogue&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="reason" xml:space="preserve">
+    <value>Reason&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="relation" xml:space="preserve">
+    <value>Relation&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Topics1" xml:space="preserve">
+    <value>Topics&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Type_Configuration" xml:space="preserve">
+    <value>Type configuration</value>
+  </data>
+  <data name="Type_Configuration1" xml:space="preserve">
+    <value>T. Configuration&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="unit1" xml:space="preserve">
+    <value>Unit&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Workplace" xml:space="preserve">
+    <value>Workplace</value>
+  </data>
+  <data name="relation1" xml:space="preserve">
+    <value>Relation</value>
+  </data>
+  <data name="start_Date" xml:space="preserve">
+    <value>Start date&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Workplace1" xml:space="preserve">
+    <value>Workplace&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="chucvumoi" xml:space="preserve">
+    <value>New position</value>
+  </data>
+  <data name="Attachments1" xml:space="preserve">
+    <value>Attachments&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="new_department" xml:space="preserve">
+    <value>New department</value>
+  </data>
+  <data name="new_department1" xml:space="preserve">
+    <value>New department&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="new_positions" xml:space="preserve">
+    <value>New position</value>
+  </data>
+  <data name="qualifications1" xml:space="preserve">
+    <value>Qualifications&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="quantity1" xml:space="preserve">
+    <value>Quantity&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Status1" xml:space="preserve">
+    <value>Status&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="unitTinh" xml:space="preserve">
+    <value>Unit&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="from_year" xml:space="preserve">
+    <value>From year</value>
+  </data>
+  <data name="to_year" xml:space="preserve">
+    <value>To year</value>
+  </data>
+  <data name="account_number" xml:space="preserve">
+    <value>Account number</value>
+  </data>
+  <data name="account_number1" xml:space="preserve">
+    <value>Account number&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="bank1" xml:space="preserve">
+    <value>Bank&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="ma" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="selected_bank" xml:space="preserve">
+    <value>Selected bank</value>
+  </data>
+  <data name="unit_code" xml:space="preserve">
+    <value>Unit code</value>
+  </data>
+  <data name="unit_name" xml:space="preserve">
+    <value>Unit name</value>
+  </data>
+  <data name="selecting_course" xml:space="preserve">
+    <value>Selecting course</value>
+  </data>
+  <data name="training_plan" xml:space="preserve">
+    <value>Training plan</value>
+  </data>
+  <data name="work_plan" xml:space="preserve">
+    <value>Work plan</value>
+  </data>
+  <data name="ngayhethanhd" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="ngayhieuluc" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="ngayhieuluc1" xml:space="preserve">
+    <value>Start date&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="reason1" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="signer" xml:space="preserve">
+    <value>Signer</value>
+  </data>
+  <data name="signer1" xml:space="preserve">
+    <value>Signer&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="size" xml:space="preserve">
+    <value>Size (KB)</value>
+  </data>
+  <data name="noidaotao" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="scale" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="chucvucu" xml:space="preserve">
+    <value>Old position</value>
+  </data>
+  <data name="date_of_issue" xml:space="preserve">
+    <value>Grant date</value>
+  </data>
+  <data name="expiration_date" xml:space="preserve">
+    <value>Expiration date</value>
+  </data>
+  <data name="gradenew" xml:space="preserve">
+    <value>New grade</value>
+  </data>
+  <data name="oldDepartment" xml:space="preserve">
+    <value>Old department</value>
+  </data>
+  <data name="oldgrade" xml:space="preserve">
+    <value>Old grade</value>
+  </data>
+  <data name="Receiving_date" xml:space="preserve">
+    <value>Receiving date</value>
+  </data>
+  <data name="Receiving_year" xml:space="preserve">
+    <value>Receiving year</value>
+  </data>
+  <data name="traffic_accident" xml:space="preserve">
+    <value>Traffic accident</value>
+  </data>
+  <data name="AllowancesCode" xml:space="preserve">
+    <value>Allowances code</value>
+  </data>
+  <data name="AsADependent" xml:space="preserve">
+    <value>As a dependent</value>
+  </data>
+  <data name="DateOfDecisions" xml:space="preserve">
+    <value>Date of decisions&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="EndDateGiamTru" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="Expired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="NoiDungCongTac" xml:space="preserve">
+    <value>Content&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Reasons_KhenThuong" xml:space="preserve">
+    <value>Reasons&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="RelevantPeople" xml:space="preserve">
+    <value>Relevant people</value>
+  </data>
+  <data name="StartDateGiamTru" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="TrainingSchool" xml:space="preserve">
+    <value>Training school&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Unit_manager" xml:space="preserve">
+    <value>Unit manager</value>
+  </data>
+  <data name="AddSubsidy" xml:space="preserve">
+    <value>Add subsidy</value>
+  </data>
+  <data name="ApplyForAllStaff" xml:space="preserve">
+    <value>Apply for all staff</value>
+  </data>
+  <data name="Assets1" xml:space="preserve">
+    <value>Assets&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Cause" xml:space="preserve">
+    <value>Cause&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Cause1" xml:space="preserve">
+    <value>Cause</value>
+  </data>
+  <data name="CloseAllButNotThis" xml:space="preserve">
+    <value>Close other tabs</value>
+  </data>
+  <data name="CloseAllTab" xml:space="preserve">
+    <value>Close all tab</value>
+  </data>
+  <data name="CloseTab" xml:space="preserve">
+    <value>Close tab</value>
+  </data>
+  <data name="Compensation" xml:space="preserve">
+    <value>Compensation</value>
+  </data>
+  <data name="CreateDecisionSalary" xml:space="preserve">
+    <value>Create decision</value>
+  </data>
+  <data name="CreateDecisionSalaryForManyPeople" xml:space="preserve">
+    <value>Create decision for many people</value>
+  </data>
+  <data name="CreateDecisionSalaryForOnePerson" xml:space="preserve">
+    <value>Create decision for one person</value>
+  </data>
+  <data name="Damage" xml:space="preserve">
+    <value>Damage</value>
+  </data>
+  <data name="DateOccurred" xml:space="preserve">
+    <value>Date occurred&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="DateOccurred1" xml:space="preserve">
+    <value>Date occurred</value>
+  </data>
+  <data name="DateOfCompensation" xml:space="preserve">
+    <value>Date of compensation</value>
+  </data>
+  <data name="DeciderRequired" xml:space="preserve">
+    <value>Decider&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="decisionCodeRequired" xml:space="preserve">
+    <value>Decision code&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="DecisionName" xml:space="preserve">
+    <value>Decision name</value>
+  </data>
+  <data name="DecisionNameRequired" xml:space="preserve">
+    <value>Decision name&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="EnterStaffCodeOrName" xml:space="preserve">
+    <value>Enter staff code or name</value>
+  </data>
+  <data name="EnterStaffCodeOrNameOrIDCardNo" xml:space="preserve">
+    <value>Enter staff code or name or ID card</value>
+  </data>
+  <data name="Injury" xml:space="preserve">
+    <value>Injury</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Reason2" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="Reason3" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="RewardForm" xml:space="preserve">
+    <value>Reward form</value>
+  </data>
+  <data name="StartDateRequired" xml:space="preserve">
+    <value>Start date&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Subsidy1" xml:space="preserve">
+    <value>Subsidy&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="SubsidyType" xml:space="preserve">
+    <value>Subsidy type</value>
+  </data>
+  <data name="TheLatestOfDecisionSalary" xml:space="preserve">
+    <value>The latest of decision</value>
+  </data>
+  <data name="Trophy" xml:space="preserve">
+    <value>Trophy</value>
+  </data>
+  <data name="TrophyInWork" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ViewSubsidy" xml:space="preserve">
+    <value>View Subsidy</value>
+  </data>
+  <data name="BHXH_CMT_CT" xml:space="preserve">
+    <value>Insurance, Identy card, Political</value>
+  </data>
+  <data name="BHXH" xml:space="preserve">
+    <value>Social Insurance</value>
+  </data>
+  <data name="BHYT" xml:space="preserve">
+    <value>Health Insurance</value>
+  </data>
+  <data name="BHTN" xml:space="preserve">
+    <value>Unemployment Insurance</value>
+  </data>
+  <data name="SoTheBHYT" xml:space="preserve">
+    <value>Số thẻ BHYT</value>
+  </data>
+  <data name="DateOfBHYT" xml:space="preserve">
+    <value>Ngày đóng BHYT</value>
+  </data>
+  <data name="HetHanBHYT" xml:space="preserve">
+    <value>Hết hạn BHYT</value>
+  </data>
+  <data name="NoiKhamBenh" xml:space="preserve">
+    <value>Nơi khám bệnh</value>
+  </data>
+  <data name="TyLeDongBH" xml:space="preserve">
+    <value>Tỷ lệ đóng BH</value>
+  </data>
+  <data name="SoTheBHXH" xml:space="preserve">
+    <value>Số thẻ BHXH</value>
+  </data>
+  <data name="NoiCapBHXH" xml:space="preserve">
+    <value>Nơi cấp BHXH</value>
+  </data>
+  <data name="NgayCapBHXH" xml:space="preserve">
+    <value>Ngày cấp BHXH</value>
+  </data>
+  <data name="DangChinhSach" xml:space="preserve">
+    <value>Dạng chính sách</value>
+  </data>
+  <data name="KetThucBHXH" xml:space="preserve">
+    <value>Kết thúc BHXH</value>
+  </data>
+  <data name="NgayKetThucBHXH" xml:space="preserve">
+    <value>Ngày kết thúc BHXH</value>
+  </data>
+  <data name="IDCardPassport" xml:space="preserve">
+    <value>Chứng minh thư nhân dân, hộ chiếu</value>
+  </data>
+  <data name="NgayVaoDoan" xml:space="preserve">
+    <value>Ngày vào Đoàn</value>
+  </data>
+  <data name="ChucVuDoan" xml:space="preserve">
+    <value>Chức vụ Đoàn</value>
+  </data>
+  <data name="NoiKetNapDoan" xml:space="preserve">
+    <value>Nơi kết nạp đoàn</value>
+  </data>
+  <data name="NgayVaoCongDoan" xml:space="preserve">
+    <value>Ngày vào công đoàn</value>
+  </data>
+  <data name="ChucVuCongDoan" xml:space="preserve">
+    <value>Chức vụ công đoàn</value>
+  </data>
+  <data name="TrinhDoChinhTri" xml:space="preserve">
+    <value>Trình độ chính trị</value>
+  </data>
+  <data name="ThamGiaCachMang" xml:space="preserve">
+    <value>Tham gia cách mạng</value>
+  </data>
+  <data name="NgayThamGiaCachMang" xml:space="preserve">
+    <value>Ngày tham gia cách mạng</value>
+  </data>
+  <data name="LaDangVien" xml:space="preserve">
+    <value>Là Đảng viên</value>
+  </data>
+  <data name="NgayVaoDang" xml:space="preserve">
+    <value>Ngày vào Đảng</value>
+  </data>
+  <data name="VaoDangChinhThuc" xml:space="preserve">
+    <value>Vào Đảng chính thức</value>
+  </data>
+  <data name="NoiKetNapDang" xml:space="preserve">
+    <value>Nơi kết nạp đảng</value>
+  </data>
+  <data name="ChucVuDang" xml:space="preserve">
+    <value>Chức vụ Đảng</value>
+  </data>
+  <data name="NoiSinhHoat" xml:space="preserve">
+    <value>Noi sinh hoạt</value>
+  </data>
+  <data name="NoiSinhHoatDang" xml:space="preserve">
+    <value>Noi sinh hoạt Đảng</value>
+  </data>
+  <data name="DaThamGiaQuanDoi" xml:space="preserve">
+    <value>Đã tham gia quân đội</value>
+  </data>
+  <data name="NgayNhapNgu" xml:space="preserve">
+    <value>Ngày nhập ngũ</value>
+  </data>
+  <data name="NgayXuatNgu" xml:space="preserve">
+    <value>Ngày xuất ngũ</value>
+  </data>
+  <data name="BacQuanDoi" xml:space="preserve">
+    <value>Bậc quân đội</value>
+  </data>
+  <data name="ChucVuQuanDoi" xml:space="preserve">
+    <value>Chức vụ quân đội</value>
+  </data>
+  <data name="MaxLengh50" xml:space="preserve">
+    <value>Bạn chỉ được nhập tối đa 50 ký tự</value>
+  </data>
+  <data name="AddCategories" xml:space="preserve">
+    <value>Add category</value>
+  </data>
+  <data name="CodeCategories" xml:space="preserve">
+    <value>Code category</value>
+  </data>
+  <data name="NameCategories" xml:space="preserve">
+    <value>Name category</value>
+  </data>
+  <data name="SaveCategories" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="CancelCategories" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CodeCategories1" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="NameCategories1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="AcceptChoose" xml:space="preserve">
+    <value>Accept selection</value>
+  </data>
+  <data name="NgayBNCV" xml:space="preserve">
+    <value>Ngày BNCV</value>
+  </data>
+  <data name="BoNhiemNgach" xml:space="preserve">
+    <value>Bổ nghiệm ngạch</value>
+  </data>
+  <data name="TrinhDoQL" xml:space="preserve">
+    <value>Trình độ QL</value>
+  </data>
+  <data name="NgayBoNhiemNgach" xml:space="preserve">
+    <value>Ngày bổ nhiệm ngạch</value>
+  </data>
+  <data name="TrinhDoQLKT" xml:space="preserve">
+    <value>Trình độ QLKT</value>
+  </data>
+  <data name="TenDangNhap" xml:space="preserve">
+    <value>Tên đăng nhập</value>
+  </data>
+  <data name="BankInformation" xml:space="preserve">
+    <value>Bank account information</value>
+  </data>
+  <data name="ThongTinThoiViec" xml:space="preserve">
+    <value>Thông tin thôi việc</value>
+  </data>
+  <data name="DaThoiViec" xml:space="preserve">
+    <value>Đã thôi việc</value>
+  </data>
+  <data name="NgayThoiViec" xml:space="preserve">
+    <value>Ngày thôi việc</value>
+  </data>
+  <data name="HeathInformation" xml:space="preserve">
+    <value>Thông tin sức khỏe</value>
+  </data>
+  <data name="NhomMau" xml:space="preserve">
+    <value>Blood</value>
+  </data>
+  <data name="NhomA" xml:space="preserve">
+    <value>Blood group A</value>
+  </data>
+  <data name="NhomB" xml:space="preserve">
+    <value>Blood group B</value>
+  </data>
+  <data name="NhomAB" xml:space="preserve">
+    <value>Blood group AB</value>
+  </data>
+  <data name="NhomO" xml:space="preserve">
+    <value>Blood group O</value>
+  </data>
+  <data name="CaoCanNang" xml:space="preserve">
+    <value>Cao/Cân nặng</value>
+  </data>
+  <data name="Cao" xml:space="preserve">
+    <value>Cao</value>
+  </data>
+  <data name="CanNang" xml:space="preserve">
+    <value>Nặng</value>
+  </data>
+  <data name="TinhTrangSK" xml:space="preserve">
+    <value>Tình trạng SK</value>
+  </data>
+  <data name="TinhTrangSucKhoe" xml:space="preserve">
+    <value>Tình trạng sức khỏe</value>
+  </data>
+  <data name="LaThuongBinh" xml:space="preserve">
+    <value>Là thương binh</value>
+  </data>
+  <data name="HangThuongTat" xml:space="preserve">
+    <value>Hạng thương tật</value>
+  </data>
+  <data name="SoThuongTat" xml:space="preserve">
+    <value>Số thương tật</value>
+  </data>
+  <data name="HinhThucThuongTat" xml:space="preserve">
+    <value>Hình thức thương tật</value>
+  </data>
+  <data name="LienHeTrongTruongHopKhanCap" xml:space="preserve">
+    <value>Liên hệ trong trường hợp khẩn cấp</value>
+  </data>
+  <data name="HoTenNguoiLienHe" xml:space="preserve">
+    <value>Contact person name</value>
+  </data>
+  <data name="SDTNguoiLienHe" xml:space="preserve">
+    <value>Contact Person telephone</value>
+  </data>
+  <data name="ViDuNguoiLienHe" xml:space="preserve">
+    <value>Example: Dad, Mom,...</value>
+  </data>
+  <data name="EmailNguoiLienHe" xml:space="preserve">
+    <value>Contact Person email</value>
+  </data>
+  <data name="SoThich" xml:space="preserve">
+    <value>Hobby</value>
+  </data>
+  <data name="UuDiem" xml:space="preserve">
+    <value>Advantage</value>
+  </data>
+  <data name="NhuocDiem" xml:space="preserve">
+    <value>Disadvantages</value>
+  </data>
+  <data name="MaDot" xml:space="preserve">
+    <value>Mã đợt</value>
+  </data>
+  <data name="TenDotDanhGia" xml:space="preserve">
+    <value>Tên đợt đánh giá</value>
+  </data>
+  <data name="TuDanhGia" xml:space="preserve">
+    <value>Tự đánh giá</value>
+  </data>
+  <data name="NguoiKhacDanhGia" xml:space="preserve">
+    <value>Người khác đánh giá</value>
+  </data>
+  <data name="NguoiQuanLyDanhGia" xml:space="preserve">
+    <value>Người quản lý đánh gia</value>
+  </data>
+  <data name="LuongDongBHXH" xml:space="preserve">
+    <value>Salary of Insurance</value>
+  </data>
+  <data name="NgayHuongLuong" xml:space="preserve">
+    <value>Date enjoy salaries</value>
+  </data>
+  <data name="NgayHuongLuongNB" xml:space="preserve">
+    <value>Ngày hưởng lương NB</value>
+  </data>
+  <data name="DonVi" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="DiaDiemLamViec" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ApplyAllStaff" xml:space="preserve">
+    <value>Apply for all Staff</value>
+  </data>
+  <data name="HeSo" xml:space="preserve">
+    <value>Coefficient</value>
+  </data>
+  <data name="PhanTram" xml:space="preserve">
+    <value>Percent</value>
+  </data>
+  <data name="staffInformation" xml:space="preserve">
+    <value>Staff information</value>
+  </data>
+  <data name="NewDecisionInformation" xml:space="preserve">
+    <value>New decision information</value>
+  </data>
+  <data name="start_Date1" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="ChonCacCotHienThiTrenLuoi" xml:space="preserve">
+    <value>Chọn các cột muốn hiển thị trên lưới</value>
+  </data>
+  <data name="CauHinhCacCotTrenLuoi" xml:space="preserve">
+    <value>Cấu hình các cột trên lưới</value>
+  </data>
+  <data name="PhanTramHuongLuong" xml:space="preserve">
+    <value>Phần trăm hưởng lương</value>
+  </data>
+  <data name="PhanTramHuongLuong1" xml:space="preserve">
+    <value>% hưởng lương</value>
+  </data>
+  <data name="LuongHopDong" xml:space="preserve">
+    <value>Lương hợp đồng</value>
+  </data>
+  <data name="LuongHopDong1" xml:space="preserve">
+    <value>Lương hợp đồng&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="LoaiLuong" xml:space="preserve">
+    <value>Loại lương</value>
+  </data>
+  <data name="LuongDongBH" xml:space="preserve">
+    <value>Lương đóng BHXH</value>
+  </data>
+  <data name="LuongDongBH1" xml:space="preserve">
+    <value>Lương đóng BHXH&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="BacLuong" xml:space="preserve">
+    <value>Bậc lương</value>
+  </data>
+  <data name="BacLuongNB" xml:space="preserve">
+    <value>Bậc lương NB</value>
+  </data>
+  <data name="BangQuyetDinhLuong" xml:space="preserve">
+    <value>Bảng quyết định lương của cán bộ công nhân viên</value>
+  </data>
+  <data name="ThongTinLuongMoi" xml:space="preserve">
+    <value>New salary information</value>
+  </data>
+  <data name="LuongTrachNhiem" xml:space="preserve">
+    <value>Lương trách nhiệm</value>
+  </data>
+  <data name="SuDungPhuCapCu" xml:space="preserve">
+    <value>&lt;span style='color:red;'&gt;Áp dụng các phụ cấp cũ cho quyết định lương mới&lt;/span&gt;</value>
+  </data>
+  <data name="ThongTinLuong" xml:space="preserve">
+    <value>Salary information</value>
+  </data>
+  <data name="CapNhatChoTatCaNhanVien" xml:space="preserve">
+    <value>Update for all staff</value>
+  </data>
+  <data name="DanhSachCanBoNhanQuyetDinh" xml:space="preserve">
+    <value>List staff in decision</value>
+  </data>
+  <data name="ChooseStaff" xml:space="preserve">
+    <value>Choose staff</value>
+  </data>
+  <data name="ChonDanhSachNhanVien" xml:space="preserve">
+    <value>Choose list staff</value>
+  </data>
+  <data name="ChonPhongBan" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="DanhSachNhanVien" xml:space="preserve">
+    <value>Danh sách nhân viên</value>
+  </data>
+  <data name="NhapTenDeTimKiem" xml:space="preserve">
+    <value>Enter staff name ...</value>
+  </data>
+  <data name="filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="ThongTinChung" xml:space="preserve">
+    <value>General Information</value>
+  </data>
+</root>

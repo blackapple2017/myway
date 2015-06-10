@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account_number" xml:space="preserve">
+    <value>Account number</value>
+  </data>
+  <data name="Address_Customers" xml:space="preserve">
+    <value>Address customers&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Bank_name" xml:space="preserve">
+    <value>Bank name</value>
+  </data>
+  <data name="Care_date" xml:space="preserve">
+    <value>Care date</value>
+  </data>
+  <data name="Care_staff" xml:space="preserve">
+    <value>Care staff</value>
+  </data>
+  <data name="Company_name" xml:space="preserve">
+    <value>Company name&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Contact_information" xml:space="preserve">
+    <value>Contact information</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Customers_code" xml:space="preserve">
+    <value>Customers code&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="enter_code_or_company_name" xml:space="preserve">
+    <value>Enter code or company name</value>
+  </data>
+  <data name="History_of_customer_care" xml:space="preserve">
+    <value>History of customer care</value>
+  </data>
+  <data name="Industry" xml:space="preserve">
+    <value>Industry</value>
+  </data>
+  <data name="information_customer" xml:space="preserve">
+    <value>Customers infomation</value>
+  </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="Nature_scope" xml:space="preserve">
+    <value>Nature &amp; scope</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Ownership</value>
+  </data>
+  <data name="Parent_company" xml:space="preserve">
+    <value>Parent company</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Status_customers" xml:space="preserve">
+    <value>Status customers</value>
+  </data>
+  <data name="Status_customer_care" xml:space="preserve">
+    <value>Status customer care&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Status_update_customer_care" xml:space="preserve">
+    <value>Status update customer care</value>
+  </data>
+  <data name="Tax_code" xml:space="preserve">
+    <value>Tax code</value>
+  </data>
+  <data name="Type_of_businesses" xml:space="preserve">
+    <value>Type of businesses</value>
+  </data>
+  <data name="Unit_infomation" xml:space="preserve">
+    <value>Unit infomation</value>
+  </data>
+  <data name="Appraisers" xml:space="preserve">
+    <value>Appraisers</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="Auditors" xml:space="preserve">
+    <value>Auditors</value>
+  </data>
+  <data name="Auditors_comment" xml:space="preserve">
+    <value>Auditors comment</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Contracts_name" xml:space="preserve">
+    <value>Contracts name</value>
+  </data>
+  <data name="Contracts_number" xml:space="preserve">
+    <value>Contracts number</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="Cost_of_fax_charges" xml:space="preserve">
+    <value>Cost of fax charges</value>
+  </data>
+  <data name="Departments_implementation" xml:space="preserve">
+    <value>Departments implementation</value>
+  </data>
+  <data name="Directors" xml:space="preserve">
+    <value>Directors</value>
+  </data>
+  <data name="File_Name" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="ID_contracts" xml:space="preserve">
+    <value>ID contracts</value>
+  </data>
+  <data name="Release_date_actual_report" xml:space="preserve">
+    <value>Release date actual report</value>
+  </data>
+  <data name="Release_date_management_letter" xml:space="preserve">
+    <value>Release date management letter</value>
+  </data>
+  <data name="Release_date_scheduled_report" xml:space="preserve">
+    <value>Release date scheduled report</value>
+  </data>
+  <data name="Signing_date_contracts" xml:space="preserve">
+    <value>Date contract</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="Status_contracts" xml:space="preserve">
+    <value>Status contracts</value>
+  </data>
+  <data name="Took_the_contract" xml:space="preserve">
+    <value>Took the contract</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="add_customer" xml:space="preserve">
+    <value>Add customer</value>
+  </data>
+  <data name="Add_new_attachment" xml:space="preserve">
+    <value>Add new attachment</value>
+  </data>
+  <data name="Care_date1" xml:space="preserve">
+    <value>Care date&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Care_staff1" xml:space="preserve">
+    <value>Care staff&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Choose_file" xml:space="preserve">
+    <value>Choose file&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Company_name1" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="contracts" xml:space="preserve">
+    <value>Contracts</value>
+  </data>
+  <data name="Contract_status" xml:space="preserve">
+    <value>Contract status</value>
+  </data>
+  <data name="Country1" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Customers_code1" xml:space="preserve">
+    <value>Customers code</value>
+  </data>
+  <data name="Enter_customer_code_or_customer_name_to_search" xml:space="preserve">
+    <value>Enter customer code or customer name to search</value>
+  </data>
+  <data name="Enter_the_customer_address" xml:space="preserve">
+    <value>Enter the customer address</value>
+  </data>
+  <data name="File_Name1" xml:space="preserve">
+    <value>File Name&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="home_phone" xml:space="preserve">
+    <value>Home phone</value>
+  </data>
+  <data name="maximum_size" xml:space="preserve">
+    <value>&lt;span style='color:red;'&gt;*&lt;/span&gt;The maximum size of 10MB</value>
+  </data>
+  <data name="Nature_scope_of_the_customer" xml:space="preserve">
+    <value>Nature scope of the customer</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Parent_company_name_of_the_customer" xml:space="preserve">
+    <value>Parent company name of the customer</value>
+  </data>
+  <data name="Result1" xml:space="preserve">
+    <value>Result&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="sectors_of_client_activity" xml:space="preserve">
+    <value>Sectors of client activity</value>
+  </data>
+  <data name="Subsidiaries" xml:space="preserve">
+    <value>Subsidiaries</value>
+  </data>
+  <data name="tinhtrang_khitraodoikhachhang" xml:space="preserve">
+    <value>Condition reached after discussions with customers</value>
+  </data>
+  <data name="Type_of_business" xml:space="preserve">
+    <value>Type of business</value>
+  </data>
+  <data name="Type_of_businesses_of_the_customer" xml:space="preserve">
+    <value>Type of businesses of the customer</value>
+  </data>
+  <data name="Unit_address" xml:space="preserve">
+    <value>Unit address</value>
+  </data>
+  <data name="Working_status_with_customers" xml:space="preserve">
+    <value>Working status with customers</value>
+  </data>
+  <data name="Add_new_member" xml:space="preserve">
+    <value>Add new member</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>ID,Full Name,Department,Position,Note,Director</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role&lt;span style='color:red'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Staff" xml:space="preserve">
+    <value>Staff&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Update_information" xml:space="preserve">
+    <value>Update information</value>
+  </data>
+  <data name="Customer" xml:space="preserve">
+    <value>Customer&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="department" xml:space="preserve">
+    <value>Department&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="ID_contracts1" xml:space="preserve">
+    <value>Contract Name&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="information_contract" xml:space="preserve">
+    <value>Information contract</value>
+  </data>
+  <data name="number_report" xml:space="preserve">
+    <value>Number report</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="Signing_date_contracts1" xml:space="preserve">
+    <value>Date contracts&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Status_contracts1" xml:space="preserve">
+    <value>Status contracts&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Amount1" xml:space="preserve">
+    <value>Amount&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Customer1" xml:space="preserve">
+    <value>Customer name</value>
+  </data>
+  <data name="Detail_bill" xml:space="preserve">
+    <value>Detail bill</value>
+  </data>
+  <data name="executor" xml:space="preserve">
+    <value>Executor</value>
+  </data>
+  <data name="General_Information" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="Get_a_contract" xml:space="preserve">
+    <value>Get a contract</value>
+  </data>
+  <data name="Into_money" xml:space="preserve">
+    <value>Into money</value>
+  </data>
+  <data name="Invoice" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="Invoice1" xml:space="preserve">
+    <value>Invoice&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Invoice_date" xml:space="preserve">
+    <value>Invoice date</value>
+  </data>
+  <data name="Invoice_date1" xml:space="preserve">
+    <value>Invoice date&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="nam1" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Number_bill" xml:space="preserve">
+    <value>Number bill</value>
+  </data>
+  <data name="Number_bill1" xml:space="preserve">
+    <value>Number bill&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="Other_Information" xml:space="preserve">
+    <value>Other information</value>
+  </data>
+  <data name="Release_date_actual_report1" xml:space="preserve">
+    <value>Release date actual report</value>
+  </data>
+  <data name="scheduled_reporting_date" xml:space="preserve">
+    <value>Release date scheduled report</value>
+  </data>
+  <data name="Tax" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="The_cost_before_tax_usd" xml:space="preserve">
+    <value>The cost before tax (USD)</value>
+  </data>
+  <data name="The_cost_before_tax_vnd" xml:space="preserve">
+    <value>The cost before tax (VNĐ)</value>
+  </data>
+  <data name="Contracts_number1" xml:space="preserve">
+    <value>Contracts number&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="TypeOfContract1" xml:space="preserve">
+    <value>Contract type&lt;span style='color:red;'&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="career" xml:space="preserve">
+    <value>Career</value>
+  </data>
+  <data name="Customers_care" xml:space="preserve">
+    <value>Customers care</value>
+  </data>
+  <data name="Enter_customerCode_or_companyName" xml:space="preserve">
+    <value>Enter customer code or Company name</value>
+  </data>
+  <data name="ContractCodeIsExist" xml:space="preserve">
+    <value>Contract code is exist!</value>
+  </data>
+  <data name="statuscontract" xml:space="preserve">
+    <value>Status contract</value>
+  </data>
+</root>

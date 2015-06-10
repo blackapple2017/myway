@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MathRule>
+  <Column AllowBlank="false" DataType="Integer" DisplayOnGrid="false" DefaultValue="">
+    <DataBase>IDNhanVien_BaoHiem</DataBase>
+    <Software>IDNhanVien_BaoHiem</Software>
+    <Excel>IDNhanVien_BaoHiem</Excel>
+  </Column>
+  <Column AllowBlank="false" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MaNhanVien</DataBase>
+    <Software>Mã nhân viên</Software>
+    <Excel>Mã nhân viên</Excel>
+  </Column>
+  <Column AllowBlank="false" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>HoTen</DataBase>
+    <Software>Họ và tên</Software>
+    <Excel>Họ và tên</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Bit" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>GioiTinh</DataBase>
+    <Software>GioiTinh</Software>
+    <Excel>GioiTinh;Giới tính</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NgaySinh</DataBase>
+    <Software>NgaySinh</Software>
+    <Excel>NgaySinh;Ngày sinh</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>HoKhauThuongTruTamTru</DataBase>
+    <Software>HoKhauThuongTruTamTru</Software>
+    <Excel>HoKhauThuongTruTamTru</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DiaChiLienHe</DataBase>
+    <Software>DiaChiLienHe</Software>
+    <Excel>DiaChiLienHe</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>SoCMTND</DataBase>
+    <Software>SoCMTND</Software>
+    <Excel>SoCMTND</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NgayCapCMTND</DataBase>
+    <Software>NgayCapCMTND</Software>
+    <Excel>NgayCapCMTND</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NoiCapCMTND</DataBase>
+    <Software>NoiCapCMTND</Software>
+    <Excel>NoiCapCMTND</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MaChucVu</DataBase>
+    <Software>MaChucVu</Software>
+    <Excel>MaChucVu</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>LuongBaoHiem</DataBase>
+    <Software>LuongBaoHiem</Software>
+    <Excel>LuongBaoHiem;Lương bảo hiểm</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>PhuCapCV</DataBase>
+    <Software>PhuCapCV</Software>
+    <Excel>PhuCapCV;Phụ cấp chức vụ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>PhuCapTNN</DataBase>
+    <Software>PhuCapTNN</Software>
+    <Excel>PhuCapTNN;Phụ cấp TNN</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>PhuCapTNVK</DataBase>
+    <Software>PhuCapTNVK</Software>
+    <Excel>PhuCapTNVK;Phụ cấp TNVK</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>PhuCapKhac</DataBase>
+    <Software>PhuCapKhac</Software>
+    <Excel>PhuCapKhac;Phụ cấp khác</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NoiDangKyKCB</DataBase>
+    <Software>NoiDangKyKCB</Software>
+    <Excel>NoiDangKyKCB;Nơi đăng ký khám chữa bệnh</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>LoaiBHYT</DataBase>
+    <Software>LoaiBHYT</Software>
+    <Excel>LoaiBHYT;Loại BHYT</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>SoTheBHYT</DataBase>
+    <Software>SoTheBHYT</Software>
+    <Excel>SoTheBHYT;Số thẻ BHYT</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>TuThangBHYT</DataBase>
+    <Software>TuThangBHYT</Software>
+    <Excel>TuThangBHYT;Từ ngày</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DenThangBHYT</DataBase>
+    <Software>DenThangBHYT</Software>
+    <Excel>DenThangBHYT;Đến ngày</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DoiTuongHuongBHYTMuc</DataBase>
+    <Software>DoiTuongHuongBHYTMuc</Software>
+    <Excel>DoiTuongHuongBHYTMuc</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Bit" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>BHXHTrangThaiDangKyCQBH</DataBase>
+    <Software>BHXHTrangThaiDangKyCQBH</Software>
+    <Excel>BHXHTrangThaiDangKyCQBH</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NgayDangKyBHXH</DataBase>
+    <Software>NgayDangKyBHXH</Software>
+    <Excel>NgayDangKyBHXH</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>TrangThaiCapSoBHXH</DataBase>
+    <Software>TrangThaiCapSoBHXH</Software>
+    <Excel>TrangThaiCapSoBHXH</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>TrangThaiCapTheBHYT</DataBase>
+    <Software>TrangThaiCapTheBHYT</Software>
+    <Excel>TrangThaiCapTheBHYT</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NoiCapSoBHXH</DataBase>
+    <Software>NoiCapSoBHXH</Software>
+    <Excel>NoiCapSoBHXH</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NgayCapSoBHXH</DataBase>
+    <Software>NgayCapSoBHXH</Software>
+    <Excel>NgayCapSoBHXH</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>SoSoBHXH</DataBase>
+    <Software>SoSoBHXH</Software>
+    <Excel>SoSoBHXH</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Bit" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DangDongBHXH</DataBase>
+    <Software>DangDongBHXH</Software>
+    <Excel>DangDongBHXH</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Bit" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DangDongBHYT</DataBase>
+    <Software>DangDongBHYT</Software>
+    <Excel>DangDongBHYT</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Bit" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DangDongBHTN</DataBase>
+    <Software>DangDongBHTN</Software>
+    <Excel>DangDongBHTN</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Integer" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>ThoiGianDongBHXHTruocKhiVaoCongTy</DataBase>
+    <Software>ThoiGianDongBHXHTruocKhiVaoCongTy</Software>
+    <Excel>ThoiGianDongBHXHTruocKhiVaoCongTy</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Integer" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>ThoiGianDongBaoHiem</DataBase>
+    <Software>ThoiGianDongBaoHiem</Software>
+    <Excel>ThoiGianDongBaoHiem</Excel>
+  </Column>
+  <Column AllowBlank="false" DataType="Integer" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>UserID</DataBase>
+    <Software>UserID</Software>
+    <Excel>UserID</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Bit" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DaNghi</DataBase>
+    <Software>DaNghi</Software>
+    <Excel>DaNghi</Excel>
+  </Column>
+  <Column AllowBlank="false" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DateCreate</DataBase>
+    <Software>DateCreate</Software>
+    <Excel>DateCreate</Excel>
+  </Column>
+  <Column AllowBlank="false" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MaDonVi</DataBase>
+    <Software>MaDonVi</Software>
+    <Excel>MaDonVi</Excel>
+  </Column>
+</MathRule>

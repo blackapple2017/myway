@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="Themmoicongviec" xml:space="preserve"><value>Thêm mới công việc</value></data>
+<data name="Tieude" xml:space="preserve"><value>Tiêu đề</value></data>
+<data name="Themmoithongtinchucvu" xml:space="preserve"><value>Thêm mới thông tin chức vụ</value></data>
+<data name="Suathongtinchucvu" xml:space="preserve"><value>Sửa thông tin chức vụ</value></data>
+<data name="Themmoithongtinngach" xml:space="preserve"><value>Thêm mới thông tin ngạch</value></data>
+<data name="Suathongtinngach" xml:space="preserve"><value>Sửa thông tin ngạch</value></data>
+<data name="Themmoithongtinnhomngach" xml:space="preserve"><value>Thêm mới thông tin nhóm ngạch</value></data>
+<data name="Themmoithongtinnhomnghach" xml:space="preserve"><value>Thêm mới thông tin nhóm nghạch</value></data>
+<data name="Themmoithongtinnuoc" xml:space="preserve"><value>Thêm mới thông tin nước</value></data>
+<data name="Suathongtinnuoc" xml:space="preserve"><value>Sửa thông tin nước</value></data>
+<data name="Themmoithongtintinhthanh" xml:space="preserve"><value>Thêm mới thông tin tỉnh thành</value></data>
+<data name="Suathongtintinhthanh" xml:space="preserve"><value>Sửa thông tin tỉnh thành</value></data>
+<data name="Themmoithongtinloaihopdong" xml:space="preserve"><value>Thêm mới thông tin loại hợp đồng</value></data>
+<data name="Suathongtinloaihopdong" xml:space="preserve"><value>Sửa thông tin loại hợp đồng</value></data>
+<data name="Suathongtinnhomngach" xml:space="preserve"><value>Sửa thông tin nhóm ngạch</value></data>
+<data name="Themmoithongtintruongdaotao" xml:space="preserve"><value>Thêm mới thông tin trường đào tạo</value></data>
+<data name="Suathongtintruongdaotao" xml:space="preserve"><value>Sửa thông tin trường đào tạo</value></data>
+<data name="Themmoithongtinchuyennghanh" xml:space="preserve"><value>Thêm mới thông tin chuyên nghành</value></data>
+<data name="Suathongtinchuyennganh" xml:space="preserve"><value>Sửa thông tin chuyên ngành</value></data>
+<data name="Themmoithongtinchungchi" xml:space="preserve"><value>Thêm mới thông tin chứng chỉ</value></data>
+<data name="Suathongtinchungchi" xml:space="preserve"><value>Sửa thông tin chứng chỉ</value></data>
+<data name="Themmoithongtincongtrinh" xml:space="preserve"><value>Thêm mới thông tin công trình</value></data>
+<data name="Suathongtincongtrinh" xml:space="preserve"><value>Sửa thông tin công trình</value></data>
+<data name="ThemmoithongtinnoicapBHXH" xml:space="preserve"><value>Thêm mới thông tin nơi cấp BHXH</value></data>
+<data name="SuathongtinnoicapBHXH" xml:space="preserve"><value>Sửa thông tin nơi cấp BHXH</value></data>
+<data name="Themmoithongtinquanhe" xml:space="preserve"><value>Thêm mới thông tin quan hệ</value></data>
+<data name="Suathongtinquanhe" xml:space="preserve"><value>Sửa thông tin quan hệ</value></data>
+<data name="Themmoithongtinnganhang" xml:space="preserve"><value>Thêm mới thông tin ngân hàng</value></data>
+<data name="Suathongtinnganhang" xml:space="preserve"><value>Sửa thông tin ngân hàng</value></data>
+<data name="Themmoithongtindantoc" xml:space="preserve"><value>Thêm mới thông tin dân tộc</value></data>
+<data name="Suathongtindantoc" xml:space="preserve"><value>Sửa thông tin dân tộc</value></data>
+<data name="Themmoithongtintongiao" xml:space="preserve"><value>Thêm mới thông tin tôn giáo</value></data>
+<data name="Suathongtintongiao" xml:space="preserve"><value>Sửa thông tin tôn giáo</value></data>
+<data name="Themmoithongtincapbacquandoi" xml:space="preserve"><value>Thêm mới thông tin cấp bậc quân đội</value></data>
+<data name="Suathongtincapbacquandoi" xml:space="preserve"><value>Sửa thông tin cấp bậc quân đội</value></data>
+<data name="ThemmoithongtinchucvuDang" xml:space="preserve"><value>Thêm mới  thông tin chức vụ Đảng</value></data>
+<data name="SuathongtinchucvuDang" xml:space="preserve"><value>Sửa thông tin chức vụ Đảng</value></data>
+<data name="Themmoithongtinchucvudoan" xml:space="preserve"><value>Thêm mới thông tin chức vụ đoàn</value></data>
+<data name="Suathongtinchucvudoan" xml:space="preserve"><value>Sửa thông tin chức vụ đoàn</value></data>
+<data name="Themmoithongtinchucvuquandoi" xml:space="preserve"><value>Thêm mới thông tin  chức vụ quân đội</value></data>
+<data name="Suathongtinchucvuquandoi" xml:space="preserve"><value>Sửa thông tin chức vụ quân đội </value></data>
+<data name="Themthongtindonvitinh" xml:space="preserve"><value>Thêm thông tin đơn vị tính</value></data>
+<data name="Suathongtindonvitinh" xml:space="preserve"><value>Sửa thông tin đơn vị tính</value></data>
+<data name="Themmoigioitinh" xml:space="preserve"><value>Thêm mới giới tính</value></data>
+<data name="Suathongtingioitinh" xml:space="preserve"><value>Sửa thông tin giới tính</value></data>
+<data name="Themmoihinhthucdaotao" xml:space="preserve"><value>Thêm mới hình thức đào tạo</value></data>
+<data name="Suathongtinhinhthucdaotao" xml:space="preserve"><value>Sửa thông tin hình thức đào tạo</value></data>
+<data name="Themmoithongtinhinhthuckhenthuong" xml:space="preserve"><value>Thêm mới thông tin hình thức khen thưởng</value></data>
+<data name="Suathongtinhinhthuckhenthuong" xml:space="preserve"><value>Sửa thông tin hình thức khen thưởng</value></data>
+<data name="Themthongtinhinhthuctuyendung" xml:space="preserve"><value>Thêm thông tin hình thức tuyển dụng</value></data>
+<data name="Suathongtinhinhthuctuyendung" xml:space="preserve"><value>Sửa thông tin hình thức tuyển dụng</value></data>
+<data name="Themmoithongtinkhanang" xml:space="preserve"><value>Thêm mới thông tin khả năng</value></data>
+<data name="Suathongtinkhanang" xml:space="preserve"><value>Sửa thông tin khả năng</value></data>
+<data name="Themmoithongtinloaichinhsach" xml:space="preserve"><value>Thêm mới thông tin loại chính sách</value></data>
+<data name="Suathongtinloaichinhsach" xml:space="preserve"><value>Sửa thông tin loại chính sách</value></data>
+<data name="Themmoithongtinloailuong" xml:space="preserve"><value>Thêm mới thông tin loại lương</value></data>
+<data name="Suathongtinloailuong" xml:space="preserve"><value>Sửa thông tin loại lương</value></data>
+<data name="Themmoithongtinloaitotnghiep" xml:space="preserve"><value>Thêm mới thông tin loại tốt nghiệp</value></data>
+<data name="Suathongtinloaitotnghiep" xml:space="preserve"><value>Sửa thông tin loại tốt nghiệp</value></data>
+<data name="Themmoithongtinlydodaotao" xml:space="preserve"><value>Thêm mới thông tin lý do đào tạo</value></data>
+<data name="Suathongtinlydodaotao" xml:space="preserve"><value>Sửa thông tin lý do đào tạo</value></data>
+<data name="Themmoilydokhenthuong" xml:space="preserve"><value>Thêm mới lý do khen thưởng</value></data>
+<data name="Suathongtinkhenthuong" xml:space="preserve"><value>Sửa thông tin khen thưởng</value></data>
+<data name="Themmoithongtinlydonghi" xml:space="preserve"><value>Thêm mới thông tin lý do nghỉ</value></data>
+<data name="Suathongtinlydonghi" xml:space="preserve"><value>Sửa thông tin lý do nghỉ</value></data>
+<data name="Themmoithongtinmucluongngach" xml:space="preserve"><value>Thêm mới thông tin mức lương ngạch</value></data>
+<data name="Suathongtinmucluongngach" xml:space="preserve"><value>Sửa thông tin mức lương ngạch</value></data>
+<data name="Themmoithongtinngoaingu" xml:space="preserve"><value>Thêm mới thông tin ngoại ngữ</value></data>
+<data name="Suathongtinngoaingu" xml:space="preserve"><value>Sửa thông tin ngoại ngữ</value></data>
+<data name="Themmoithongtinnhomvattuhanghoa" xml:space="preserve"><value>Thêm mới thông tin nhóm vật tư hàng hóa</value></data>
+<data name="Themmoithongtinnoikhamchuabenh" xml:space="preserve"><value>Thêm mới thông tin nơi khám chữa bệnh</value></data>
+<data name="SuathongtinnhomVTHH" xml:space="preserve"><value>Sửa thông tin nhóm VTHH</value></data>
+<data name="Suathongtinnoikhamchuabenh" xml:space="preserve"><value>Sửa thông tin nơi khám chữa bệnh</value></data>
+<data name="ThemmoithongtinnoicapBHYT" xml:space="preserve"><value>Thêm mới thông tin nơi cấp BHYT</value></data>
+<data name="SuathongtinnoicapBHYT" xml:space="preserve"><value>Sửa thông tin nơi cấp BHYT</value></data>
+<data name="ThemmoithongtinnoicapCMND" xml:space="preserve"><value>Thêm mới thông tin nơi cấp CMND</value></data>
+<data name="SuathongtinnoicapCMND" xml:space="preserve"><value>Sửa thông tin nơi cấp CMND</value></data>
+<data name="Themmoithongtinnoicaphochieu" xml:space="preserve"><value>Thêm mới thông tin nơi cấp hộ chiếu</value></data>
+<data name="Suathongtinnoicaphochieu" xml:space="preserve"><value>Sửa thông tin nơi cấp hộ chiếu</value></data>
+<data name="Themmoithongtintrinhdochinhtri" xml:space="preserve"><value>Thêm mới thông tin trình độ chính trị</value></data>
+<data name="Suathongtintrinhdochinhtri" xml:space="preserve"><value>Sửa thông tin trình độ chính trị</value></data>
+<data name="Themmoithongtintrinhdoquanlykinhte" xml:space="preserve"><value>Thêm mới thông tin trình độ quản lý kinh tế</value></data>
+<data name="Suathongtintrinhdoquanlykinhte" xml:space="preserve"><value>Sửa thông tin trình độ quản lý kinh tế</value></data>
+<data name="Themmoithongtintrinhdoquanly" xml:space="preserve"><value>Thêm mới thông tin trình độ quản lý</value></data>
+<data name="Themmoithongtintrinhdovanhoa" xml:space="preserve"><value>Thêm mới thông tin trình đọ văn hóa</value></data>
+<data name="Suathongtintrinhquanly" xml:space="preserve"><value>Sửa thông tin trình quản lý</value></data>
+<data name="Suathongtintrinhdovanhoa" xml:space="preserve"><value>Sửa thông tin trình độ văn hóa</value></data>
+<data name="Themmucthuethunhap" xml:space="preserve"><value>Thêm mức thuế thu nhập</value></data>
+<data name="Suathongtinthuethunhap" xml:space="preserve"><value>Sửa thông tin thuê thu nhập</value></data>
+<data name="Themmoithongtintrinhdotinhoc" xml:space="preserve"><value>Thêm mới thông tin trình độ tin học</value></data>
+<data name="Suathongtintrinhdotinhoc" xml:space="preserve"><value>Sửa thông tin trình độ tin học</value></data>
+<data name="Themmoithongtinthanhphanbanthan" xml:space="preserve"><value>Thêm mới thông tin thành phần bản thân</value></data>
+<data name="Suathongtinthanhphanbanthan" xml:space="preserve"><value>Sửa thông tin thành phần bản thân</value></data>
+<data name="Themmoithanhphangiadinh" xml:space="preserve"><value>Thêm mới thành phần gia đình</value></data>
+<data name="Suathongtinthanhphangiadinh" xml:space="preserve"><value>Sửa thông tin thành phần gia đình</value></data>
+<data name="Themmoithongtintinhtranghopdong" xml:space="preserve"><value>Thêm mới thông tin tình trạng hợp đồng</value></data>
+<data name="Suathongtintinhtranghopdong" xml:space="preserve"><value>Sửa thông tin tình trạng hợp đồng</value></data>
+<data name="Themmoithongtintinhtranghonnhan" xml:space="preserve"><value>Thêm mới thông tin tình trạng hôn nhân</value></data>
+<data name="Suathongtintinhtranghonnhan" xml:space="preserve"><value>Sửa thông tin tình trạng hôn nhân</value></data>
+<data name="Themmoithongtintinhtrangsuckhoe" xml:space="preserve"><value>Thêm mới thông tin tình trạng sức khỏe</value></data>
+<data name="Suathongtintinhtrangsuckhoe" xml:space="preserve"><value>Sửa thông tin tình trạng sức khỏe</value></data>
+<data name="Themmoithongtinxeploai" xml:space="preserve"><value>Thêm mới thông tin xếp loại</value></data>
+<data name="Suathongtinxeploai" xml:space="preserve"><value>Sửa thông tin xếp loại</value></data>
+<data name="Thongsohethong" xml:space="preserve"><value>Thông số hệ thống</value></data>
+<data name="Themmoithongtinlydokyluat" xml:space="preserve"><value>Thêm mới thông tin lý do kỷ luật</value></data>
+<data name="Themmoi" xml:space="preserve"><value>Thêm mới</value></data>
+<data name="Themmoithongtinhinhthuckyluat" xml:space="preserve"><value>Thêm mới thông tin hình thức kỷ luật</value></data>
+<data name="Suathongtinlydokyluat" xml:space="preserve"><value>Sửa thông tin lý do kỷ luật</value></data>
+<data name="Suathongtinhinhthuckyluat" xml:space="preserve"><value>Sửa thông tin hình thức kỷ luật</value></data>
+<data name="Themmoithongtinungvien" xml:space="preserve"><value>Thêm mới thông tin ứng viên</value></data>
+<data name="Suathongtinungvien" xml:space="preserve"><value>Sửa thông tin ứng viên</value></data>
+<data name="Themmoithongtindonviphutrachdaotao" xml:space="preserve"><value>Thêm mới thông tin đơn vị phụ trách đào tạo</value></data>
+<data name="Suathongtindonviphutrachdaotao" xml:space="preserve"><value>Sửa thông tin đơn vị phụ trách đào tạo</value></data>
+<data name="Themmoithongtinkhoadaotao" xml:space="preserve"><value>Thêm mới thông tin khóa đào tạo</value></data>
+<data name="Suathongtinkhoahoc" xml:space="preserve"><value>Sửa thông tin khóa học</value></data>
+<data name="AddnewCostCenter" xml:space="preserve"><value>Add new Cost Center</value></data>
+</root>
