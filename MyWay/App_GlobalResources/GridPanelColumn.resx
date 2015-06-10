@@ -1,0 +1,1146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Manuoc" xml:space="preserve">
+    <value>Mã nước</value>
+  </data>
+  <data name="Tennuoc" xml:space="preserve">
+    <value>Tên nước</value>
+  </data>
+  <data name="Nguoitao" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="Ngaytao" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="Donvitao" xml:space="preserve">
+    <value>Đơn vị tạo</value>
+  </data>
+  <data name="Manhomngach" xml:space="preserve">
+    <value>Mã nhóm ngạch</value>
+  </data>
+  <data name="Tennhomngach" xml:space="preserve">
+    <value>Tên nhóm ngạch</value>
+  </data>
+  <data name="Matruong" xml:space="preserve">
+    <value>Mã trường</value>
+  </data>
+  <data name="Tentruong" xml:space="preserve">
+    <value>Tên trường</value>
+  </data>
+  <data name="Madoi" xml:space="preserve">
+    <value>Mã đội</value>
+  </data>
+  <data name="Tendoi" xml:space="preserve">
+    <value>Tên đội</value>
+  </data>
+  <data name="Maloaidoi" xml:space="preserve">
+    <value>Mã loại đội</value>
+  </data>
+  <data name="Machucvu" xml:space="preserve">
+    <value>Mã chức vụ</value>
+  </data>
+  <data name="Tenchucvu" xml:space="preserve">
+    <value>Tên chức vụ</value>
+  </data>
+  <data name="Thutu" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="Madonvi" xml:space="preserve">
+    <value>Mã đơn vị</value>
+  </data>
+  <data name="Tendonvi" xml:space="preserve">
+    <value>Tên đơn vị</value>
+  </data>
+  <data name="Tentienganh" xml:space="preserve">
+    <value>Tên tiếng anh</value>
+  </data>
+  <data name="Tentat" xml:space="preserve">
+    <value>Tên tắt</value>
+  </data>
+  <data name="Diachi" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="Dienthoai" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Mathue" xml:space="preserve">
+    <value>Mã thuế</value>
+  </data>
+  <data name="SoTK" xml:space="preserve">
+    <value>Số TK</value>
+  </data>
+  <data name="Nganhang" xml:space="preserve">
+    <value>Ngân hàng</value>
+  </data>
+  <data name="Giamdoc" xml:space="preserve">
+    <value>Giám đốc</value>
+  </data>
+  <data name="Ketoantruong" xml:space="preserve">
+    <value>Kế toán trưởng</value>
+  </data>
+  <data name="Machuyennganh" xml:space="preserve">
+    <value>Mã chuyên ngành</value>
+  </data>
+  <data name="Tenchuyennganh" xml:space="preserve">
+    <value>Tên chuyên ngành</value>
+  </data>
+  <data name="Machungchi" xml:space="preserve">
+    <value>Mã chứng chỉ</value>
+  </data>
+  <data name="Tenchungchi" xml:space="preserve">
+    <value>Tên chứng chỉ</value>
+  </data>
+  <data name="Macongtrinh" xml:space="preserve">
+    <value>Mã công trình</value>
+  </data>
+  <data name="Tencongtrinh" xml:space="preserve">
+    <value>Tên công trình</value>
+  </data>
+  <data name="STTcongtrinh" xml:space="preserve">
+    <value>STT công trình</value>
+  </data>
+  <data name="ManoicapBHXH" xml:space="preserve">
+    <value>Mã nơi cấp BHXH</value>
+  </data>
+  <data name="TennoicapBHXH" xml:space="preserve">
+    <value>Tên nơi cấp BHXH</value>
+  </data>
+  <data name="Maquanhe" xml:space="preserve">
+    <value>Mã quan hệ</value>
+  </data>
+  <data name="Tenquanhe" xml:space="preserve">
+    <value>Tên quan hệ</value>
+  </data>
+  <data name="Manganhang" xml:space="preserve">
+    <value>Mã ngân hàng</value>
+  </data>
+  <data name="Tennganhang" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="Madantoc" xml:space="preserve">
+    <value>Mã dân tộc</value>
+  </data>
+  <data name="Tendantoc" xml:space="preserve">
+    <value>Tên dân tộc</value>
+  </data>
+  <data name="Matongiao" xml:space="preserve">
+    <value>Mã tôn giáo</value>
+  </data>
+  <data name="Tentongiao" xml:space="preserve">
+    <value>Tên tôn giáo</value>
+  </data>
+  <data name="Macapbacquandoi" xml:space="preserve">
+    <value>Mã cấp bậc quân đội</value>
+  </data>
+  <data name="Tencapbacquandoi" xml:space="preserve">
+    <value>Tên cấp bậc quân đội</value>
+  </data>
+  <data name="Machucvudang" xml:space="preserve">
+    <value>Mã chức vụ đảng</value>
+  </data>
+  <data name="Tenchucvudang" xml:space="preserve">
+    <value>Tên chức vụ đảng</value>
+  </data>
+  <data name="Machucvudoan" xml:space="preserve">
+    <value>Mã chức vụ đoàn</value>
+  </data>
+  <data name="Tenchucvudoan" xml:space="preserve">
+    <value>Tên chức vụ đoàn</value>
+  </data>
+  <data name="Machucvuquandoi" xml:space="preserve">
+    <value>Mã chức vụ quân đội</value>
+  </data>
+  <data name="Tenchucvuquandoi" xml:space="preserve">
+    <value>Tên chức vụ quân đội</value>
+  </data>
+  <data name="Madonvitinh" xml:space="preserve">
+    <value>Mã đơn vị tính</value>
+  </data>
+  <data name="Tendonvitinh" xml:space="preserve">
+    <value>Tên đơn vị tính</value>
+  </data>
+  <data name="Magioitinh" xml:space="preserve">
+    <value>Mã giới tính</value>
+  </data>
+  <data name="Tengioitinh" xml:space="preserve">
+    <value>Tên giới tính</value>
+  </data>
+  <data name="Mahinhthucdaotao" xml:space="preserve">
+    <value>Mã hình thức đào tạo</value>
+  </data>
+  <data name="Tenhinhthucdaotao" xml:space="preserve">
+    <value>Tên hình thức đào tạo</value>
+  </data>
+  <data name="Mahinhthuckhenthuong" xml:space="preserve">
+    <value>Mã hình thức khen thưởng</value>
+  </data>
+  <data name="Tenhinhthuckhenthuong" xml:space="preserve">
+    <value>Tên hình thức khen thưởng</value>
+  </data>
+  <data name="Mahinhthuctuyendung" xml:space="preserve">
+    <value>Mã đơn vị</value>
+  </data>
+  <data name="Tenhinhthuctuyendung" xml:space="preserve">
+    <value>Tên đơn vị (Tiếng Việt)</value>
+  </data>
+  <data name="Makhanang" xml:space="preserve">
+    <value>Mã khả năng</value>
+  </data>
+  <data name="Tenkhanang" xml:space="preserve">
+    <value>Tên khả năng</value>
+  </data>
+  <data name="Maloaichinhsach" xml:space="preserve">
+    <value>Mã loại chính sách</value>
+  </data>
+  <data name="Tenloaichinhsach" xml:space="preserve">
+    <value>Tên loại chính sách</value>
+  </data>
+  <data name="Maloailuong" xml:space="preserve">
+    <value>Mã loại lương</value>
+  </data>
+  <data name="Tenloailuong" xml:space="preserve">
+    <value>Tên loại lương</value>
+  </data>
+  <data name="Maloaitotnghiep" xml:space="preserve">
+    <value>Mã loại tốt nghiệp</value>
+  </data>
+  <data name="Tenloaitotnghiep" xml:space="preserve">
+    <value>Tên loại tốt nghiệp</value>
+  </data>
+  <data name="Malydodaotao" xml:space="preserve">
+    <value>Mã lý do đào tạo</value>
+  </data>
+  <data name="Tenlydodaotao" xml:space="preserve">
+    <value>Tên lý do đào tạo</value>
+  </data>
+  <data name="Diem" xml:space="preserve">
+    <value>Điểm</value>
+  </data>
+  <data name="Malydokhenthuong" xml:space="preserve">
+    <value>Mã lý do khen thưởng</value>
+  </data>
+  <data name="Tenlydokhenthuong" xml:space="preserve">
+    <value>Tên lý do khen thưởng</value>
+  </data>
+  <data name="Malydonghi" xml:space="preserve">
+    <value>Mã lý do nghỉ</value>
+  </data>
+  <data name="Tenlydonghi" xml:space="preserve">
+    <value>Tên lý do nghỉ</value>
+  </data>
+  <data name="Mangoaingu" xml:space="preserve">
+    <value>Mã ngoại ngữ</value>
+  </data>
+  <data name="Tenngoaingu" xml:space="preserve">
+    <value>Tên ngoại ngữ</value>
+  </data>
+  <data name="ManhomVTHH" xml:space="preserve">
+    <value>Mã nhóm VTHH</value>
+  </data>
+  <data name="TennhomVTHH" xml:space="preserve">
+    <value>Tên nhóm VTHH</value>
+  </data>
+  <data name="ManoiKCB" xml:space="preserve">
+    <value>Mã nơi KCB</value>
+  </data>
+  <data name="TennoiKCB" xml:space="preserve">
+    <value>Tên nơi KCB</value>
+  </data>
+  <data name="ManoicapBHYT" xml:space="preserve">
+    <value>Mã nơi cấp BHYT</value>
+  </data>
+  <data name="NoicapBHYT" xml:space="preserve">
+    <value>Nơi cấp BHYT</value>
+  </data>
+  <data name="ManoicapCMND" xml:space="preserve">
+    <value>Mã nơi cấp CMND</value>
+  </data>
+  <data name="Tennoicap" xml:space="preserve">
+    <value>Tên nơi cấp </value>
+  </data>
+  <data name="Manoicaphochieu" xml:space="preserve">
+    <value>Mã nơi cấp hộ chiếu</value>
+  </data>
+  <data name="Tennoicaphochieu" xml:space="preserve">
+    <value>Tên nơi cấp hộ chiếu</value>
+  </data>
+  <data name="Makynang" xml:space="preserve">
+    <value>Mã kỹ năng</value>
+  </data>
+  <data name="Tenkynang" xml:space="preserve">
+    <value>Tên kỹ năng</value>
+  </data>
+  <data name="Matrinhdochinhtri" xml:space="preserve">
+    <value>Mã trình độ chính trị</value>
+  </data>
+  <data name="Tentrinhdochinhtri" xml:space="preserve">
+    <value>Tên trình độ chính trị</value>
+  </data>
+  <data name="Tentrinhdoquanlykinhte" xml:space="preserve">
+    <value>Tên trình độ quản lý kinh tế</value>
+  </data>
+  <data name="Matrinhdoquanlykinhte" xml:space="preserve">
+    <value>Mã trình độ quản lý kinh tế</value>
+  </data>
+  <data name="Matrinhdoquanly" xml:space="preserve">
+    <value>Mã trình độ quản lý</value>
+  </data>
+  <data name="Tentrinhdoquanly" xml:space="preserve">
+    <value>Tên trình độ quản lý</value>
+  </data>
+  <data name="Tentrinhdovanhoa" xml:space="preserve">
+    <value>Tên trình độ văn hóa</value>
+  </data>
+  <data name="Matrinhdovanhoa" xml:space="preserve">
+    <value>Mã trình độ văn hóa</value>
+  </data>
+  <data name="Maloaithue" xml:space="preserve">
+    <value>Mã loại thuế</value>
+  </data>
+  <data name="Tenloaithue" xml:space="preserve">
+    <value>Tên loại thuế</value>
+  </data>
+  <data name="Mucduoi" xml:space="preserve">
+    <value>Mức dưới </value>
+  </data>
+  <data name="Muctren" xml:space="preserve">
+    <value>Mức trên</value>
+  </data>
+  <data name="Phantram" xml:space="preserve">
+    <value>Phần trăm</value>
+  </data>
+  <data name="Matinhoc" xml:space="preserve">
+    <value>Mã tin học</value>
+  </data>
+  <data name="Tentinhoc" xml:space="preserve">
+    <value>Tên tin học</value>
+  </data>
+  <data name="Mathanhphanbanthan" xml:space="preserve">
+    <value>Mã thành phần bản thân</value>
+  </data>
+  <data name="Tenthanhphanbanthan" xml:space="preserve">
+    <value>Tên thành phần bản thân</value>
+  </data>
+  <data name="Mathanhphangiadinh" xml:space="preserve">
+    <value>Mã thành phần gia đình</value>
+  </data>
+  <data name="Tenthanhphangiadinh" xml:space="preserve">
+    <value>Tên thành phần gia đình</value>
+  </data>
+  <data name="LoaiHD" xml:space="preserve">
+    <value>Loại HĐ</value>
+  </data>
+  <data name="TenloaiHD" xml:space="preserve">
+    <value>Tên loại HĐ</value>
+  </data>
+  <data name="Matinhtranghopdong" xml:space="preserve">
+    <value>Mã tình trạng hợp đồng</value>
+  </data>
+  <data name="Tentinhtranghopdong" xml:space="preserve">
+    <value>Tên tình trạng hợp đồng</value>
+  </data>
+  <data name="Matinhtranghonnhan" xml:space="preserve">
+    <value>Mã tình trạng hôn nhân</value>
+  </data>
+  <data name="Tentinhtranghonnhan" xml:space="preserve">
+    <value>Tên tình trạng hôn nhân</value>
+  </data>
+  <data name="Matinhtrangsuckhoe" xml:space="preserve">
+    <value>Mã tình trạng sức khỏe</value>
+  </data>
+  <data name="Tentinhtrangsuckhoe" xml:space="preserve">
+    <value>Tên tình trạng sức khỏe</value>
+  </data>
+  <data name="Maxeploai" xml:space="preserve">
+    <value>Mã xếp loại</value>
+  </data>
+  <data name="Tenxeploai" xml:space="preserve">
+    <value>Tên xếp loại</value>
+  </data>
+  <data name="Khoachinh" xml:space="preserve">
+    <value>Khoá chính</value>
+  </data>
+  <data name="Khoaphu" xml:space="preserve">
+    <value>Khóa phụ</value>
+  </data>
+  <data name="Ngayphongvan" xml:space="preserve">
+    <value>Ngày phỏng vấn</value>
+  </data>
+  <data name="Noidung" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="Tongdiem" xml:space="preserve">
+    <value>Tổng điểm</value>
+  </data>
+  <data name="Ketqua" xml:space="preserve">
+    <value>Kết quả</value>
+  </data>
+  <data name="Ghichu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Tungay" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="Denngay" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="Tendetai" xml:space="preserve">
+    <value>Tên đề tài</value>
+  </data>
+  <data name="Capdetai" xml:space="preserve">
+    <value>Cấp đề tài</value>
+  </data>
+  <data name="Chunhiemdetai" xml:space="preserve">
+    <value>Chủ nhiệm đề tài</value>
+  </data>
+  <data name="Tucachthamgia" xml:space="preserve">
+    <value>Tư cách tham gia</value>
+  </data>
+  <data name="Khoangoai" xml:space="preserve">
+    <value>Khóa ngoại</value>
+  </data>
+  <data name="Diemdanhgia" xml:space="preserve">
+    <value>Điểm đánh giá</value>
+  </data>
+  <data name="Danhgia" xml:space="preserve">
+    <value>Đánh giá</value>
+  </data>
+  <data name="Loaihinh" xml:space="preserve">
+    <value>Loại hình</value>
+  </data>
+  <data name="Nhiemky" xml:space="preserve">
+    <value>Nhiệm kỳ</value>
+  </data>
+  <data name="Ngaynhan" xml:space="preserve">
+    <value>Ngày nhận</value>
+  </data>
+  <data name="Tinhtrang" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="Tenvattu" xml:space="preserve">
+    <value>Tên vật tư</value>
+  </data>
+  <data name="Donvi" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="MA_PHONG" xml:space="preserve">
+    <value>MA_PHONG</value>
+  </data>
+  <data name="MA_CHUCVU" xml:space="preserve">
+    <value>MA_CHUCVU</value>
+  </data>
+  <data name="MA_NGACH" xml:space="preserve">
+    <value>MA_NGACH</value>
+  </data>
+  <data name="Hesoluong" xml:space="preserve">
+    <value>Hệ số lương</value>
+  </data>
+  <data name="Phucap" xml:space="preserve">
+    <value>Phụ cấp</value>
+  </data>
+  <data name="Tenphong" xml:space="preserve">
+    <value>Tên phòng</value>
+  </data>
+  <data name="Tenngach" xml:space="preserve">
+    <value>Tên ngạch</value>
+  </data>
+  <data name="Congviec" xml:space="preserve">
+    <value>Công việc</value>
+  </data>
+  <data name="Chucvu" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+  <data name="Quoctich" xml:space="preserve">
+    <value>Quốc tịch</value>
+  </data>
+  <data name="Lydo" xml:space="preserve">
+    <value>Lý do</value>
+  </data>
+  <data name="Coquanquyetdinh" xml:space="preserve">
+    <value>Cơ quan quyết định</value>
+  </data>
+  <data name="Sotien" xml:space="preserve">
+    <value>Số tiền</value>
+  </data>
+  <data name="Chuyennganh" xml:space="preserve">
+    <value>Chuyên ngành</value>
+  </data>
+  <data name="Khoahoc" xml:space="preserve">
+    <value>Khóa học</value>
+  </data>
+  <data name="Nuoc" xml:space="preserve">
+    <value>Nước</value>
+  </data>
+  <data name="Truongdaotao" xml:space="preserve">
+    <value>Trường đào tạo</value>
+  </data>
+  <data name="Trinhdo" xml:space="preserve">
+    <value>Trình  độ</value>
+  </data>
+  <data name="Xeploai" xml:space="preserve">
+    <value>Xếp loại</value>
+  </data>
+  <data name="Hinhthucdaotao" xml:space="preserve">
+    <value>Hình thức đào tạo</value>
+  </data>
+  <data name="Mucluong" xml:space="preserve">
+    <value>Mức lương</value>
+  </data>
+  <data name="Tyle" xml:space="preserve">
+    <value>Tỷ lệ</value>
+  </data>
+  <data name="Loailuong" xml:space="preserve">
+    <value>Loại lương</value>
+  </data>
+  <data name="Ngach" xml:space="preserve">
+    <value>Ngạch</value>
+  </data>
+  <data name="Phucapchucvu" xml:space="preserve">
+    <value>Phụ cấp chức vụ</value>
+  </data>
+  <data name="Luongcoban" xml:space="preserve">
+    <value>Lương cơ bản</value>
+  </data>
+  <data name="LuongBHXH" xml:space="preserve">
+    <value>Lương BHXH</value>
+  </data>
+  <data name="Bacluong" xml:space="preserve">
+    <value>Bậc lương</value>
+  </data>
+  <data name="Sohopdong" xml:space="preserve">
+    <value>Số hợp đồng</value>
+  </data>
+  <data name="Loaihopdong" xml:space="preserve">
+    <value>Loại hợp đồng</value>
+  </data>
+  <data name="Ngaykyhopdong" xml:space="preserve">
+    <value>Ngày ký hợp đồng</value>
+  </data>
+  <data name="Ngayketthuchopdong" xml:space="preserve">
+    <value>Ngày kết thúc hợp đồng</value>
+  </data>
+  <data name="Tinhtranghopdong" xml:space="preserve">
+    <value>Tình trạng hợp đồng</value>
+  </data>
+  <data name="Khanang" xml:space="preserve">
+    <value>Khả năng</value>
+  </data>
+  <data name="Soquyetdinh" xml:space="preserve">
+    <value>Số quyết định</value>
+  </data>
+  <data name="Ngayquyetdinh" xml:space="preserve">
+    <value>Ngày quyết định</value>
+  </data>
+  <data name="Lydokhenthuong" xml:space="preserve">
+    <value>Lý do khen thưởng</value>
+  </data>
+  <data name="Hinhthuckhenthuong" xml:space="preserve">
+    <value>Hình thức khen thưởng</value>
+  </data>
+  <data name="Lydokyluat" xml:space="preserve">
+    <value>Lý do kỷ luật</value>
+  </data>
+  <data name="Hinhthuckyluat" xml:space="preserve">
+    <value>Hình thức kỷ luật</value>
+  </data>
+  <data name="Hoten" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="Tuoi" xml:space="preserve">
+    <value>Tuổi</value>
+  </data>
+  <data name="Quanhe" xml:space="preserve">
+    <value>Quan hệ</value>
+  </data>
+  <data name="Nghenghiep" xml:space="preserve">
+    <value>Nghề nghiệp</value>
+  </data>
+  <data name="Noilamviec" xml:space="preserve">
+    <value>Nơi làm việc</value>
+  </data>
+  <data name="Gioitinh" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="Malydokyluat" xml:space="preserve">
+    <value>Mã lý do kỷ luật</value>
+  </data>
+  <data name="Mahinhthuckyluat" xml:space="preserve">
+    <value>Mã hình thức kỷ luật</value>
+  </data>
+  <data name="Thoigian" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="Tenbang" xml:space="preserve">
+    <value>Tên bảng</value>
+  </data>
+  <data name="Chucnang" xml:space="preserve">
+    <value>Chức năng</value>
+  </data>
+  <data name="Tencotbianhhuong" xml:space="preserve">
+    <value>Tên cột bị ảnh hưởng</value>
+  </data>
+  <data name="Mota" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="IPmaytinh" xml:space="preserve">
+    <value>IP máy tính</value>
+  </data>
+  <data name="Tenmay" xml:space="preserve">
+    <value>Tên máy</value>
+  </data>
+  <data name="Phongban" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="Macanbo" xml:space="preserve">
+    <value>Mã cán bộ</value>
+  </data>
+  <data name="Tongcong" xml:space="preserve">
+    <value>Tổng cộng</value>
+  </data>
+  <data name="Congsanpham" xml:space="preserve">
+    <value>Công sản phẩm</value>
+  </data>
+  <data name="Ngay01" xml:space="preserve">
+    <value>Ngày 01</value>
+  </data>
+  <data name="Ngay02" xml:space="preserve">
+    <value>Ngày 02</value>
+  </data>
+  <data name="Ngay03" xml:space="preserve">
+    <value>Ngày 03</value>
+  </data>
+  <data name="Ngay04" xml:space="preserve">
+    <value>Ngày 04</value>
+  </data>
+  <data name="Ngay05" xml:space="preserve">
+    <value>Ngày 05</value>
+  </data>
+  <data name="Ngay06" xml:space="preserve">
+    <value>Ngày 06</value>
+  </data>
+  <data name="Ngay07" xml:space="preserve">
+    <value>Ngày 07</value>
+  </data>
+  <data name="Ngay08" xml:space="preserve">
+    <value>Ngày 08</value>
+  </data>
+  <data name="Ngay09" xml:space="preserve">
+    <value>Ngày 09</value>
+  </data>
+  <data name="Ngay10" xml:space="preserve">
+    <value>Ngày 10</value>
+  </data>
+  <data name="Ngay11" xml:space="preserve">
+    <value>Ngày 11</value>
+  </data>
+  <data name="Ngay12" xml:space="preserve">
+    <value>Ngày 12</value>
+  </data>
+  <data name="Ngay13" xml:space="preserve">
+    <value>Ngày 13</value>
+  </data>
+  <data name="Ngay14" xml:space="preserve">
+    <value>Ngày 14</value>
+  </data>
+  <data name="Ngay15" xml:space="preserve">
+    <value>Ngày 15</value>
+  </data>
+  <data name="Ngay16" xml:space="preserve">
+    <value>Ngày 16</value>
+  </data>
+  <data name="Ngay17" xml:space="preserve">
+    <value>Ngày 17</value>
+  </data>
+  <data name="Ngay18" xml:space="preserve">
+    <value>Ngày 18</value>
+  </data>
+  <data name="Ngay19" xml:space="preserve">
+    <value>Ngày 19</value>
+  </data>
+  <data name="Ngay20" xml:space="preserve">
+    <value>Ngày 20</value>
+  </data>
+  <data name="Ngay21" xml:space="preserve">
+    <value>Ngày 21</value>
+  </data>
+  <data name="Ngay22" xml:space="preserve">
+    <value>Ngày 22</value>
+  </data>
+  <data name="Ngay23" xml:space="preserve">
+    <value>Ngày 23</value>
+  </data>
+  <data name="Ngay24" xml:space="preserve">
+    <value>Ngày 24</value>
+  </data>
+  <data name="Ngay25" xml:space="preserve">
+    <value>Ngày 25</value>
+  </data>
+  <data name="Ngay26" xml:space="preserve">
+    <value>Ngày 26</value>
+  </data>
+  <data name="Ngay27" xml:space="preserve">
+    <value>Ngày 27</value>
+  </data>
+  <data name="Ngay28" xml:space="preserve">
+    <value>Ngày 28</value>
+  </data>
+  <data name="Ngay29" xml:space="preserve">
+    <value>Ngày 29</value>
+  </data>
+  <data name="Ngay30" xml:space="preserve">
+    <value>Ngày 30</value>
+  </data>
+  <data name="Ngay31" xml:space="preserve">
+    <value>Ngày 31</value>
+  </data>
+  <data name="Diemthuong" xml:space="preserve">
+    <value>Điểm thưởng</value>
+  </data>
+  <data name="Diemphat" xml:space="preserve">
+    <value>Điểm phạt</value>
+  </data>
+  <data name="Hesothuong" xml:space="preserve">
+    <value>Hệ số thưởng</value>
+  </data>
+  <data name="Ca1" xml:space="preserve">
+    <value>Ca 1</value>
+  </data>
+  <data name="Ca2" xml:space="preserve">
+    <value>Ca 2</value>
+  </data>
+  <data name="Ca3" xml:space="preserve">
+    <value>Ca 3</value>
+  </data>
+  <data name="Themgiongaythuong" xml:space="preserve">
+    <value>Thêm giờ ngày thường</value>
+  </data>
+  <data name="Themgiongaynghi" xml:space="preserve">
+    <value>Thêm giờ ngày nghỉ</value>
+  </data>
+  <data name="Om" xml:space="preserve">
+    <value>Ốm</value>
+  </data>
+  <data name="Vanhoathethao" xml:space="preserve">
+    <value>Văn hóa thể thao</value>
+  </data>
+  <data name="Ngayle" xml:space="preserve">
+    <value>Ngày lễ</value>
+  </data>
+  <data name="Nghiphep" xml:space="preserve">
+    <value>Nghỉ phép</value>
+  </data>
+  <data name="Tainan" xml:space="preserve">
+    <value>Tai nạn</value>
+  </data>
+  <data name="Chedo" xml:space="preserve">
+    <value>Chế độ</value>
+  </data>
+  <data name="Dihoc" xml:space="preserve">
+    <value>Đi học</value>
+  </data>
+  <data name="Diquansu" xml:space="preserve">
+    <value>Đi quân sự</value>
+  </data>
+  <data name="BHXH" xml:space="preserve">
+    <value>BHXH</value>
+  </data>
+  <data name="Dieuduong" xml:space="preserve">
+    <value>Điều dưỡng</value>
+  </data>
+  <data name="Ngaynghi" xml:space="preserve">
+    <value>Ngày nghỉ</value>
+  </data>
+  <data name="Thamquan" xml:space="preserve">
+    <value>Tham quan</value>
+  </data>
+  <data name="Vaolo" xml:space="preserve">
+    <value>Vào lò</value>
+  </data>
+  <data name="Nghitutuc" xml:space="preserve">
+    <value>Nghỉ tự túc</value>
+  </data>
+  <data name="Nghivolydo" xml:space="preserve">
+    <value>Nghỉ vô lý do</value>
+  </data>
+  <data name="Khac" xml:space="preserve">
+    <value>Khác</value>
+  </data>
+  <data name="Ngaysinh" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="Mangach" xml:space="preserve">
+    <value>Mã ngạch</value>
+  </data>
+  <data name="Nhomngach" xml:space="preserve">
+    <value>Nhóm ngạch</value>
+  </data>
+  <data name="Sothang" xml:space="preserve">
+    <value>Số tháng</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>USERNAME</value>
+  </data>
+  <data name="Mato" xml:space="preserve">
+    <value>Mã tổ</value>
+  </data>
+  <data name="Tento" xml:space="preserve">
+    <value>Tên tổ</value>
+  </data>
+  <data name="Matinhthanh" xml:space="preserve">
+    <value>Mã tỉnh thành</value>
+  </data>
+  <data name="Tentinhthanh" xml:space="preserve">
+    <value>Tên tỉnh thành</value>
+  </data>
+  <data name="Loi" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="TenVTTHH" xml:space="preserve">
+    <value>Tên VTTHH</value>
+  </data>
+  <data name="Tenkhoahoc" xml:space="preserve">
+    <value>Tên khóa học</value>
+  </data>
+  <data name="Matruongdaotao" xml:space="preserve">
+    <value>Mã trường đào tạo</value>
+  </data>
+  <data name="Ngayhopdong" xml:space="preserve">
+    <value>Ngày hợp đồng</value>
+  </data>
+  <data name="Maungvien" xml:space="preserve">
+    <value>Mã ứng viên</value>
+  </data>
+  <data name="Didong" xml:space="preserve">
+    <value>Di động</value>
+  </data>
+  <data name="CongviecVitri" xml:space="preserve">
+    <value>Công việc/Vị trí</value>
+  </data>
+  <data name="Kehoachtuyendung" xml:space="preserve">
+    <value>Kế hoạch tuyển dụng</value>
+  </data>
+  <data name="Kinhnghiem" xml:space="preserve">
+    <value>Kinh nghiệm</value>
+  </data>
+  <data name="Diemvong1" xml:space="preserve">
+    <value>Điểm vòng 1</value>
+  </data>
+  <data name="Diemvong2" xml:space="preserve">
+    <value>Điểm vòng 2</value>
+  </data>
+  <data name="Diemvong3" xml:space="preserve">
+    <value>Điểm vòng 3</value>
+  </data>
+  <data name="Diemvong4" xml:space="preserve">
+    <value>Điểm vòng 4</value>
+  </data>
+  <data name="Nhanxetvong1" xml:space="preserve">
+    <value>Nhận xét vòng 1</value>
+  </data>
+  <data name="Nhanxetvong2" xml:space="preserve">
+    <value>Nhận xét vòng 2</value>
+  </data>
+  <data name="Nhanxetvong3" xml:space="preserve">
+    <value>Nhận xét vòng 3</value>
+  </data>
+  <data name="Nhanxetvong4" xml:space="preserve">
+    <value>Nhận xét vòng 4</value>
+  </data>
+  <data name="VitriCongviec" xml:space="preserve">
+    <value>Vị trí /Công việc</value>
+  </data>
+  <data name="Lichlan1" xml:space="preserve">
+    <value>Lịch lần 1</value>
+  </data>
+  <data name="Lichlan2" xml:space="preserve">
+    <value>Lịch lần 2</value>
+  </data>
+  <data name="Lichlan3" xml:space="preserve">
+    <value>Lịch lần 3</value>
+  </data>
+  <data name="Lichlan4" xml:space="preserve">
+    <value>Lịch lần 4</value>
+  </data>
+  <data name="Daphongvan" xml:space="preserve">
+    <value>Đã phỏng vấn</value>
+  </data>
+  <data name="Diachilienhe" xml:space="preserve">
+    <value>Địa chỉ liên hệ</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Tổ</value>
+  </data>
+  <data name="Ngayvaochinhthuc" xml:space="preserve">
+    <value>Ngày vào chính thức</value>
+  </data>
+  <data name="Madoitac" xml:space="preserve">
+    <value>Mã đối tác</value>
+  </data>
+  <data name="Tendoitac" xml:space="preserve">
+    <value>Tên đối tác</value>
+  </data>
+  <data name="Trusochinh" xml:space="preserve">
+    <value>Trụ sở chính</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Ma" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+  <data name="Thoigiandaotao" xml:space="preserve">
+    <value>Thời gian đào tạo</value>
+  </data>
+  <data name="Chiphidukien" xml:space="preserve">
+    <value>Chi phí dự kiến</value>
+  </data>
+  <data name="Chiphithucte" xml:space="preserve">
+    <value>Chi phí thực tế</value>
+  </data>
+  <data name="Soluonghocvien" xml:space="preserve">
+    <value>Số lương học viên</value>
+  </data>
+  <data name="Diadiemdaotao" xml:space="preserve">
+    <value>Địa điểm đào tạo</value>
+  </data>
+  <data name="Nhanviendong" xml:space="preserve">
+    <value>Nhân viên đóng</value>
+  </data>
+  <data name="Congtyhotro" xml:space="preserve">
+    <value>Công ty hỗ trợ</value>
+  </data>
+  <data name="Loaikhoahoc" xml:space="preserve">
+    <value>Loại khóa học</value>
+  </data>
+  <data name="Chungchi" xml:space="preserve">
+    <value>Chứng chỉ</value>
+  </data>
+  <data name="Phutrachdaotao" xml:space="preserve">
+    <value>Phụ trách đào tạo</value>
+  </data>
+  <data name="TU_NGAY" xml:space="preserve">
+    <value>TU_NGAY</value>
+  </data>
+  <data name="DEN_NGAY" xml:space="preserve">
+    <value>DEN_NGAY</value>
+  </data>
+  <data name="TEN_KHOA_HOC" xml:space="preserve">
+    <value>TEN_KHOA_HOC</value>
+  </data>
+  <data name="MA_CHUNGCHI" xml:space="preserve">
+    <value>MA_CHUNGCHI</value>
+  </data>
+  <data name="KINHPHI_DUKIEN" xml:space="preserve">
+    <value>KINHPHI_DUKIEN</value>
+  </data>
+  <data name="KINHPHI_THUCTE" xml:space="preserve">
+    <value>KINHPHI_THUCTE</value>
+  </data>
+  <data name="KINHPHI_CTY_HOTRO" xml:space="preserve">
+    <value>KINHPHI_CTY_HOTRO</value>
+  </data>
+  <data name="KINHPHI_NHANVIEN_DONG" xml:space="preserve">
+    <value>KINHPHI_NHANVIEN_DONG</value>
+  </data>
+  <data name="BATDAU_DANGKY" xml:space="preserve">
+    <value>BATDAU_DANGKY</value>
+  </data>
+  <data name="HETHAN_DANGKY" xml:space="preserve">
+    <value>HETHAN_DANGKY</value>
+  </data>
+  <data name="MUCDICH_KHOAHOC" xml:space="preserve">
+    <value>MUCDICH_KHOAHOC</value>
+  </data>
+  <data name="NOIDUNG_DAOTAO" xml:space="preserve">
+    <value>NOIDUNG_DAOTAO</value>
+  </data>
+  <data name="DIA_DIEM_DAOTAO" xml:space="preserve">
+    <value>DIA_DIEM_DAOTAO</value>
+  </data>
+  <data name="THOI_GIAN_DAOTAO" xml:space="preserve">
+    <value>THOI_GIAN_DAOTAO</value>
+  </data>
+  <data name="TRANG_THAI" xml:space="preserve">
+    <value>TRANG_THAI</value>
+  </data>
+  <data name="DOITUONG_DAOTAO" xml:space="preserve">
+    <value>DOITUONG_DAOTAO</value>
+  </data>
+  <data name="SOLUONG_HOCVIEN" xml:space="preserve">
+    <value>SOLUONG_HOCVIEN</value>
+  </data>
+  <data name="LYDO_DAOTAO" xml:space="preserve">
+    <value>LYDO_DAOTAO</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>CreatedBy</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>CreatedDate</value>
+  </data>
+  <data name="MA_DONVI" xml:space="preserve">
+    <value>MA_DONVI</value>
+  </data>
+  <data name="MA_LYDODAOTAO" xml:space="preserve">
+    <value>MA_LYDODAOTAO</value>
+  </data>
+  <data name="GHI_CHU" xml:space="preserve">
+    <value>GHI_CHU</value>
+  </data>
+  <data name="MA_DONVIPHUTRACHDAOTAO" xml:space="preserve">
+    <value>MA_DONVIPHUTRACHDAOTAO</value>
+  </data>
+  <data name="TEN_DONVIPHUTRACHDAOTAO" xml:space="preserve">
+    <value>TEN_DONVIPHUTRACHDAOTAO</value>
+  </data>
+  <data name="TEN_LYDO_DAOTAO" xml:space="preserve">
+    <value>TEN_LYDO_DAOTAO</value>
+  </data>
+  <data name="TEN_CHUNGCHI" xml:space="preserve">
+    <value>TEN_CHUNGCHI</value>
+  </data>
+  <data name="Ten" xml:space="preserve">
+    <value>Ten</value>
+  </data>
+  <data name="MA_DOTTUYENDUNG" xml:space="preserve">
+    <value>MA_DOTTUYENDUNG</value>
+  </data>
+  <data name="Sobactoida" xml:space="preserve">
+    <value>Số bậc tối đa</value>
+  </data>
+  <data name="Tenchucvutienganh" xml:space="preserve">
+    <value>Tên chức vụ tiếng anh</value>
+  </data>
+  <data name="Costcenter" xml:space="preserve">
+    <value>Cost center</value>
+  </data>
+  <data name="Tencostcenter" xml:space="preserve">
+    <value>Tên cost center</value>
+  </data>
+  <data name="Tenhinhthuctuyendung_EN" xml:space="preserve">
+    <value>Tên đơn vị (Tiếng Anh)</value>
+  </data>
+</root>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MathRule>
+  <Column AllowBlank="false" DataType="Integer" DisplayOnGrid="false" DefaultValue="">
+    <DataBase>PR_KEY</DataBase>
+    <Excel>Khóa chính(*)</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="False" DefaultValue="">
+    <DataBase>MA_PHONG</DataBase>
+    <Excel>Mã phòng</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_CHUCVU</DataBase>
+    <Excel>Mã chức vụ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="False" DefaultValue="">
+    <DataBase>MA_CONGVIEC</DataBase>
+    <Excel>Mã công việc (*)</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MUC_LUONG</DataBase>
+    <Excel>Mức lương</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NGAY_NOP_HS</DataBase>
+    <Excel>Ngày nộp hồ sơ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_CB</DataBase>
+    <Excel>Mã cán bộ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>TEN_CB</DataBase>
+    <Excel>Tên cán bộ (*)</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NGAY_SINH</DataBase>
+    <Excel>Ngày sinh</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_GIOITINH</DataBase>
+    <Excel>Giới tính(*)</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TINHTHANH</DataBase>
+    <Excel>Mã tỉnh thành</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_NUOC</DataBase>
+    <Excel>Mã nước</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_DANTOC</DataBase>
+    <Excel>Mã dân tộc</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TONGIAO</DataBase>
+    <Excel>Mã tôn giáo</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TP_BANTHAN</DataBase>
+    <Excel>Mã thành phần bản thân</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TP_GIADINH</DataBase>
+    <Excel>Mã thành phần gia đình</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_NGOAINGU</DataBase>
+    <Excel>Mã ngoại ngữ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TINHOC</DataBase>
+    <Excel>Mã tin học</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TT_HONNHAN</DataBase>
+    <Excel>Mã tình trạng hôn nhân</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TD_VANHOA</DataBase>
+    <Excel>Mã trình độ văn hóa</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TT_SUCKHOE</DataBase>
+    <Excel>Mã tình trạng sức khỏe</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>HO_KHAU</DataBase>
+    <Excel>Hộ khẩu</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DIA_CHI_LHE</DataBase>
+    <Excel>Địa chỉ liên hệ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DI_DONG</DataBase>
+    <Excel>Di động</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>DIEN_THOAI</DataBase>
+    <Excel>Điện thoại</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>EMAIL</DataBase>
+    <Excel>Email</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>SO_CMND</DataBase>
+    <Excel>Số CMND</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>NGAY_CAP_CMND</DataBase>
+    <Excel>Ngày cấp CMND</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_NOICAP_CMND</DataBase>
+    <Excel>Mã nơi cấp CMND</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TRINHDO</DataBase>
+    <Excel>Mã trình độ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_CHUYENNGANH</DataBase>
+    <Excel>Mã chuyên ngành</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_TRUONG_DAOTAO</DataBase>
+    <Excel>Mã trường đào tạo</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_CHUNGCHI</DataBase>
+    <Excel>Mã chứng chỉ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_HT_DAOTAO</DataBase>
+    <Excel>Mã hình thức đào tạo</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>MA_XEPLOAI</DataBase>
+    <Excel>Mã xếp loại</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>KINH_NGHIEM</DataBase>
+    <Excel>Kinh nghiệm</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>FLANGUAGE</DataBase>
+    <Excel>Ngoại ngữ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>IQ</DataBase>
+    <Excel>IQ</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>GMAT</DataBase>
+    <Excel>GMAT</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>SPECIALITY</DataBase>
+    <Excel>Khả năng đặc biệt</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="Float" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>TOTAL_MARK</DataBase>
+    <Excel>Tổng điểm</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>INTERVIEW</DataBase>
+    <Excel>Phỏng vấn</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="true" DefaultValue="">
+    <DataBase>COMMENT</DataBase>
+    <Excel>Nhận xét</Excel>
+  </Column>
+  <Column AllowBlank="false" DataType="Bit" DisplayOnGrid="False" DefaultValue="">
+    <DataBase>RESULT</DataBase>
+    <Excel>Kết quả (*)</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="false" DefaultValue="">
+    <DataBase>PHOTO</DataBase>
+    <Excel>Ảnh đại diện</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="false" DefaultValue="CreatedUser">
+    <DataBase>USERNAME</DataBase>
+    <Excel>USERNAME</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="DateTime" DisplayOnGrid="false" DefaultValue="CreatedDate">
+    <DataBase>DATE_CREATE</DataBase>
+    <Excel>DATE_CREATE</Excel>
+  </Column>
+  <Column AllowBlank="true" DataType="String" DisplayOnGrid="false" DefaultValue="">
+    <DataBase>MA_DONVI</DataBase>
+    <Excel>MA_DONVI</Excel>
+  </Column>
+</MathRule>

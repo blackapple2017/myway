@@ -1,0 +1,27 @@
+﻿/* {
+    font-size: 12px !important;
+    line-height: 18px !important;
+}*/
+
+/*tree*/
+.x-tree-node .x-tree-selected
+{
+    background: #368eeb !important;
+}
+
+    .x-tree-node .x-tree-selected span, .x-tree-node .x-tree-node-over span
+    {
+        color: #fff !important;
+    }
+
+.x-tree-node .x-tree-node-over
+{
+    background: #368eeb !important;
+    color: #fff !important;
+}
+
+.requiredDataWG .x-form-text
+{
+    background: #fcfcb1 !important;
+}
+ 

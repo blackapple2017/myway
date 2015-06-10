@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+<data name="Danhsachcongviec" xml:space="preserve"><value>Danh sách công việc</value></data>
+<data name="Danhmucchucvu" xml:space="preserve"><value>Danh mục chức vụ</value></data>
+<data name="Danhmucngach" xml:space="preserve"><value>Danh mục ngạch</value></data>
+<data name="Danhmucnuoc" xml:space="preserve"><value>Danh mục nước</value></data>
+<data name="Danhmuctinhthanh" xml:space="preserve"><value>Danh mục tỉnh thành</value></data>
+<data name="Danhmucnhomngach" xml:space="preserve"><value>Danh mục nhóm ngạch</value></data>
+<data name="Danhmuctruongdaotao" xml:space="preserve"><value>Danh mục trường đào tạo</value></data>
+<data name="Danhmucchuyennganh" xml:space="preserve"><value>Danh mục chuyên ngành</value></data>
+<data name="Danhmucchungchi" xml:space="preserve"><value>Danh mục chứng chỉ</value></data>
+<data name="Danhmuccongtrinh" xml:space="preserve"><value>Danh mục công trình</value></data>
+<data name="DanhmucnoicapBHXH" xml:space="preserve"><value>Danh mục nơi cấp BHXH</value></data>
+<data name="Danhmucquanhe" xml:space="preserve"><value>Danh mục quan hệ</value></data>
+<data name="Danhmucnganhang" xml:space="preserve"><value>Danh mục ngân hàng</value></data>
+<data name="Danhmucdantoc" xml:space="preserve"><value>Danh mục dân tộc</value></data>
+<data name="Danhmuctongiao" xml:space="preserve"><value>Danh mục tôn giáo</value></data>
+<data name="Danhmuccapbacquandoi" xml:space="preserve"><value>Danh mục cấp bậc quân đội</value></data>
+<data name="Danhmucchucvudang" xml:space="preserve"><value>Danh mục chức vụ đảng</value></data>
+<data name="Danhmucchucvudoan" xml:space="preserve"><value>Danh mục chức vụ đoàn</value></data>
+<data name="Danhmucchucvuquandoi" xml:space="preserve"><value>Danh mục chức vụ quân đội</value></data>
+<data name="Danhmucdonvitinh" xml:space="preserve"><value>Danh mục đơn vị tính</value></data>
+<data name="Danhmucgioitinh" xml:space="preserve"><value>Danh mục giới tính</value></data>
+<data name="Danhmuchinhthucdaotao" xml:space="preserve"><value>Danh mục hình thức đào tạo</value></data>
+<data name="Danhmuchinhthuckhenthuong" xml:space="preserve"><value>Danh mục hình thức khen thưởng</value></data>
+<data name="Danhmuchinhthuctuyendung" xml:space="preserve"><value>Danh mục hình thức tuyển dụng</value></data>
+<data name="Danhmuckhanang" xml:space="preserve"><value>Danh mục khả năng </value></data>
+<data name="Danhmucloaichinhsach" xml:space="preserve"><value>Danh mục loại chính sách</value></data>
+<data name="Danhmucloailuong" xml:space="preserve"><value>Danh mục loại lương</value></data>
+<data name="Danhmucloaitotnghiep" xml:space="preserve"><value>Danh mục loại tốt nghiệp</value></data>
+<data name="Danhmuclydodaotao" xml:space="preserve"><value>Danh mục lý do đào tạo</value></data>
+<data name="Danhmuclydokhenthuong" xml:space="preserve"><value>Danh mục lý do khen thưởng</value></data>
+<data name="Danhmuclydonghi" xml:space="preserve"><value>Danh mục lý do nghỉ</value></data>
+<data name="Danhmucmucluongngach" xml:space="preserve"><value>Danh mục mức lương ngạch</value></data>
+<data name="Danhmucngoaingu" xml:space="preserve"><value>Danh mục ngoại ngữ</value></data>
+<data name="DanhmucnhomVTHH" xml:space="preserve"><value>Danh mục nhóm VTHH</value></data>
+<data name="DanhmucnoiKCB" xml:space="preserve"><value>Danh mục nơi KCB</value></data>
+<data name="DanhmucnoicapBHYT" xml:space="preserve"><value>Danh mục nơi cấp BHYT</value></data>
+<data name="DanhmucnoicapCMND" xml:space="preserve"><value>Danh mục nơi cấp CMND</value></data>
+<data name="Danhmucnoicaphochieu" xml:space="preserve"><value>Danh mục nơi cấp hộ chiếu</value></data>
+<data name="Danhmuctrinhdochinhtri" xml:space="preserve"><value>Danh mục trình  độ chính trị</value></data>
+<data name="DanhmuctrinhdoQLKT" xml:space="preserve"><value>Danh mục trình độ QLKT</value></data>
+<data name="Danhmuctrinhdoquanly" xml:space="preserve"><value>Danh mục trình độ quản lý</value></data>
+<data name="Danhmuctrinhdovanhoa" xml:space="preserve"><value>Danh mục trình độ văn hóa</value></data>
+<data name="Danhmucthuethunhap" xml:space="preserve"><value>Danh mục thuế thu nhập</value></data>
+<data name="Danhmuctinhoc" xml:space="preserve"><value>Danh mục tin học</value></data>
+<data name="Danhmucthanhphanbanthan" xml:space="preserve"><value>Danh mục thành phần bản thân</value></data>
+<data name="Danhmucthanhphangiadinh" xml:space="preserve"><value>Danh mục thành phần gia đình</value></data>
+<data name="Danhmuctinhtranghopdong" xml:space="preserve"><value>Danh mục tình trạng hợp đồng</value></data>
+<data name="Danhmuctinhtranghonnhan" xml:space="preserve"><value>Danh mục tình trạng hôn nhân</value></data>
+<data name="Danhmuctinhtrangsuckhoe" xml:space="preserve"><value>Danh mục tình trạng sức khỏe</value></data>
+<data name="Danhmucxeploai" xml:space="preserve"><value>Danh mục xếp loại</value></data>
+<data name="Hosotuyendung" xml:space="preserve"><value>Hồ sơ tuyển dụng</value></data>
+<data name="Hosoquatrinhdaotao" xml:space="preserve"><value>Hồ sơ quá trình đào tạo</value></data>
+<data name="Hosobaohiem" xml:space="preserve"><value>Hồ sơ bảo hiểm</value></data>
+<data name="Dienbienluong" xml:space="preserve"><value>Diễn biến lương</value></data>
+<data name="Danhmucdetai" xml:space="preserve"><value>Danh mục đề tài</value></data>
+<data name="Hosohopdong" xml:space="preserve"><value>Hồ sơ hợp đồng</value></data>
+<data name="Hosokhanang" xml:space="preserve"><value>Hồ sơ khả năng</value></data>
+<data name="Hosokhenthuong" xml:space="preserve"><value>Hồ sơ khen thưởng</value></data>
+<data name="Hosokyluat" xml:space="preserve"><value>Hồ sơ kỷ luật</value></data>
+<data name="Hosoquanhegiadinh" xml:space="preserve"><value>Hồ sơ quan hệ gia đình</value></data>
+<data name="Taisan" xml:space="preserve"><value>Tài sản</value></data>
+<data name="Kehoachtuyendung" xml:space="preserve"><value>Kế hoạch tuyển dụng</value></data>
+<data name="Danhmuclydokyluat" xml:space="preserve"><value>Danh mục lý do kỷ luật</value></data>
+<data name="Danhmuchinhthuckyluat" xml:space="preserve"><value>Danh mục hình thức kỷ luật</value></data>
+<data name="Nhatkytruycap" xml:space="preserve"><value>Nhật ký truy cập</value></data>
+<data name="Bangchamcongtheothang" xml:space="preserve"><value>Bảng chấm công theo tháng</value></data>
+<data name="Loaihopdong" xml:space="preserve"><value>Loại hợp đồng</value></data>
+<data name="Costcenter" xml:space="preserve"><value>Cost center</value></data>
+</root>
