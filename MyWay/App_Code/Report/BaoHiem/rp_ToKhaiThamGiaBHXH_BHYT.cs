@@ -175,9 +175,9 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             xrl_hoten.Text = dt.Rows[0]["HoTen"].ToString().ToUpper();
             string noisinh = dt.Rows[0]["NOI_SINH"].ToString();
             string[] noisinh1 = noisinh.Split(',');
-            string hk1 = dt.Rows[0]["HoKhauThuongTruTamTru"].ToString();
+            string hk1 = dt.Rows[0]["HO_KHAU"].ToString();
             string[] hokhau = hk1.Split(',');
-            string dc1 = dt.Rows[0]["DiaChiLienHe"].ToString();
+            string dc1 = dt.Rows[0]["DIA_CHI_LH"].ToString();
             string[] diachi = dc1.Split(',');
             int count = noisinh1.Length;
             int counthk = hokhau.Length;
@@ -241,7 +241,7 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
                 xrLabel56.Text = diachi[3];
             }
             if (!string.IsNullOrEmpty(dt.Rows[0]["SoSoBHXH"].ToString()))
-                xrLabel6.Text = "Mã số:       " + dt.Rows[0]["SoSoBHXH"].ToString();
+                xrLabel6.Text = "Số định danh:       " + dt.Rows[0]["SoSoBHXH"].ToString();
             if (dt.Rows[0]["GioiTinh"].ToString() == "True")
             {
                 chknam.Checked = true;
@@ -296,9 +296,9 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             {
                 xrlngayloaihopdong.Text = "ngày: " + Convert.ToDateTime(dt.Rows[0]["NGAY_HDONG"]).Day + "/" + Convert.ToDateTime(dt.Rows[0]["NGAY_HDONG"]).Month + "/" + Convert.ToDateTime(dt.Rows[0]["NGAY_HDONG"]).Year + ",";
             }
-            if (!string.IsNullOrEmpty(dt.Rows[0]["NgayCoHieuLuc"].ToString().Trim()))
+            if (!string.IsNullOrEmpty(dt.Rows[0]["NGAY_HDONG"].ToString().Trim()))
             {
-                xrlhieulucngay.Text = "có  hiệu lực từ ngày " + Convert.ToDateTime(dt.Rows[0]["NgayCoHieuLuc"]).Day + "/" + Convert.ToDateTime(dt.Rows[0]["NgayCoHieuLuc"]).Month + "/" + Convert.ToDateTime(dt.Rows[0]["NgayCoHieuLuc"]).Year + ",";
+                xrlhieulucngay.Text = "có  hiệu lực từ ngày " + Convert.ToDateTime(dt.Rows[0]["NGAY_HDONG"]).Day + "/" + Convert.ToDateTime(dt.Rows[0]["NGAY_HDONG"]).Month + "/" + Convert.ToDateTime(dt.Rows[0]["NGAY_HDONG"]).Year + ",";
             }
             if (!string.IsNullOrEmpty(dt.Rows[0]["TEN_LOAI_HDONG"].ToString()))
             {
@@ -364,10 +364,10 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             {
                 xrlsoloaihopdong.Text = "[14]. Quyết định tuyển dụng, hợp đồng lao động (hoặc HĐLV): số " + soquyetdinh;
             }
-            if (!string.IsNullOrEmpty(ngayhieuluc.ToString()))
-            {
-                xrlhieulucngay.Text = "có  hiệu lực từ ngày " + Convert.ToDateTime(ngayhieuluc).Day + "/" + Convert.ToDateTime(ngayhieuluc).Month + "/" + Convert.ToDateTime(ngayhieuluc).Year;
-            }
+            //if (!string.IsNullOrEmpty(ngayhieuluc.ToString()))
+            //{
+            //    xrlhieulucngay.Text = "có  hiệu lực từ ngày " + Convert.ToDateTime(ngayhieuluc).Day + "/" + Convert.ToDateTime(ngayhieuluc).Month + "/" + Convert.ToDateTime(ngayhieuluc).Year;
+            //}
             if (!string.IsNullOrEmpty(ngayky.ToString()))
             {
                 xrlngayloaihopdong.Text = "Ngày " + Convert.ToDateTime(ngayky).Day + "/" + Convert.ToDateTime(ngayky).Month + "/" + Convert.ToDateTime(ngayky).Year;
@@ -759,7 +759,7 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             // xrLabel51
             // 
             this.xrLabel51.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(181.6667F, 300.9167F);
+            this.xrLabel51.LocationFloat = new DevExpress.Utils.PointFloat(213.1042F, 300.9167F);
             this.xrLabel51.Name = "xrLabel51";
             this.xrLabel51.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel51.SizeF = new System.Drawing.SizeF(221.0417F, 22.99998F);
@@ -771,7 +771,7 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             // xrLabel50
             // 
             this.xrLabel50.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(404.9998F, 300.9167F);
+            this.xrLabel50.LocationFloat = new DevExpress.Utils.PointFloat(436.4373F, 300.9167F);
             this.xrLabel50.Name = "xrLabel50";
             this.xrLabel50.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel50.SizeF = new System.Drawing.SizeF(312.4376F, 23.00001F);
@@ -785,10 +785,10 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             this.xrLabel49.LocationFloat = new DevExpress.Utils.PointFloat(0F, 300.9167F);
             this.xrLabel49.Name = "xrLabel49";
             this.xrLabel49.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel49.SizeF = new System.Drawing.SizeF(181.6667F, 23F);
+            this.xrLabel49.SizeF = new System.Drawing.SizeF(213.1042F, 23F);
             this.xrLabel49.StylePriority.UseFont = false;
             this.xrLabel49.StylePriority.UseTextAlignment = false;
-            this.xrLabel49.Text = "[10]. Địa chỉ đăng ký hộ khẩu:                        ";
+            this.xrLabel49.Text = "[10]. Địa chỉ liên hệ (nơi sinh sống):                        ";
             this.xrLabel49.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel48
@@ -1925,26 +1925,26 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             this.xrLabel3,
             this.xrLabel2,
             this.xrLabel1});
-            this.ReportHeader.HeightF = 265F;
+            this.ReportHeader.HeightF = 239F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel6
             // 
             this.xrLabel6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(263.4376F, 232.7083F);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(268.4376F, 200.1666F);
             this.xrLabel6.Name = "xrLabel6";
             this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel6.SizeF = new System.Drawing.SizeF(332.9166F, 23F);
             this.xrLabel6.StylePriority.UseFont = false;
             this.xrLabel6.StylePriority.UseTextAlignment = false;
-            this.xrLabel6.Text = "Số sổ BHXH: ___________________________________";
+            this.xrLabel6.Text = "Số định danh: ___________________________________";
             this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrt_anhthe
             // 
-            this.xrt_anhthe.LocationFloat = new DevExpress.Utils.PointFloat(52.49999F, 99.75001F);
+            this.xrt_anhthe.LocationFloat = new DevExpress.Utils.PointFloat(65.62513F, 99.75001F);
             this.xrt_anhthe.Name = "xrt_anhthe";
-            this.xrt_anhthe.SizeF = new System.Drawing.SizeF(129.1667F, 155.9583F);
+            this.xrt_anhthe.SizeF = new System.Drawing.SizeF(100F, 124.2083F);
             // 
             // xrLine2
             // 
@@ -1961,7 +1961,7 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             // xrLabel5
             // 
             this.xrLabel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(181.6667F, 182.2083F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(186.6666F, 149.6666F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -2006,7 +2006,7 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
             this.xrLabel2.SizeF = new System.Drawing.SizeF(244.2709F, 39.66669F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.StylePriority.UseTextAlignment = false;
-            this.xrLabel2.Text = "( Ban hành kèm theo QĐ số:  /QĐ - BHXH\r\nngày .../.../... của BHXH Việt Nam)";
+            this.xrLabel2.Text = "( Ban hành kèm theo QĐ số:  /QĐ - BHXH\r\nngày 10/10/2014 của BHXH Việt Nam)";
             this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrLabel1

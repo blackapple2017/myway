@@ -1544,5 +1544,12 @@ public class HoSoInfo
     public DateTime? BATDAUHOPDONG { get; set; }
     public DateTime? KETTHUCHOPDONG { get; set; }
     public string MaCa { get; set; }
+
+    public DateTime? Ngay_sinh { get; set; }
+    public string Noi_sinh { get; set; }
+    public DateTime? NgayCapCMTND { get; set; }
+    public string NoiCapCMTND { get; set; }
+
+    public string LoaiHopDong { get; set; }
    
 }

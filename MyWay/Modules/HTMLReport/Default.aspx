@@ -13,6 +13,7 @@
         <ext:ResourceManager runat="server" ID="RM">
         </ext:ResourceManager>
         <ext:Hidden runat="server" ID="hdfMaCB" />
+        <ext:Hidden runat="server" ID="hdfmaBC" />
         <uc1:ucChooseEmployee ID="ucChooseEmployee1" ChiChonMotCanBo="true" runat="server" />
         <ext:Viewport runat="server" ID="vp">
             <Items>
@@ -25,7 +26,7 @@
                                         <ext:ToolbarSpacer runat="server" ID="tbs" Width="5" />
                                         <ext:DisplayField runat="server" Text="Chọn mẫu quyết định" />
                                         <ext:ToolbarSpacer runat="server" ID="ToolbarSpacer1" Width="5" />
-                                        <ext:ComboBox runat="server" Editable="false" ID="cbxQD" DisplayField="Value" ValueField="Description"
+                                        <%--<ext:ComboBox runat="server" Editable="false" ID="cbxQD" DisplayField="Value" ValueField="Description"
                                             AnchorHorizontal="100%" ItemSelector="div.list-item">
                                             <Template ID="Template24" runat="server">
                                                 <Html>
@@ -58,7 +59,40 @@
                                                     <EventMask ShowMask="true" />
                                                 </Select>
                                             </DirectEvents>
-                                        </ext:ComboBox>
+                                        </ext:ComboBox>--%>
+                                        <ext:ComboBox runat="server" Editable="false" ID="cbxBC" DisplayField="ReportName" ValueField="ID"
+                                                AnchorHorizontal="100%" ItemSelector="div.list-item">
+                                                <Template ID="Template24" runat="server">
+                                                    <Html>
+                                                        <tpl for=".">
+						                             <div class="list-item"> 
+							                              {ReportName}
+						                             </div>
+					                             </tpl>
+                                                    </Html>
+                                                </Template>
+                                                <Store>
+                                                    <ext:Store runat="server" ID="cbxBC_Store" AutoLoad="false" OnRefreshData="cbxBC_Store_OnRefreshData">
+                                                        <Reader>
+                                                            <ext:JsonReader>
+                                                                <Fields>
+                                                                    <ext:RecordField Name="ReportName" />
+                                                                    <ext:RecordField Name="ID" />
+                                                                </Fields>
+                                                            </ext:JsonReader>
+                                                        </Reader>
+                                                    </ext:Store>
+                                                </Store>
+                                                <Listeners>
+                                                    <Expand Handler="if(cbxBC.store.getCount()==0) cbxBC_Store.reload();" />
+                                                    <Select Handler="hdfmaBC.setValue(cbxBC.getValue());if(hdfMaCB.getValue()== '') {ucChooseEmployee1_wdChooseUser.show();}" />
+                                                </Listeners>
+                                                <DirectEvents>
+                                                    <Select OnEvent="FillRePort">
+                                                        <EventMask ShowMask="true" />
+                                                    </Select>
+                                                </DirectEvents>
+                                            </ext:ComboBox>
                                         <ext:ToolbarSpacer runat="server" ID="ToolbarSpacer2" Width="5" />
                                         <ext:Button runat="server" Text="Chọn nhân viên" Icon="User">
                                             <Listeners>

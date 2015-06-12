@@ -301,12 +301,7 @@
                         <ext:Container ID="Container12" runat="server" ColumnWidth="0.33" Layout="FormLayout"
                             LabelWidth="80">
                             <Items>
-                                <ext:TextField runat="server" ID="txtAge" AnchorHorizontal="100%" FieldLabel="Độ tuổi">
-                                    <ToolTips>
-                                        <ext:ToolTip ID="ToolTip2" runat="server" Title="Hướng dẫn" Html="Độ tuổi được tính theo năm, ví dụ:<br/>>=30 : những người có độ tuổi lớn hơn hoặc bằng 30<br/>=35: những người có độ tuổi bằng 35<br/>30-35: những người có độ tuổi từ 30-35">
-                                        </ext:ToolTip>
-                                    </ToolTips>
-                                </ext:TextField>
+                                <ext:TextField runat="server" ID="txtAge" AnchorHorizontal="100%" FieldLabel="Độ tuổi" />
                             </Items>
                         </ext:Container>
                     </Items>
@@ -450,16 +445,11 @@
                                         <ext:Container ID="Container5" runat="server" Layout="BorderLayout" ColumnWidth="0.5">
                                             <Items>
                                                 <ext:GridPanel Border="false" AnchorHorizontal="98%" ID="grpSelectedReportFilter"
-                                                    runat="server" StripeRows="true" AutoExpandColumn="Value"
+                                                    runat="server" StripeRows="true" AutoExpandColumn="Value" Title="Điều kiện đã chọn"
                                                     Icon="Tick" Region="Center" TrackMouseOver="false">
                                                     <TopBar>
                                                         <ext:Toolbar ID="Toolbar3" runat="server">
                                                             <Items>
-                                                                <ext:ToolbarSpacer runat="server" Width="5" />
-                                                                <ext:Label runat="server" Icon="Tick" />
-                                                                <ext:ToolbarSpacer runat="server" Width="3" />
-                                                                <ext:DisplayField ID="dplfDieuKien" runat="server" Text="<b style='color:#15428B'>Điều kiện đã chọn</b>"></ext:DisplayField>
-                                                                <ext:ToolbarFill runat="server" />
                                                                 <ext:Button ID="btnDeleteReportFilter" runat="server" Text="Xóa" Icon="Delete">
                                                                     <Listeners>
                                                                         <Click Handler="removeFilter();" />
@@ -538,7 +528,7 @@
                                 </ext:ComboBox>
                             </Items>
                         </ext:Panel>
-                        <ext:Panel runat="server" ID="Panel1" Title="Ghi chú" Border="false" Layout="FitLayout" Hidden="true"
+                        <ext:Panel runat="server" ID="Panel1" Title="Ghi chú" Border="false" Layout="FitLayout"
                             AnchorHorizontal="100%">
                             <Items>
                                 <ext:HtmlEditor runat="server" ID="htmlNote">
@@ -647,7 +637,7 @@
                     </Center>
                     <West Collapsible="true" Split="true">
                         <ext:TreePanel Border="false" ID="TreePanel1" CtCls="west-report" runat="server"
-                            Width="300" Icon="Report" Title="Mẫu báo cáo"
+                            Width="300" Icon="Report" ContextMenuID="RowContextMenu" Title="Mẫu báo cáo"
                             RootVisible="false" AutoScroll="true">
                             <TopBar>
                                 <ext:Toolbar ID="Toolbar1" runat="server">

@@ -159,7 +159,6 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             panelBaoHiem.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelDaiBieu.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelDanhGia.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
-            panelDienBienLuong.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
             panelDeTai.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelHopDong.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelKhaNang.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
@@ -173,13 +172,13 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             panelKinhNghiemLamViec.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelBangCapChungChi.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelTaiNanLaoDong.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
+            panelDienBienLuong.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             #endregion
             #region Listener Active
             panelGeneralInformation.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
             panelHoSoTuyenDung.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
             panelDanhGia.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
             panelQuaTrinhDaoTao.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
-            panelDienBienLuong.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
             #endregion
         }
         if (btnViewPhuCap.Visible)
@@ -1220,6 +1219,39 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
                 {
                     GenerateSoQD();
                 }
+            }
+            GridPanelHopDong.Reload();
+        }
+        catch (Exception ex)
+        {
+            ExtMessage.Dialog.ShowError(ex.Message);
+        }
+    }
+    protected void btnUpdateLuong_Click(object sender, DirectEventArgs e)
+    {
+        try
+        {
+            DAL.HOSO_LUONG luong = new HOSO_LUONG()
+            {
+                PrKeyHoSo = decimal.Parse(hdfRecordID.Text),
+                HeSoLuong = double.Parse("0" + txtHeSoLuong.Text),
+                LuongCung = double.Parse("0" + txtLuongCung.Text),
+                LuongDongBHXH = double.Parse("0" + txtLuongDongBH.Text),
+                NgayHuongLuong = DateTime.Parse(dfNgayHuongLuong.SelectedValue.ToString()),
+                NgayHieuLuc = DateTime.Parse(dfNgayHieuLuc.SelectedValue.ToString()),
+                NgayQuyetDinh = DateTime.Parse(dfNgayQuyetDinh.SelectedValue.ToString())
+            };
+            if (e.ExtraParams["Command"] == "Update")
+            {
+                luong.ID = int.Parse(RowSelectionModelHopDong.SelectedRecordID);
+                HoSoLuongController hsl1 =  new HoSoLuongController();
+                hsl1.Update(luong);
+                wdDienBienLuong.Hide();
+            }
+            else
+            {
+                HoSoLuongController hslx = new HoSoLuongController();
+                hslx.Add(luong);
             }
             GridPanelHopDong.Reload();
         }

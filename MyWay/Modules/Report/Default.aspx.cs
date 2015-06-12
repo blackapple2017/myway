@@ -79,7 +79,7 @@ public partial class Modules_Report_Default : WebBase
             NodeID = "0"
         };
         TreePanel1.Root.Add(node);
-        BindChildGroup(node);
+        BindChildGroup(node); 
     }
     private void BindChildGroup(Ext.Net.TreeNode parentNode)
     {
@@ -111,8 +111,8 @@ public partial class Modules_Report_Default : WebBase
                 NodeID = item.ID.ToString(),
                 // Qtip = item.Tooltip,
             };
-            chidNode.Listeners.DblClick.Handler = "hdfReportID.setValue('" + item.ID + "'); document.getElementById('divReportPreview').style.display = 'none';hdfTitle.setValue('" + item.Name + "');txtReportTitle.setValue('" + item.Name.ToUpper() + "');wdReportFilter.show();" + item.Javascript;
-            //chidNode.Listeners.Click.Handler = "getReportPreview('" + item.ImageReportPreview + "');hdfReportID.setValue('" + chidNode.NodeID + "');";
+            chidNode.Listeners.DblClick.Handler = "document.getElementById('divReportPreview').style.display = 'none';hdfTitle.setValue('" + item.Name + "');txtReportTitle.setValue('" + item.Name.ToUpper() + "');wdReportFilter.show();" + item.Javascript;
+            chidNode.Listeners.Click.Handler = "getReportPreview('" + item.ImageReportPreview + "');hdfReportID.setValue('" + chidNode.NodeID + "');";
             chidNode.Listeners.ContextMenu.Handler = "hdfReportID.setValue('" + item.ID + "');";
             parentNode.Nodes.Add(chidNode);
             if (!string.IsNullOrEmpty(item.Javascript))
@@ -275,13 +275,7 @@ public partial class Modules_Report_Default : WebBase
                 Name1 = txtnguoiky1.Text,
                 Name2 = txtnguoiky2.Text,
                 Name3 = txtnguoiky3.Text,
-                ReportedDate = dfReportDate.SelectedDate,
-                MaSoThue = new HeThongController().GetValueByName(SystemConfigParameter.COMPANY_MASOTHUE, Session["MaDonVi"].ToString()),
-                CompanyAddress = new HeThongController().GetValueByName(SystemConfigParameter.COMPANY_ADDRESS, Session["MaDonVi"].ToString()),
-                CompanyPhone = new HeThongController().GetValueByName(SystemConfigParameter.COMPANY_DIENTHOAI, Session["MaDonVi"].ToString()),
-                CompanyFax = new HeThongController().GetValueByName(SystemConfigParameter.COMPANY_FAX, Session["MaDonVi"].ToString()),
-                CompanyName = new HeThongController().GetValueByName(SystemConfigParameter.COMPANY_NAME, Session["MaDonVi"].ToString()),
-                CompanyEmail = new HeThongController().GetValueByName(SystemConfigParameter.COMPANY_EMAIL, Session["MaDonVi"].ToString())
+                ReportedDate = dfReportDate.SelectedDate
             };
             DataTable tbl = DataController.DataHandler.GetInstance().ExecuteDataTable("HOSO_GetHoSoInfo", "@Prkey", reportFilter.EmployeeCode);
             if (tbl.Rows.Count > 0)

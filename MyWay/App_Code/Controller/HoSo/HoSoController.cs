@@ -420,13 +420,18 @@ public class HoSoController : LinqProvider
                  from tb4 in em5.DefaultIfEmpty()
                  join hsluong in dataContext.HOSO_LUONGs on t.PR_KEY equals hsluong.PrKeyHoSo into em9
                  from tb9 in em9.DefaultIfEmpty()
+                 join tbx in dataContext.DM_LOAI_HDONGs on t.MA_LOAI_HDONG equals tbx.MA_LOAI_HDONG into emx
+                 from ems in emx.DefaultIfEmpty()
                  join knlv in dataContext.HOSO_UNGVIEN_KINHNGHIEMLAMVIECs on t.PR_KEY equals knlv.FR_KEY into em10
                  from tb10 in em10.DefaultIfEmpty()
                  where (t.MA_CB == macb)
                  orderby tb5.NGAY_HDONG ascending
                  select new HoSoInfo
                  {
+                     Ngay_sinh = t.NGAY_SINH,
+                     Noi_sinh = t.NOI_SINH,
                      MACB = t.MA_CB,
+                     LOAIHDONG = ems.TEN_LOAI_HDONG,
                      HOTEN = t.HO_TEN,
                      TENNUOC = tb.TEN_NUOC,
                      GIOITINH = t.MA_GIOITINH == "M" ? "Ông" : "Bà",

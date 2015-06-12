@@ -23,6 +23,9 @@
         case "SouthHoSoNhanSu1_panelKhaNang":
             SouthHoSoNhanSu1_wdKhaNang.show();
             break;
+        case "SouthHoSoNhanSu1_panelDienBienLuong":
+            SouthHoSoNhanSu1_wdDienBienLuong.show();
+            break;
         case "SouthHoSoNhanSu1_panelKhenThuong":
             SouthHoSoNhanSu1_wdKhenThuong.show();
             SouthHoSoNhanSu1_hdfTypeWindow.setValue('KhenThuong');

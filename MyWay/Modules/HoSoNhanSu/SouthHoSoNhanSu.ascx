@@ -394,7 +394,7 @@
                         </ext:ComboBox>
                         <ext:DateField ID="dfBHDenNgay" runat="server" Vtype="daterange" FieldLabel="Đến ngày"
                             AnchorHorizontal="100%" Editable="true" MaskRe="/[0-9\/]/" Format="d/M/yyyy"
-                            Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng"> 
+                            Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng">
                         </ext:DateField>
                         <ext:TextField ID="txtBHHSLuong" runat="server" FieldLabel="Hệ số lương" AnchorHorizontal="100%"
                             MaskRe="/[0-9\.]/" AllowDecimals="true" AllowNegative="false" MaxLength="15" />
@@ -580,7 +580,7 @@
                             TabIndex="5" ID="txDeTaiTuCachThamGia" MaxLength="500" />
                         <ext:DateField runat="server" Vtype="daterange" FieldLabel="Đến ngày" AnchorHorizontal="100%"
                             TabIndex="7" EnableKeyEvents="true" ID="txtDeTaiDenNgay" Editable="true" MaskRe="/[0-9\/]/"
-                            Format="d/M/yyyy" Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng"> 
+                            Format="d/M/yyyy" Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng">
                         </ext:DateField>
                     </Items>
                 </ext:Container>
@@ -827,7 +827,7 @@
                         <ext:DateField runat="server" FieldLabel="Ngày hiệu lực<span style='color:red;'>*</span>"
                             ID="dfNgayCoHieuLuc" AnchorHorizontal="99%" Editable="true" MaskRe="/[0-9\/]/"
                             Format="d/M/yyyy" CtCls="requiredData"
-                            Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng"> 
+                            Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng">
                             <Listeners>
                                 <Select Handler="#{DirectMethods}.SetNgayHetHD();" />
                                 <Blur Handler="#{DirectMethods}.SetNgayHetHD();" />
@@ -989,6 +989,76 @@
         <ext:Button ID="Button21" runat="server" Text="Đóng lại" Icon="Decline">
             <Listeners>
                 <Click Handler="#{wdHopDong}.hide();" />
+            </Listeners>
+        </ext:Button>
+    </Buttons>
+    <Listeners>
+        <BeforeShow Handler="if (#{hdfButtonClick}.getValue() == 'Insert')#{DirectMethods}.GenerateSoQD();" />
+        <Hide Handler="#{btnUpdateHopDong}.show();#{btnEditHopDong}.hide();#{Button20}.show();ResetWdHopDong();" />
+    </Listeners>
+</ext:Window>
+<ext:Window ID="wdDienBienLuong" AutoHeight="true" Width="550" runat="server" Padding="6"
+    EnableViewState="false" Layout="FormLayout" Modal="true" Hidden="true" Constrain="true"
+    Icon="Add" Title="Lương" Resizable="false">
+    <Items>
+        <ext:TextField runat="server" FieldLabel="Số quyết định"
+                    Width="386" ID="txtSoQD" MaxLength="30" AnchorHorizontal="99%" />
+        <ext:Hidden runat="server" ID="Hidden1" />
+        <ext:TextField runat="server" FieldLabel="Hệ số lương" ID="txtHeSoLuong" AnchorHorizontal="99%" />
+        <ext:Hidden runat="server" ID="Hidden2" />
+        <ext:TextField runat="server" ID="txtLuongCung" MaskRe="[0-9]" MaxLength="11" FieldLabel="Lương cứng" CtCls="requiredData" AnchorHorizontal="99%"/>
+        <ext:Hidden runat="server" ID="Hidden3" />
+        <ext:TextField runat="server" ID="txtLuongDongBH" MaskRe="[0-9]" MaxLength="11" FieldLabel="Lương đóng BHXH" AnchorHorizontal="99%"/>
+        <ext:DateField runat="server" ID="dfNgayHuongLuong" FieldLabel="Ngày hưởng lương" Format="dd/MM/yyyy" CtCls="requiredData" AnchorHorizontal="99%"/>
+        <ext:DateField runat="server" ID="dfNgayHieuLuc" FieldLabel="Ngày hiệu lực" Format="dd/MM/yyyy" AnchorHorizontal="99%"/>
+        <ext:Hidden runat="server" ID="Hidden5" CtCls="requiredData" />
+        <ext:DateField runat="server" ID="dfNgayQuyetDinh" FieldLabel="Ngày quyết định" Format="dd/MM/yyyy" AnchorHorizontal="99%"/>
+        <ext:TextArea runat="server" ID="TextArea1" FieldLabel="Ghi chú" AnchorHorizontal="99%" />
+    </Items>
+    <Buttons>
+        <ext:Button ID="Button16" runat="server" Text="Cập nhật" Icon="Disk">
+            <Listeners>
+                <Click Handler="return CheckInputHopDong(#{fufHopDongTepTin}.fileInput.dom);" />
+            </Listeners>
+            <DirectEvents>
+                <Click OnEvent="btnUpdateLuong_Click" After="ResetWdHopDong();">
+                    <EventMask ShowMask="true" Msg="Đang lưu dữ liệu" />
+                    <ExtraParams>
+                        <ext:Parameter Name="Close" Value="False" />
+                    </ExtraParams>
+                </Click>
+            </DirectEvents>
+        </ext:Button>
+        <ext:Button runat="server" ID="Button17" Icon="Disk" Hidden="true" Text="Cập nhật">
+            <Listeners>
+                <Click Handler="return CheckInputHopDong(#{fufHopDongTepTin}.fileInput.dom);" />
+            </Listeners>
+            <DirectEvents>
+                <Click OnEvent="btnUpdateLuong_Click">
+                    <EventMask ShowMask="true" Msg="Đang lưu dữ liệu" />
+                    <ExtraParams>
+                        <ext:Parameter Name="Command" Value="Update">
+                        </ext:Parameter>
+                    </ExtraParams>
+                </Click>
+            </DirectEvents>
+        </ext:Button>
+        <ext:Button ID="Button35" runat="server" Text="Cập nhật & Đóng lại" Icon="Disk">
+            <Listeners>
+                <Click Handler="return CheckInputHopDong(#{fufHopDongTepTin}.fileInput.dom);" />
+            </Listeners>
+            <DirectEvents>
+                <Click OnEvent="btnUpdateHopDong_Click">
+                    <EventMask ShowMask="true" Msg="Đang lưu dữ liệu" />
+                    <ExtraParams>
+                        <ext:Parameter Name="Close" Value="True" />
+                    </ExtraParams>
+                </Click>
+            </DirectEvents>
+        </ext:Button>
+        <ext:Button ID="Button36" runat="server" Text="Đóng lại" Icon="Decline">
+            <Listeners>
+                <Click Handler="#{wdDienBienLuong}.hide();" />
             </Listeners>
         </ext:Button>
     </Buttons>
@@ -1778,7 +1848,7 @@
                         <ext:DateField runat="server" ID="dfQHGDBatDauGiamTru" Disabled="true" Vtype="daterange"
                             FieldLabel="Bắt đầu giảm trừ" AnchorHorizontal="95%" Editable="true" MaskRe="/[0-9\/]/"
                             Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng"
-                            Format="d/M/yyyy"> 
+                            Format="d/M/yyyy">
                         </ext:DateField>
                     </Items>
                 </ext:Container>
@@ -1787,7 +1857,7 @@
                         <ext:DateField runat="server" ID="dfQHGDKetThucGiamTru" Disabled="true" Vtype="daterange"
                             FieldLabel="Kết thúc giảm trừ" AnchorHorizontal="100%" Editable="true" MaskRe="/[0-9\/]/"
                             Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng"
-                            Format="d/M/yyyy"> 
+                            Format="d/M/yyyy">
                         </ext:DateField>
                     </Items>
                 </ext:Container>
@@ -2791,7 +2861,7 @@
                         </ext:DateField>
                         <ext:DateField runat="server" Vtype="daterange" ID="df_ngayketthuchoc" FieldLabel="Đến ngày"
                             AnchorHorizontal="98%" Editable="true" MaskRe="/[0-9\/]/" Format="d/M/yyyy">
-                          --%> 
+                          --%>
                         <ext:TextField runat="server" ID="txtNamNhanBang" FieldLabel="Năm nhận bằng" AnchorHorizontal="98%"
                             MaskRe="[0-9]" MaxLength="4" MinLength="4" />
                     </Items>
