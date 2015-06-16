@@ -1845,7 +1845,8 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
                 MA_VTHH = cbTaiSan.SelectedItem.Value,
                 SoLuong = int.Parse("0" + txtTaiSanSoLuong.Text),
                 MaDonViTinh = hdfDonViTinh.Text,
-                TINH_TRANG = tsTxtinhTrang.Text
+                TINH_TRANG = tsTxtinhTrang.Text,
+                HanSuDung = DateTime.Parse(dfTSanHSD.Value.ToString())
             };
             if (!SoftCore.Util.GetInstance().IsDateNull(tsDateField.SelectedDate))
                 ts.NGAY_NHAN = tsDateField.SelectedDate;

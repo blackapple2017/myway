@@ -494,7 +494,7 @@ public partial class Modules_Report_BaoCao_Main : WebBase
 
     private XtraReport DSLaoDongThamGiaBHXHTheoThang()
     {
-        rp_austfeed_DS_LaoDongThamGiaBHXH rp = new rp_austfeed_DS_LaoDongThamGiaBHXH();
+        rp_austfeed_DS_LaoDongThamGiaBHXH1 rp = new rp_austfeed_DS_LaoDongThamGiaBHXH1();
         if (Session["rp"] != null)
         {
             ReportFilter filter = Session["rp"] as ReportFilter;

@@ -9,7 +9,7 @@ public class LocTheoDotTuyenDungHandler : IHttpHandler {
     {
         context.Response.ContentType = "text/json";
         var start = 0;
-        var limit = 4;
+        var limit = 10;
         var sort = string.Empty;
         var dir = string.Empty;
         var query = string.Empty;

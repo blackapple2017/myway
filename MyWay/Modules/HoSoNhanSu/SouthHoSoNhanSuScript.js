@@ -719,7 +719,7 @@ var ResetWdQuaTrinhDieuChuyen = function () {
 }
 var ResetWdTaiSan = function () {
     SouthHoSoNhanSu1_cbTaiSan.reset(); SouthHoSoNhanSu1_tsDateField.reset(); SouthHoSoNhanSu1_tsTxtinhTrang.reset(); SouthHoSoNhanSu1_tsGhiChu.reset(); SouthHoSoNhanSu1_hdfDonViTinh.reset();
-    SouthHoSoNhanSu1_txtTaiSanSoLuong.reset(); SouthHoSoNhanSu1_cbxDonViTinh.reset();
+    SouthHoSoNhanSu1_txtTaiSanSoLuong.reset(); SouthHoSoNhanSu1_cbxDonViTinh.reset(); SouthHoSoNhanSu1_dfTSanHSD.reset();
 }
 var ResetWdAttachFile = function () {
     SouthHoSoNhanSu1_txtFileName.reset(); SouthHoSoNhanSu1_txtGhiChu.reset(); SouthHoSoNhanSu1_file_cv.reset();

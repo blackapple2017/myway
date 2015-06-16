@@ -2479,6 +2479,7 @@
             Editable="true" Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/" RegexText="Định dạng ngày hạn nộp hồ sơ không đúng" Format="d/M/yyyy" />
         <ext:TextField ID="tsTxtinhTrang" runat="server" FieldLabel="Tình trạng<span style='color:red;'>*</span>"
             CtCls="requiredData" AnchorHorizontal="100%" MaxLength="50" />
+        <ext:DateField runat="server" ID="dfTSanHSD" FieldLabel="Hạn sử dụng" Format="dd/MM/yyyy" />
         <ext:TextArea ID="tsGhiChu" runat="server" FieldLabel="Ghi chú" AnchorHorizontal="100%"
             MaxLength="4000" />
     </Content>
@@ -4541,6 +4542,7 @@
                                         <ext:RecordField Name="TINH_TRANG" />
                                         <ext:RecordField Name="TepTinDinhKem" />
                                         <ext:RecordField Name="GHI_CHU" />
+                                        <ext:RecordField Name="HanSuDung" />
                                     </Fields>
                                 </ext:JsonReader>
                             </Reader>
@@ -4555,6 +4557,8 @@
                             <ext:Column ColumnID="SoLuong" Width="80" Header="Số lượng" DataIndex="SoLuong" />
                             <ext:Column ColumnID="TEN_DVT" Width="100" Header="Đơn vị tính" DataIndex="TEN_DVT" />
                             <ext:DateColumn Format="dd/MM/yyyy" ColumnID="NGAY_NHAN" Header="Ngày nhận" DataIndex="NGAY_NHAN">
+                            </ext:DateColumn>
+                             <ext:DateColumn Format="dd/MM/yyyy" ColumnID="HanSuDung" Header="Hạn sử dụng" DataIndex="HanSuDung">
                             </ext:DateColumn>
                             <ext:Column ColumnID="TINH_TRANG" Header="Tình trạng" DataIndex="TINH_TRANG">
                             </ext:Column>

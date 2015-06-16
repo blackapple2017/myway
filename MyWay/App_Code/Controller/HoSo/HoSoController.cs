@@ -35,7 +35,12 @@ public class HoSoController : LinqProvider
                 where t.PR_KEY == prKey
                 select t).FirstOrDefault();
     }
-
+    public string GetTenVietTatCongTy(string maDonVi)
+    {
+        return (from x in dataContext.DM_DONVIs
+                where x.MA_DONVI == maDonVi
+                select x.TEN_TAT).FirstOrDefault();
+    }
     public int CountByDVAndDayAndTypeStaff(string dv, string work, string maChucVu, DateTime day, bool typeStaff)
     {
         dv = dv.ToLower();
@@ -629,6 +634,7 @@ public class HoSoController : LinqProvider
             taisan.NGAY_NHAN = hsts.NGAY_NHAN;
             taisan.TINH_TRANG = hsts.TINH_TRANG;
             taisan.TepTinDinhKem = hsts.TepTinDinhKem;
+            taisan.HanSuDung = hsts.HanSuDung;
             Save();
         }
     }

@@ -91,8 +91,10 @@ public class rpwg_BaoCaoDanhSachNhanVienNghiViec : DevExpress.XtraReports.UI.Xtr
         if (!string.IsNullOrEmpty(filter.ReportTitle))
         {
             xrReportTitle.Text = filter.ReportTitle.ToUpper();
-        }
-        DataSource = DataHandler.GetInstance().ExecuteDataTable("report_DanhSachThoiViec", "@startMonth", "@endMonth", "@year", "@maboPhan", filter.StartMonth, filter.EndMonth, filter.Year, filter.SelectedDepartment);
+        } 
+        
+        DataSource = DataHandler.GetInstance().ExecuteDataTable("report_DanhSachThoiViec", "@startMonth", "@endMonth", "@year", "@maboPhan", filter.StartDate, filter.EndDate, filter.Year, filter.SelectedDepartment);
+        xrl_ThoiGianBaoCao.Text = rpCtr.GetFromDateToDate(filter.StartDate,filter.EndDate);
         xrFullName.DataBindings.Add("Text", DataSource, "HO_TEN");
         //  xrDepartment.DataBindings.Add("Text", DataSource, "TEN_DONVI");
         xrNgayVaoLV.DataBindings.Add("Text", DataSource, "NGAY_TUYEN_DTIEN", "{0:dd/MM/yyyy}");
@@ -104,8 +106,8 @@ public class rpwg_BaoCaoDanhSachNhanVienNghiViec : DevExpress.XtraReports.UI.Xtr
         xrBoPhan.DataBindings.Add("Text", DataSource, "TEN_DONVI");
 
         this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
-            new DevExpress.XtraReports.UI.GroupField("TEN_DIADIEM", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
-        xrt_TenPhongBan.DataBindings.Add("Text", DataSource, "TEN_DIADIEM");
+            new DevExpress.XtraReports.UI.GroupField("TEN_DONVI", DevExpress.XtraReports.UI.XRColumnSortOrder.Ascending)});
+        xrt_TenPhongBan.DataBindings.Add("Text", DataSource, "TEN_DONVI");
         if (!string.IsNullOrEmpty(filter.Title1))
         {
             xrl_footer1.Text = filter.Title1;

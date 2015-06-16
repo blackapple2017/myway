@@ -1975,6 +1975,7 @@
       <Column Name="NgayBanGiao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="GhiChuSauBanGiao" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="TepTinDinhKem" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Member="HanSuDung" Type="System.DateTime" CanBeNull="true" />
       <Association Name="DM_DVT_HOSO_TAISAN" Member="DM_DVT" ThisKey="MaDonViTinh" OtherKey="MA_DVT" Type="DM_DVT" IsForeignKey="true" />
     </Type>
   </Table>

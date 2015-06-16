@@ -44397,6 +44397,8 @@ namespace DAL
 		
 		private string _TepTinDinhKem;
 		
+		private System.Nullable<System.DateTime> _HanSuDung;
+		
 		private EntityRef<DM_DVT> _DM_DVT;
 		
     #region Extensibility Method Definitions
@@ -44429,6 +44431,8 @@ namespace DAL
     partial void OnGhiChuSauBanGiaoChanged();
     partial void OnTepTinDinhKemChanging(string value);
     partial void OnTepTinDinhKemChanged();
+    partial void OnHanSuDungChanging(System.Nullable<System.DateTime> value);
+    partial void OnHanSuDungChanged();
     #endregion
 		
 		public HOSO_TAISAN()
@@ -44697,6 +44701,26 @@ namespace DAL
 					this._TepTinDinhKem = value;
 					this.SendPropertyChanged("TepTinDinhKem");
 					this.OnTepTinDinhKemChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HanSuDung")]
+		public System.Nullable<System.DateTime> HanSuDung
+		{
+			get
+			{
+				return this._HanSuDung;
+			}
+			set
+			{
+				if ((this._HanSuDung != value))
+				{
+					this.OnHanSuDungChanging(value);
+					this.SendPropertyChanging();
+					this._HanSuDung = value;
+					this.SendPropertyChanged("HanSuDung");
+					this.OnHanSuDungChanged();
 				}
 			}
 		}

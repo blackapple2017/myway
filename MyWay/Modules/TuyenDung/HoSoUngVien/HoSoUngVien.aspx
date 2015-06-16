@@ -1510,7 +1510,7 @@
                                             <Items>
                                                 <ext:ComboBox runat="server" TypeAhead="false" EmptyText="Lọc theo đợt tuyển dụng"
                                                     DisplayField="TenKeHoach" ValueField="ID" LoadingText="Đang tìm kiếm..." AnchorHorizontal="100%"
-                                                    PageSize="10" ItemSelector="div.search-item" MinChars="1" ID="cbx_dottuyendung"
+                                                    ItemSelector="div.search-item" MinChars="1" ID="cbx_dottuyendung"
                                                     Width="150" ListWidth="250">
                                                     <Triggers>
                                                         <ext:FieldTrigger Icon="Clear" HideTrigger="true" />
