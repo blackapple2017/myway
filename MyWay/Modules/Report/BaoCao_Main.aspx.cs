@@ -168,7 +168,7 @@ public partial class Modules_Report_BaoCao_Main : WebBase
                 return DanhSachNhanVienTheoLoaiHopDong();
             case "BaoCaoLaoDongBinhQuanNam":
                 return BaoCaoLaoDongBinhQuanNam();
-            case "DanhSachNgayPhepConLaiTrongNam":
+            case "BaoCaoNgayPhepCbnv":
                 return DanhSachNgayPhepConLaiTrongNam();
             case "BaoCaoThamNienCongTac":
                 return BaoCaoCanThamNienCongTac();

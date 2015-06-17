@@ -1975,7 +1975,7 @@
       <Column Name="NgayBanGiao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="GhiChuSauBanGiao" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="TepTinDinhKem" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Member="HanSuDung" Type="System.DateTime" CanBeNull="true" />
+      <Column Name="HanSuDung" Type="System.DateTime" CanBeNull="true" />
       <Association Name="DM_DVT_HOSO_TAISAN" Member="DM_DVT" ThisKey="MaDonViTinh" OtherKey="MA_DVT" Type="DM_DVT" IsForeignKey="true" />
     </Type>
   </Table>
@@ -3074,6 +3074,7 @@
       <Column Name="CreatedDate" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
       <Column Name="CreatedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="GhiChu" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DiemDanh" Type="System.Int32" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="ChamCong.BangPhanCaNhanVien" Member="BangPhanCaNhanViens">

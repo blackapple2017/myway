@@ -445,7 +445,8 @@ public class DaoTaoController : LinqProvider
                      SoTienNhanVienDong = t.SoTienNVDong,
                      ViTriCongViec = hs2.DM_CONGVIEC != null ? hs2.DM_CONGVIEC.TEN_CONGVIEC : "",
                      DiaDiemLamViec = ddlv2.TEN_DIADIEM,
-                     GhiChu = t.GhiChu
+                     GhiChu = t.GhiChu,
+                     DiemDanh = t.DiemDanh
                  };
         return rs.ToList();
     }
@@ -503,6 +504,7 @@ public class DaoTaoController : LinqProvider
         nv.SoTienNVDong = item.SoTienNhanVienDong;
         nv.DaThamGia = item.DaThamGia;
         nv.GhiChu = item.GhiChu;
+        nv.DiemDanh = item.DiemDanh;
         Save();
     }
 

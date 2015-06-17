@@ -34,4 +34,5 @@ public class NhanVienThamGiaDaoTaoInfo
     public string DiaDiemDaoTao { get; set; }
     public string DiaDiemLamViec { get; set; }
     public string GhiChu { get; set; }
+    public int? DiemDanh { get; set; }
 }

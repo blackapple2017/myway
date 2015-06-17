@@ -1811,6 +1811,7 @@
                                                                     <ext:RecordField Name="SoTienNhanVienDong" />
                                                                     <ext:RecordField Name="SoTienCongTyDong" />
                                                                     <ext:RecordField Name="GhiChu" />
+                                                                    <ext:RecordField Name="DiemDanh" />
                                                                 </Fields>
                                                             </ext:JsonReader>
                                                         </Reader>
@@ -1833,6 +1834,11 @@
                                                             <Renderer Fn="RenderDaThamGia" />
                                                             <Editor>
                                                                 <ext:Checkbox runat="server" ID="chkDaThamGia" />
+                                                            </Editor>
+                                                        </ext:Column>
+                                                        <ext:Column Header="Điểm danh" Width="60" Align="Right" DataIndex="DiemDanh">
+                                                            <Editor>
+                                                                <ext:NumberField runat="server" AllowNegative="false" ID="txtDiemDanh" />
                                                             </Editor>
                                                         </ext:Column>
                                                         <ext:Column Header="Điểm" Width="60" Align="Right" DataIndex="Diem">

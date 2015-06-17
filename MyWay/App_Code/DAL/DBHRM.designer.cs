@@ -67779,6 +67779,8 @@ namespace DAL
 		
 		private string _GhiChu;
 		
+		private System.Nullable<int> _DiemDanh;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -67807,6 +67809,8 @@ namespace DAL
     partial void OnCreatedByChanged();
     partial void OnGhiChuChanging(string value);
     partial void OnGhiChuChanged();
+    partial void OnDiemDanhChanging(System.Nullable<int> value);
+    partial void OnDiemDanhChanged();
     #endregion
 		
 		public DM_NhanVienThamGiaDaoTao()
@@ -68050,6 +68054,26 @@ namespace DAL
 					this._GhiChu = value;
 					this.SendPropertyChanged("GhiChu");
 					this.OnGhiChuChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiemDanh")]
+		public System.Nullable<int> DiemDanh
+		{
+			get
+			{
+				return this._DiemDanh;
+			}
+			set
+			{
+				if ((this._DiemDanh != value))
+				{
+					this.OnDiemDanhChanging(value);
+					this.SendPropertyChanging();
+					this._DiemDanh = value;
+					this.SendPropertyChanged("DiemDanh");
+					this.OnDiemDanhChanged();
 				}
 			}
 		}
