@@ -30,7 +30,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
     private XRTableCell xrTableCell4;
     private XRTableCell xrTableCell5;
     private XRTableCell xrTableCell6;
-    private XRTableCell xrTableCell7;
     private XRTableCell xrTableCell8;
     private XRTableCell xrTableCell9;
     private XRTable xrTable2;
@@ -59,7 +58,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
     private XRTableCell xrt_stt;
     private XRTableCell xrt_macanbo;
     private XRTableCell xrt_hovaten;
-    private XRTableCell xrt_donvi;
     private XRTableCell xrt_tongngayphep;
     private XRTableCell xrt_thang1;
     private XRTableCell xrt_thang2;
@@ -87,6 +85,18 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
     private XRTableRow xrTableRow5;
     private XRTableCell xrTableCell41;
     private XRLabel xrLabel1;
+    private FormattingRule formattingRule1;
+    private FormattingRule formattingRule2;
+    private FormattingRule formattingRule3;
+    private FormattingRule formattingRule4;
+    private FormattingRule formattingRule5;
+    private FormattingRule formattingRule6;
+    private FormattingRule formattingRule7;
+    private FormattingRule formattingRule8;
+    private FormattingRule formattingRule9;
+    private FormattingRule formattingRule11;
+    private FormattingRule formattingRule12;
+    private FormattingRule formattingRule10;
 	/// <summary>
 	/// Required designer variable.
 	/// </summary>
@@ -112,7 +122,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
         xrt_macanbo.DataBindings.Add("Text", DataSource, "MA_CB");
         xrt_hovaten.DataBindings.Add("Text", DataSource, "HO_TEN");
         xrt_ngayvaocongty.DataBindings.Add("Text", DataSource, "NGAY_TUYEN_DTIEN", "{0:dd/MM/yyyy}");
-        xrt_donvi.DataBindings.Add("Text", DataSource, "TEN_DONVI");
         xrt_tongngayphep.DataBindings.Add("Text", DataSource, "TongNgayPhepDuocHuong");
         xrt_tongngaynghile.DataBindings.Add("Text", DataSource, "SoNgayPhepNamNay");
         xrt_thang1.DataBindings.Add("Text", DataSource, "Thang1");
@@ -159,7 +168,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_macanbo = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_hovaten = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_ngayvaocongty = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrt_donvi = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_tongngayphep = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_tongngaynghile = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_thang1 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -179,6 +187,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrl_TitleBC = new DevExpress.XtraReports.UI.XRLabel();
             this.xrl_TenCongTy = new DevExpress.XtraReports.UI.XRLabel();
             this.xrl_TenThanhPho = new DevExpress.XtraReports.UI.XRLabel();
@@ -189,7 +198,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTableCell5 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell6 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell1 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrTableCell7 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell8 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell9 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell2 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -226,7 +234,18 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.formattingRule1 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule2 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule3 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule4 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule5 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule6 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule7 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule8 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule9 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule10 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule11 = new DevExpress.XtraReports.UI.FormattingRule();
+            this.formattingRule12 = new DevExpress.XtraReports.UI.FormattingRule();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -252,7 +271,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTable4.Name = "xrTable4";
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(1628F, 25F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(1364.479F, 25F);
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseFont = false;
             // 
@@ -263,7 +282,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_macanbo,
             this.xrt_hovaten,
             this.xrt_ngayvaocongty,
-            this.xrt_donvi,
             this.xrt_tongngayphep,
             this.xrt_tongngaynghile,
             this.xrt_thang1,
@@ -315,15 +333,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_ngayvaocongty.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_ngayvaocongty.Weight = 0.18018646146507161D;
             // 
-            // xrt_donvi
-            // 
-            this.xrt_donvi.Name = "xrt_donvi";
-            this.xrt_donvi.Padding = new DevExpress.XtraPrinting.PaddingInfo(3, 3, 3, 3, 100F);
-            this.xrt_donvi.StylePriority.UsePadding = false;
-            this.xrt_donvi.StylePriority.UseTextAlignment = false;
-            this.xrt_donvi.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrt_donvi.Weight = 0.48560374023287534D;
-            // 
             // xrt_tongngayphep
             // 
             this.xrt_tongngayphep.Name = "xrt_tongngayphep";
@@ -340,6 +349,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang1
             // 
+            this.xrt_thang1.FormattingRules.Add(this.formattingRule1);
             this.xrt_thang1.Name = "xrt_thang1";
             this.xrt_thang1.StylePriority.UseTextAlignment = false;
             this.xrt_thang1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -347,6 +357,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang2
             // 
+            this.xrt_thang2.FormattingRules.Add(this.formattingRule2);
             this.xrt_thang2.Name = "xrt_thang2";
             this.xrt_thang2.StylePriority.UseTextAlignment = false;
             this.xrt_thang2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -354,6 +365,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang3
             // 
+            this.xrt_thang3.FormattingRules.Add(this.formattingRule3);
             this.xrt_thang3.Name = "xrt_thang3";
             this.xrt_thang3.StylePriority.UseTextAlignment = false;
             this.xrt_thang3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -361,6 +373,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang4
             // 
+            this.xrt_thang4.FormattingRules.Add(this.formattingRule4);
             this.xrt_thang4.Name = "xrt_thang4";
             this.xrt_thang4.StylePriority.UseTextAlignment = false;
             this.xrt_thang4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -368,6 +381,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang5
             // 
+            this.xrt_thang5.FormattingRules.Add(this.formattingRule5);
             this.xrt_thang5.Name = "xrt_thang5";
             this.xrt_thang5.StylePriority.UseTextAlignment = false;
             this.xrt_thang5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -375,6 +389,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang6
             // 
+            this.xrt_thang6.FormattingRules.Add(this.formattingRule6);
             this.xrt_thang6.Name = "xrt_thang6";
             this.xrt_thang6.StylePriority.UseTextAlignment = false;
             this.xrt_thang6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -382,6 +397,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang7
             // 
+            this.xrt_thang7.FormattingRules.Add(this.formattingRule7);
             this.xrt_thang7.Name = "xrt_thang7";
             this.xrt_thang7.StylePriority.UseTextAlignment = false;
             this.xrt_thang7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -389,6 +405,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang8
             // 
+            this.xrt_thang8.FormattingRules.Add(this.formattingRule8);
             this.xrt_thang8.Name = "xrt_thang8";
             this.xrt_thang8.StylePriority.UseTextAlignment = false;
             this.xrt_thang8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -396,6 +413,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang9
             // 
+            this.xrt_thang9.FormattingRules.Add(this.formattingRule9);
             this.xrt_thang9.Name = "xrt_thang9";
             this.xrt_thang9.StylePriority.UseTextAlignment = false;
             this.xrt_thang9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -410,6 +428,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang11
             // 
+            this.xrt_thang11.FormattingRules.Add(this.formattingRule11);
             this.xrt_thang11.Name = "xrt_thang11";
             this.xrt_thang11.StylePriority.UseTextAlignment = false;
             this.xrt_thang11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -417,6 +436,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             // xrt_thang12
             // 
+            this.xrt_thang12.FormattingRules.Add(this.formattingRule12);
             this.xrt_thang12.Name = "xrt_thang12";
             this.xrt_thang12.StylePriority.UseTextAlignment = false;
             this.xrt_thang12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -460,13 +480,24 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.ReportHeader.HeightF = 120.5F;
             this.ReportHeader.Name = "ReportHeader";
             // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 50F);
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(502.0836F, 23F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // xrl_TitleBC
             // 
             this.xrl_TitleBC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.xrl_TitleBC.LocationFloat = new DevExpress.Utils.PointFloat(0F, 87.5F);
             this.xrl_TitleBC.Name = "xrl_TitleBC";
             this.xrl_TitleBC.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrl_TitleBC.SizeF = new System.Drawing.SizeF(1628F, 23F);
+            this.xrl_TitleBC.SizeF = new System.Drawing.SizeF(1365F, 23F);
             this.xrl_TitleBC.StylePriority.UseFont = false;
             this.xrl_TitleBC.StylePriority.UseTextAlignment = false;
             this.xrl_TitleBC.Text = "BÁO CÁO NGÀY PHÉP CBNV";
@@ -511,7 +542,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(1628F, 56.25F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(1364.479F, 56.25F);
             this.xrTable1.StylePriority.UseBorders = false;
             this.xrTable1.StylePriority.UseFont = false;
             this.xrTable1.StylePriority.UseTextAlignment = false;
@@ -524,7 +555,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTableCell5,
             this.xrTableCell6,
             this.xrTableCell1,
-            this.xrTableCell7,
             this.xrTableCell8,
             this.xrTableCell9,
             this.xrTableCell2,
@@ -556,12 +586,6 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTableCell1.Name = "xrTableCell1";
             this.xrTableCell1.Text = "Ngày vào công ty";
             this.xrTableCell1.Weight = 0.18018652473093555D;
-            // 
-            // xrTableCell7
-            // 
-            this.xrTableCell7.Name = "xrTableCell7";
-            this.xrTableCell7.Text = "Đơn vị";
-            this.xrTableCell7.Weight = 0.48560362073068819D;
             // 
             // xrTableCell8
             // 
@@ -745,7 +769,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // xrl_ten3
             // 
             this.xrl_ten3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.xrl_ten3.LocationFloat = new DevExpress.Utils.PointFloat(1310.291F, 126.0417F);
+            this.xrl_ten3.LocationFloat = new DevExpress.Utils.PointFloat(1082.062F, 151.0417F);
             this.xrl_ten3.Name = "xrl_ten3";
             this.xrl_ten3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrl_ten3.SizeF = new System.Drawing.SizeF(282.4167F, 23F);
@@ -756,7 +780,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // xrl_footer3
             // 
             this.xrl_footer3.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrl_footer3.LocationFloat = new DevExpress.Utils.PointFloat(1310.291F, 51.04167F);
+            this.xrl_footer3.LocationFloat = new DevExpress.Utils.PointFloat(1082.583F, 51.04167F);
             this.xrl_footer3.Name = "xrl_footer3";
             this.xrl_footer3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrl_footer3.SizeF = new System.Drawing.SizeF(281.9166F, 23F);
@@ -768,7 +792,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // xrtngayketxuat
             // 
             this.xrtngayketxuat.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Italic);
-            this.xrtngayketxuat.LocationFloat = new DevExpress.Utils.PointFloat(1310.291F, 26.04167F);
+            this.xrtngayketxuat.LocationFloat = new DevExpress.Utils.PointFloat(1082.583F, 26.04167F);
             this.xrtngayketxuat.Name = "xrtngayketxuat";
             this.xrtngayketxuat.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrtngayketxuat.SizeF = new System.Drawing.SizeF(282.4167F, 23F);
@@ -780,7 +804,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // xrl_ten2
             // 
             this.xrl_ten2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.xrl_ten2.LocationFloat = new DevExpress.Utils.PointFloat(660.4944F, 151.0417F);
+            this.xrl_ten2.LocationFloat = new DevExpress.Utils.PointFloat(527.7625F, 151.0417F);
             this.xrl_ten2.Name = "xrl_ten2";
             this.xrl_ten2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrl_ten2.SizeF = new System.Drawing.SizeF(302.1819F, 23F);
@@ -791,7 +815,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // xrl_footer2
             // 
             this.xrl_footer2.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrl_footer2.LocationFloat = new DevExpress.Utils.PointFloat(660.4944F, 51.04167F);
+            this.xrl_footer2.LocationFloat = new DevExpress.Utils.PointFloat(527.7625F, 51.04167F);
             this.xrl_footer2.Name = "xrl_footer2";
             this.xrl_footer2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrl_footer2.SizeF = new System.Drawing.SizeF(304.1828F, 23F);
@@ -834,7 +858,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             // 
             this.xrPageInfo1.Font = new System.Drawing.Font("Times New Roman", 11F);
             this.xrPageInfo1.Format = "Trang {0} của {1}";
-            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1501.958F, 38.54167F);
+            this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(1238.958F, 33.38702F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrPageInfo1.SizeF = new System.Drawing.SizeF(126.0417F, 23.00001F);
@@ -858,7 +882,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTable5.Name = "xrTable5";
             this.xrTable5.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5});
-            this.xrTable5.SizeF = new System.Drawing.SizeF(1628F, 25F);
+            this.xrTable5.SizeF = new System.Drawing.SizeF(1364.479F, 25F);
             this.xrTable5.StylePriority.UseBorders = false;
             this.xrTable5.StylePriority.UseFont = false;
             // 
@@ -882,16 +906,113 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell41.Weight = 0.083538608419587657D;
             // 
-            // xrLabel1
+            // formattingRule1
             // 
-            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 50F);
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(502.0836F, 23F);
-            this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.formattingRule1.Condition = "[Thang1]>0";
+            // 
+            // 
+            // 
+            this.formattingRule1.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule1.Name = "formattingRule1";
+            // 
+            // formattingRule2
+            // 
+            this.formattingRule2.Condition = "[Thang2]>0";
+            // 
+            // 
+            // 
+            this.formattingRule2.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule2.Name = "formattingRule2";
+            // 
+            // formattingRule3
+            // 
+            this.formattingRule3.Condition = "[Thang3]>0";
+            // 
+            // 
+            // 
+            this.formattingRule3.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule3.Name = "formattingRule3";
+            // 
+            // formattingRule4
+            // 
+            this.formattingRule4.Condition = "[Thang4]>0";
+            // 
+            // 
+            // 
+            this.formattingRule4.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule4.Name = "formattingRule4";
+            // 
+            // formattingRule5
+            // 
+            this.formattingRule5.Condition = "[Thang5]>0";
+            // 
+            // 
+            // 
+            this.formattingRule5.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule5.Name = "formattingRule5";
+            // 
+            // formattingRule6
+            // 
+            this.formattingRule6.Condition = "[Thang6]>0";
+            // 
+            // 
+            // 
+            this.formattingRule6.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule6.Name = "formattingRule6";
+            // 
+            // formattingRule7
+            // 
+            this.formattingRule7.Condition = "[Thang7]>0";
+            // 
+            // 
+            // 
+            this.formattingRule7.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule7.Name = "formattingRule7";
+            // 
+            // formattingRule8
+            // 
+            this.formattingRule8.Condition = "[Thang8]>0";
+            // 
+            // 
+            // 
+            this.formattingRule8.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule8.Name = "formattingRule8";
+            // 
+            // formattingRule9
+            // 
+            this.formattingRule9.Condition = "[Thang9]>0";
+            // 
+            // 
+            // 
+            this.formattingRule9.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule9.Name = "formattingRule9";
+            // 
+            // formattingRule10
+            // 
+            this.formattingRule10.Condition = "[Thang10]>0";
+            // 
+            // 
+            // 
+            this.formattingRule10.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule10.Name = "formattingRule10";
+            // 
+            // formattingRule11
+            // 
+            this.formattingRule11.Condition = "[Thang11]>0";
+            // 
+            // 
+            // 
+            this.formattingRule11.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule11.Name = "formattingRule11";
+            // 
+            // formattingRule12
+            // 
+            this.formattingRule12.Condition = "[Thang12]>0";
+            // 
+            // 
+            // 
+            this.formattingRule12.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule12.Name = "formattingRule12";
             // 
             // rp_DanhSachNgayPhepConLaiTrongNam
             // 
@@ -904,8 +1025,21 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.ReportFooter,
             this.PageFooter,
             this.GroupHeader1});
+            this.FormattingRuleSheet.AddRange(new DevExpress.XtraReports.UI.FormattingRule[] {
+            this.formattingRule1,
+            this.formattingRule2,
+            this.formattingRule3,
+            this.formattingRule4,
+            this.formattingRule5,
+            this.formattingRule6,
+            this.formattingRule7,
+            this.formattingRule8,
+            this.formattingRule9,
+            this.formattingRule10,
+            this.formattingRule11,
+            this.formattingRule12});
             this.Landscape = true;
-            this.Margins = new System.Drawing.Printing.Margins(12, 14, 100, 100);
+            this.Margins = new System.Drawing.Printing.Margins(12, 277, 100, 100);
             this.PageHeight = 1169;
             this.PageWidth = 1654;
             this.PaperKind = System.Drawing.Printing.PaperKind.A3;

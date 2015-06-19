@@ -50,6 +50,7 @@
         <ext:Hidden runat="server" ID="hdfType" />
         <ext:Hidden runat="server" ID="hdfKeHoachTuyenDung" />
         <ext:Hidden runat="server" ID="hdfVongPV" />
+        <ext:Hidden runat="server" ID="hdfYear" />
         <uc1:ucPhanLoaiUngVien ID="ucPhanLoaiUngVien1" runat="server" />
         <%--<uc5:ucUploadImageForm ID="ucUploadImageForm1" runat="server" />--%>
         <ext:Window runat="server" Title="Tìm kiếm nâng cao" Icon="Zoom" Constrain="true"
@@ -1586,7 +1587,7 @@
                                             <Items>
                                                 <ext:SpinnerField runat="server" ID="spnYear" FieldLabel="Năm" Width="55">
                                                     <Listeners>
-                                                        <Spin Handler="#{PagingToolbar1}.pageIndex = 0; #{PagingToolbar1}.doLoad();" />
+                                                        <Spin Handler="#{PagingToolbar1}.pageIndex = 0; #{PagingToolbar1}.doLoad();hdfYear.setValue(spnYear.getValue());" />
                                                     </Listeners>
                                                 </ext:SpinnerField>
                                             </Items>
