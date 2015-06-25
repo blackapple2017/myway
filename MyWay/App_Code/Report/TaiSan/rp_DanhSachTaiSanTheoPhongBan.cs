@@ -54,6 +54,8 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
     private XRLabel xrl_tungay;
     private XRTableCell xrTableCell9;
     private XRTableCell xrTableCell10;
+    private XRTableCell xrTableCell12;
+    private XRTableCell xrTableCell11;
 	/// <summary>
 	/// Required designer variable.
 	/// </summary>
@@ -115,6 +117,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
         xrl_donvitinh.DataBindings.Add("Text", DataSource, "TEN_VTHH");
         xrl_tinhtrang.DataBindings.Add("Text", DataSource, "SoLuong");
         xrt_ngaynhan.DataBindings.Add("Text", DataSource, "TEN_DVT");
+        xrTableCell12.DataBindings.Add("Text", DataSource, "HanSuDung", "{0:dd/MM/yyyy}");
      //   xrt_ngaytra.DataBindings.Add("Text", DataSource, "TEN_DVT", "{0:dd/MM/yyyy}"); 
         xrTableCell10.DataBindings.Add("Text", DataSource, "NGAY_NHAN", "{0:dd/MM/yyyy}");
         this.GroupHeader1.GroupFields.AddRange(new DevExpress.XtraReports.UI.GroupField[] {
@@ -179,6 +182,8 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             this.xrl_TenThanhPho = new DevExpress.XtraReports.UI.XRLabel();
             this.PageFooter = new DevExpress.XtraReports.UI.PageFooterBand();
             this.xrPageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
+            this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -198,7 +203,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             this.xrTable3.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold);
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(2.384186E-05F, 0F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
@@ -219,6 +224,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             this.xrl_tinhtrang,
             this.xrt_ngaynhan,
             this.xrt_ngaytra,
+            this.xrTableCell12,
             this.xrTableCell10});
             this.xrTableRow3.Name = "xrTableRow3";
             this.xrTableRow3.Weight = 1D;
@@ -314,6 +320,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             // 
             // BottomMargin
             // 
+            this.BottomMargin.HeightF = 100F;
             this.BottomMargin.Name = "BottomMargin";
             this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -352,6 +359,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             this.xrTableCell7,
             this.xrTableCell8,
             this.xrTableCell3,
+            this.xrTableCell11,
             this.xrTableCell9});
             this.xrTableRow1.Name = "xrTableRow1";
             this.xrTableRow1.Weight = 1D;
@@ -402,7 +410,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             // 
             this.xrTableCell3.Name = "xrTableCell3";
             this.xrTableCell3.Text = "Tình trạng";
-            this.xrTableCell3.Weight = 0.581327453345745D;
+            this.xrTableCell3.Weight = 0.58132757509922406D;
             // 
             // xrTableCell9
             // 
@@ -580,6 +588,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             // 
             this.PageFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPageInfo1});
+            this.PageFooter.HeightF = 100F;
             this.PageFooter.Name = "PageFooter";
             // 
             // xrPageInfo1
@@ -593,6 +602,17 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             this.xrPageInfo1.StylePriority.UseFont = false;
             this.xrPageInfo1.StylePriority.UseTextAlignment = false;
             this.xrPageInfo1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            // 
+            // xrTableCell11
+            // 
+            this.xrTableCell11.Name = "xrTableCell11";
+            this.xrTableCell11.Text = "Hạn sử dụng";
+            this.xrTableCell11.Weight = 0.58132733159226591D;
+            // 
+            // xrTableCell12
+            // 
+            this.xrTableCell12.Name = "xrTableCell12";
+            this.xrTableCell12.Weight = 0.44555870990532409D;
             // 
             // rp_DanhSachTaiSanTheoPhongBan
             // 
@@ -609,7 +629,7 @@ public class rp_DanhSachTaiSanTheoPhongBan : DevExpress.XtraReports.UI.XtraRepor
             this.Margins = new System.Drawing.Printing.Margins(11, 10, 11, 100);
             this.PageHeight = 850;
             this.PageWidth = 1100;
-            this.Version = "10.1";
+            this.Version = "14.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();

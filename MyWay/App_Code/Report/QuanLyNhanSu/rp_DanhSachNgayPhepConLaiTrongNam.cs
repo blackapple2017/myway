@@ -171,17 +171,28 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_tongngayphep = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_tongngaynghile = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_thang1 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule1 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang2 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule2 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang3 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule3 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang4 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule4 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang5 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule5 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang6 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule6 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang7 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule7 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang8 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule8 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang9 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule9 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang10 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_thang11 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule11 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_thang12 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.formattingRule12 = new DevExpress.XtraReports.UI.FormattingRule();
             this.xrt_tongsongaynghi = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrt_ngayconlai = new DevExpress.XtraReports.UI.XRTableCell();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
@@ -234,18 +245,7 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTable5 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow5 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell41 = new DevExpress.XtraReports.UI.XRTableCell();
-            this.formattingRule1 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule2 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule3 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule4 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule5 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule6 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule7 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule8 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule9 = new DevExpress.XtraReports.UI.FormattingRule();
             this.formattingRule10 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule11 = new DevExpress.XtraReports.UI.FormattingRule();
-            this.formattingRule12 = new DevExpress.XtraReports.UI.FormattingRule();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
@@ -355,6 +355,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang1.Weight = 0.08353884272844847D;
             // 
+            // formattingRule1
+            // 
+            this.formattingRule1.Condition = "[Thang1]>0";
+            // 
+            // 
+            // 
+            this.formattingRule1.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule1.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule1.Name = "formattingRule1";
+            // 
             // xrt_thang2
             // 
             this.xrt_thang2.FormattingRules.Add(this.formattingRule2);
@@ -362,6 +372,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang2.StylePriority.UseTextAlignment = false;
             this.xrt_thang2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang2.Weight = 0.083538950514734811D;
+            // 
+            // formattingRule2
+            // 
+            this.formattingRule2.Condition = "[Thang2]>0";
+            // 
+            // 
+            // 
+            this.formattingRule2.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule2.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule2.Name = "formattingRule2";
             // 
             // xrt_thang3
             // 
@@ -371,6 +391,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang3.Weight = 0.083538723226261435D;
             // 
+            // formattingRule3
+            // 
+            this.formattingRule3.Condition = "[Thang3]>0";
+            // 
+            // 
+            // 
+            this.formattingRule3.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule3.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule3.Name = "formattingRule3";
+            // 
             // xrt_thang4
             // 
             this.xrt_thang4.FormattingRules.Add(this.formattingRule4);
@@ -378,6 +408,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang4.StylePriority.UseTextAlignment = false;
             this.xrt_thang4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang4.Weight = 0.083538946999964558D;
+            // 
+            // formattingRule4
+            // 
+            this.formattingRule4.Condition = "[Thang4]>0";
+            // 
+            // 
+            // 
+            this.formattingRule4.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule4.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule4.Name = "formattingRule4";
             // 
             // xrt_thang5
             // 
@@ -387,6 +427,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang5.Weight = 0.083538608996229613D;
             // 
+            // formattingRule5
+            // 
+            this.formattingRule5.Condition = "[Thang5]>0";
+            // 
+            // 
+            // 
+            this.formattingRule5.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule5.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule5.Name = "formattingRule5";
+            // 
             // xrt_thang6
             // 
             this.xrt_thang6.FormattingRules.Add(this.formattingRule6);
@@ -394,6 +444,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang6.StylePriority.UseTextAlignment = false;
             this.xrt_thang6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang6.Weight = 0.083538833648625466D;
+            // 
+            // formattingRule6
+            // 
+            this.formattingRule6.Condition = "[Thang6]>0";
+            // 
+            // 
+            // 
+            this.formattingRule6.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule6.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule6.Name = "formattingRule6";
             // 
             // xrt_thang7
             // 
@@ -403,6 +463,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang7.Weight = 0.083539058447469949D;
             // 
+            // formattingRule7
+            // 
+            this.formattingRule7.Condition = "[Thang7]>0";
+            // 
+            // 
+            // 
+            this.formattingRule7.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule7.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule7.Name = "formattingRule7";
+            // 
             // xrt_thang8
             // 
             this.xrt_thang8.FormattingRules.Add(this.formattingRule8);
@@ -411,6 +481,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang8.Weight = 0.083539058374245634D;
             // 
+            // formattingRule8
+            // 
+            this.formattingRule8.Condition = "[Thang8]>0";
+            // 
+            // 
+            // 
+            this.formattingRule8.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule8.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule8.Name = "formattingRule8";
+            // 
             // xrt_thang9
             // 
             this.xrt_thang9.FormattingRules.Add(this.formattingRule9);
@@ -418,6 +498,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang9.StylePriority.UseTextAlignment = false;
             this.xrt_thang9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang9.Weight = 0.083538608447046747D;
+            // 
+            // formattingRule9
+            // 
+            this.formattingRule9.Condition = "[Thang9]>0";
+            // 
+            // 
+            // 
+            this.formattingRule9.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule9.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule9.Name = "formattingRule9";
             // 
             // xrt_thang10
             // 
@@ -434,6 +524,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang11.Weight = 0.083538608419587657D;
             // 
+            // formattingRule11
+            // 
+            this.formattingRule11.Condition = "[Thang11]>0";
+            // 
+            // 
+            // 
+            this.formattingRule11.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule11.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule11.Name = "formattingRule11";
+            // 
             // xrt_thang12
             // 
             this.xrt_thang12.FormattingRules.Add(this.formattingRule12);
@@ -441,6 +541,16 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrt_thang12.StylePriority.UseTextAlignment = false;
             this.xrt_thang12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrt_thang12.Weight = 0.09121756589255256D;
+            // 
+            // formattingRule12
+            // 
+            this.formattingRule12.Condition = "[Thang12]>0";
+            // 
+            // 
+            // 
+            this.formattingRule12.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formattingRule12.Formatting.ForeColor = System.Drawing.Color.Red;
+            this.formattingRule12.Name = "formattingRule12";
             // 
             // xrt_tongsongaynghi
             // 
@@ -906,113 +1016,15 @@ public class rp_DanhSachNgayPhepConLaiTrongNam : DevExpress.XtraReports.UI.XtraR
             this.xrTableCell41.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell41.Weight = 0.083538608419587657D;
             // 
-            // formattingRule1
-            // 
-            this.formattingRule1.Condition = "[Thang1]>0";
-            // 
-            // 
-            // 
-            this.formattingRule1.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule1.Name = "formattingRule1";
-            // 
-            // formattingRule2
-            // 
-            this.formattingRule2.Condition = "[Thang2]>0";
-            // 
-            // 
-            // 
-            this.formattingRule2.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule2.Name = "formattingRule2";
-            // 
-            // formattingRule3
-            // 
-            this.formattingRule3.Condition = "[Thang3]>0";
-            // 
-            // 
-            // 
-            this.formattingRule3.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule3.Name = "formattingRule3";
-            // 
-            // formattingRule4
-            // 
-            this.formattingRule4.Condition = "[Thang4]>0";
-            // 
-            // 
-            // 
-            this.formattingRule4.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule4.Name = "formattingRule4";
-            // 
-            // formattingRule5
-            // 
-            this.formattingRule5.Condition = "[Thang5]>0";
-            // 
-            // 
-            // 
-            this.formattingRule5.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule5.Name = "formattingRule5";
-            // 
-            // formattingRule6
-            // 
-            this.formattingRule6.Condition = "[Thang6]>0";
-            // 
-            // 
-            // 
-            this.formattingRule6.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule6.Name = "formattingRule6";
-            // 
-            // formattingRule7
-            // 
-            this.formattingRule7.Condition = "[Thang7]>0";
-            // 
-            // 
-            // 
-            this.formattingRule7.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule7.Name = "formattingRule7";
-            // 
-            // formattingRule8
-            // 
-            this.formattingRule8.Condition = "[Thang8]>0";
-            // 
-            // 
-            // 
-            this.formattingRule8.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule8.Name = "formattingRule8";
-            // 
-            // formattingRule9
-            // 
-            this.formattingRule9.Condition = "[Thang9]>0";
-            // 
-            // 
-            // 
-            this.formattingRule9.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule9.Name = "formattingRule9";
-            // 
             // formattingRule10
             // 
             this.formattingRule10.Condition = "[Thang10]>0";
             // 
             // 
             // 
+            this.formattingRule10.Formatting.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.formattingRule10.Formatting.ForeColor = System.Drawing.Color.Red;
             this.formattingRule10.Name = "formattingRule10";
-            // 
-            // formattingRule11
-            // 
-            this.formattingRule11.Condition = "[Thang11]>0";
-            // 
-            // 
-            // 
-            this.formattingRule11.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule11.Name = "formattingRule11";
-            // 
-            // formattingRule12
-            // 
-            this.formattingRule12.Condition = "[Thang12]>0";
-            // 
-            // 
-            // 
-            this.formattingRule12.Formatting.ForeColor = System.Drawing.Color.Red;
-            this.formattingRule12.Name = "formattingRule12";
             // 
             // rp_DanhSachNgayPhepConLaiTrongNam
             // 

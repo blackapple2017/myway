@@ -907,6 +907,28 @@ public class HoSoController : LinqProvider
         return dataContext.HOSO_TAINANLAODONGs.Where(t => t.ID == p).FirstOrDefault();
     }
 
+    public ThuTucDauVao getThuTuc(int p)
+    {
+        return dataContext.ThuTucDauVaos.Where(t => t.ID == p).FirstOrDefault();
+    }
+
+    public void UpdateThuTucDauVao(DAL.ThuTucDauVao thutuc)
+    {
+        DAL.ThuTucDauVao item = dataContext.ThuTucDauVaos.Where(t => t.ID == thutuc.ID).FirstOrDefault();
+        if (item == null)
+        {
+            return;
+        }
+
+            item.ID = thutuc.ID;
+            item.PrKeyHoSo = thutuc.PrKeyHoSo;
+            item.TenThuTuc = thutuc.TenThuTuc;
+            item.HoanThanh = thutuc.HoanThanh;
+            item.CreatedBy = thutuc.CreatedBy;
+            item.CreatedDate = thutuc.CreatedDate;
+            Save();
+        
+    }
     public void UpdateTaiNanLaoDong(HOSO_TAINANLAODONG taiNan, int currentID)
     {
         DAL.HOSO_TAINANLAODONG tmp = getTaiNan(taiNan.ID);
@@ -944,6 +966,11 @@ public class HoSoController : LinqProvider
     public void InsertTepTin(HOSO_TepTinDinhKem attachFile)
     {
         dataContext.HOSO_TepTinDinhKems.InsertOnSubmit(attachFile);
+        Save();
+    }
+    public void InsertThuTuc(ThuTucDauVao thutuc)
+    {
+        dataContext.ThuTucDauVaos.InsertOnSubmit(thutuc);
         Save();
     }
 

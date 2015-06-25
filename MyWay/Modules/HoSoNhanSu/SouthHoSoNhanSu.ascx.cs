@@ -58,6 +58,7 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             RowSelectionModelKinhNghiemLamViec.Listeners.RowSelect.Handler += "#{btnEditRecord}.enable();";
             RowSelectionModel_ChungChi.Listeners.RowSelect.Handler += "#{btnEditRecord}.enable();";
             RowSelectionModelTaiNanLaoDong.Listeners.RowSelect.Handler += "#{btnEditRecord}.enable();";
+            RowSelectionThuTuc.Listeners.RowSelect.Handler += "#{btnEditRecord}.enable();";
             #endregion
             #region Listener Active
             //panelGeneralInformation.Listeners.Activate.Handler += "#{btnEditRecord}.disable();";
@@ -101,6 +102,7 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             GridPanelKinhNghiemLamViec.Listeners.RowDblClick.Handler += "#{DirectMethods}.GetDataForKinhNghiemLamViec();#{Update}.hide(); #{UpdateandClose}.hide();#{btnEditKinhNghiem}.show();";
             GridPanel_ChungChi.Listeners.RowDblClick.Handler += "#{DirectMethods}.GetDataForChungChi();#{btnUpdateChungChi}.hide();#{btnUpdateandCloseChungChi}.hide();#{btnEditChungChi}.show();";
             GridPanelTaiNanLaoDong.Listeners.RowDblClick.Handler += "#{DirectMethods}.GetDataForTaiNan();#{btnInsertTaiNan}.hide();#{btnUpdateTaiNan}.show();#{btnInsertTaiNanAndClose}.hide();";
+            GridThuTucDauVao.Listeners.RowDblClick.Handler += "#{DirectMethods}.GetDataForThuTuc();#{btnUpdateThuTuc}.hide();#{btnUpdateThuTuc1}.show();#{btnUpdateCloseThuTuc}.hide();#{wdThuTucDauVao}.show();";
             #endregion
         }
         if (btnDeleteRecord.Visible)
@@ -126,6 +128,7 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             RowSelectionModelKinhNghiemLamViec.Listeners.RowSelect.Handler += "#{btnDeleteRecord}.enable();";
             RowSelectionModel_ChungChi.Listeners.RowSelect.Handler += "#{btnDeleteRecord}.enable();";
             RowSelectionModelTaiNanLaoDong.Listeners.RowSelect.Handler += "#{btnDeleteRecord}.enable();";
+            RowSelectionThuTuc.Listeners.RowSelect.Handler += "#{btnDeleteRecord}.enable();";
             #endregion
             #region Listener Active
             //panelGeneralInformation.Listeners.Activate.Handler += "#{btnDeleteRecord}.disable();";
@@ -173,6 +176,7 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             panelBangCapChungChi.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelTaiNanLaoDong.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             panelDienBienLuong.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
+            panelThuTucDauVao.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.enable();";
             #endregion
             #region Listener Active
             panelGeneralInformation.Listeners.Activate.Handler += "#{btnAddRecordInDetailTable}.disable();";
@@ -271,11 +275,11 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
 
     #region Các hàm liên quan đến Store
 
-    protected void StoregrpATM_OnRefreshData(object sender, StoreRefreshDataEventArgs e)
-    {
-        StoregrpATM.DataSource = DataHandler.GetInstance().ExecuteDataTable("HOSO_GetATM", "@prkeyHoso", hdfRecordID.Text);
-        StoregrpATM.DataBind();
-    }
+    //protected void StoregrpATM_OnRefreshData(object sender, StoreRefreshDataEventArgs e)
+    //{
+    //    StoregrpATM.DataSource = DataHandler.GetInstance().ExecuteDataTable("HOSO_GetATM", "@prkeyHoso", hdfRecordID.Text);
+    //    StoregrpATM.DataBind();
+    //}
 
     protected void StoreDienBienLuong_OnRefreshData(object sender, StoreRefreshDataEventArgs e)
     {
@@ -390,6 +394,18 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
         {
             grpTepTinDinhKemStore.DataSource = DataHandler.GetInstance().ExecuteDataTable("Attach_GetFileListOfHoSo", "@FR_KEY", decimal.Parse(hdfRecordID.Text));
             grpTepTinDinhKemStore.DataBind();
+        }
+        catch (Exception ex)
+        {
+            ExtMessage.Dialog.ShowError(ex.Message);
+        }
+    }
+    protected void grpThuTucDauVaoStore_OnRefreshData(object sender, StoreRefreshDataEventArgs e)
+    {
+        try
+        {
+            StoreThuTucDauVao.DataSource = DataHandler.GetInstance().ExecuteDataTable("GetListThuTucDauVao", "@FR_KEY", decimal.Parse(hdfRecordID.Text));
+            StoreThuTucDauVao.DataBind();
         }
         catch (Exception ex)
         {
@@ -921,15 +937,15 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
         try
         {
 
-            if (e.ExtraParams["Command"] == "Update" && new DALController().Update(wdTheNganHang, "HOSO_ATM", RowSelectionModelATM.SelectedRecordID))
-            {
-                grpATM.Reload();
-                Dialog.ShowNotification("Cập nhật thành công !");
-                wdTheNganHang.Hide();
-            }
+            //if (e.ExtraParams["Command"] == "Update" && new DALController().Update(wdTheNganHang, "HOSO_ATM", RowSelectionModelATM.SelectedRecordID))
+            //{
+            //    //grpATM.Reload();
+            //    Dialog.ShowNotification("Cập nhật thành công !");
+            //    wdTheNganHang.Hide();
+            //}
             if (e.ExtraParams["Command"] != "Update" && new DALController().Add(wdTheNganHang, "HOSO_ATM"))
             {
-                grpATM.Reload();
+                //grpATM.Reload();
                 nbf_ATMNumber.Reset();
                 cb_BankID.Reset();
                 txt_Note.Reset();
@@ -1996,6 +2012,38 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
         }
     }
 
+    protected void btnUpdateThuTuc_Click(object sender, DirectEventArgs e)
+    {
+        try
+        {
+            DAL.ThuTucDauVao thutuc = new ThuTucDauVao()
+            {
+                CreatedBy = CurrentUser.ID,
+                CreatedDate = DateTime.Now,
+                TenThuTuc = txtTenThuTuc.Text,
+                HoanThanh = chbHoanThanh.Checked
+            };
+            if (e.ExtraParams["Command"] == "Update")
+            {
+                thutuc.ID = int.Parse(RowSelectionModelTepTinDinhKem.SelectedRecordID);
+                new HoSoController().UpdateThuTucDauVao(thutuc);
+                wdThuTucDauVao.Hide();
+            }
+            else
+            {
+                new HoSoController().InsertThuTuc(thutuc);
+                if (e.ExtraParams["Close"] == "True")
+                {
+                    wdAttachFile.Hide();
+                }
+            }
+            grpTepTinDinhKem.Reload();
+        }
+        catch (Exception ex)
+        {
+            ExtMessage.Dialog.ShowError(ex.Message);
+        }
+    }
     protected void btnDownloadAttachFile_Click(object sender, DirectEventArgs e)
     {
         try
@@ -2261,6 +2309,9 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             case "StoreTaiNanLaoDong":
                 DataHandler.GetInstance().ExecuteNonQuery("delete from HOSO_TAINANLAODONG where ID = " + RowSelectionModelTaiNanLaoDong.SelectedRecordID);
                 break;
+            case "StoreThuTucDauVao":
+                DataHandler.GetInstance().ExecuteNonQuery("delete from ThuTucDauVao where ID = " + RowSelectionThuTuc.SelectedRecordID);
+                break;
             case "Store_BangCapChungChi":
                 DataHandler.GetInstance().ExecuteNonQuery("delete from HOSO_UNGVIEN_CHUNGCHI where ID = " + RowSelectionModel_ChungChi.SelectedRecordID);
                 break;
@@ -2291,9 +2342,9 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
             case "Store_BangCap":
                 DataHandler.GetInstance().ExecuteNonQuery("delete from HOSO_BANGCAP_UNGVIEN where ID = " + RowSelectionModel_BangCap.SelectedRecordID);
                 break;
-            case "StoregrpATM":
-                DataHandler.GetInstance().ExecuteNonQuery("delete from HOSO_ATM where ID = " + RowSelectionModelATM.SelectedRecordID);
-                break;
+            //case "StoregrpATM":
+            //    DataHandler.GetInstance().ExecuteNonQuery("delete from HOSO_ATM where ID = " + RowSelectionModelATM.SelectedRecordID);
+            //    break;
         }
         btnDeleteRecord.Disabled = true;
         btnEditRecord.Disabled = true;
@@ -2753,6 +2804,29 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
                 TaiNan_txtThietHai.Text = taiNan.THIET_HAI;
                 TaiNan_txtThuongTat.Text = taiNan.THUONG_TAT;
                 wdTaiNanLaoDong.Show();
+            }
+        }
+        catch (Exception ex)
+        {
+            ExtMessage.Dialog.ShowError(ex.Message);
+        }
+    }
+    [DirectMethod]
+    public void GetDataForThuTuc()
+    {
+        try
+        {
+            string id = RowSelectionThuTuc.SelectedRecordID;
+            if (id == "")
+            {
+                X.Msg.Alert("Thông báo", "Bạn chưa chọn bản ghi nào").Show();
+            }
+            else
+            {
+                DAL.ThuTucDauVao thutuc = new HoSoController().getThuTuc(int.Parse(id));
+                txtTenThuTuc.Text = thutuc.TenThuTuc;
+                chbHoanThanh.SetValue(thutuc.HoanThanh);
+                wdThuTucDauVao.Show();
             }
         }
         catch (Exception ex)

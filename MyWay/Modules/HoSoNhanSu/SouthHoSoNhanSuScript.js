@@ -757,6 +757,11 @@ var resetWdTheNganHang = function () {
     SouthHoSoNhanSu1_btnUpdateTheNganHang.show();
     SouthHoSoNhanSu1_Button4.show();
 }
+
+var resetWdThuTuc = function () {
+    SouthHoSoNhanSu1_txtTenThuTuc.reset(); SouthHoSoNhanSu1_chbHoanThanh.reset();
+
+}
 var validateWdTheNganHang = function () {
     if (SouthHoSoNhanSu1_nbf_ATMNumber.getValue() == '') {
         alert('Bạn chưa nhập số tài khoản');

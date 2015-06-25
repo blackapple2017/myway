@@ -53,7 +53,7 @@ public partial class Modules_NhanSu_KEHOACH_TUYENDUNG : WebBase
             }
             catch (Exception ex) { }
             //Create Tempory Table
-            var dtTemp = DataController.DataHandler.GetInstance().ExecuteDataTable("tuyendung_danhsachUV_ExportToExcel", "@SearchKey", "@DotTuyenDung", "@Start", "@Limit", "@month", "@year", "@checkToHOSO",
+            var dtTemp = DataController.DataHandler.GetInstance().ExecuteDataTable("tuyendung_danhsachUV_ExportToExcel", "@SearchKey", "@DotTuyenDung", "@Start", "@Limit","@month", "@year", "@checkToHOSO",
                 "%" + SoftCore.Util.GetInstance().GetKeyword(HoSoUngVien_txtSearchKey.Text) + "%", int.Parse("0" + cbx_dottuyendung.SelectedItem.Value), start, limit, cbxMonth.SelectedItem.Value, hdfYear.Value, (ck_ViewChuyenVaoHOSO.Checked ? 1 : 0));
 
 

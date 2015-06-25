@@ -324,7 +324,7 @@
                                 <ext:Container ID="Container35" runat="server" LabelAlign="Left" LabelWidth="115"
                                     Height="27" Layout="FormLayout" ColumnWidth="0.5">
                                     <Items>
-                                        <ext:DateField runat="server" ID="df_NgayBatDau" Vtype="daterange" AnchorHorizontal="98%"
+                                        <ext:DateField runat="server" ID="df_NgayBatDau" Vtype="daterange" CtCls="requiredData" AnchorHorizontal="98%"
                                             MaskRe="/[0-9\/]/" Format="d/M/yyyy" Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/"
                                             RegexText="Định dạng ngày bắt đầu không đúng" FieldLabel="Ngày bắt đầu">
                                             <Triggers>
@@ -340,7 +340,7 @@
                                 <ext:Container ID="Container36" runat="server" LabelAlign="Left" LabelWidth="115"
                                     Height="27" ColumnWidth="0.5" Layout="FormLayout">
                                     <Items>
-                                        <ext:DateField runat="server" ID="df_NgayKetThuc" Vtype="daterange" AnchorHorizontal="100%"
+                                        <ext:DateField runat="server" ID="df_NgayKetThuc" Vtype="daterange" CtCls="requiredData" AnchorHorizontal="100%"
                                             MaskRe="/[0-9\/]/" Format="d/M/yyyy" Regex="/^(3[0-1]|[0-2]?[0-9])\/(1[0-2]|0?[0-9])\/[0-9]{4}$/"
                                             RegexText="Định dạng ngày kết thúc không đúng" FieldLabel="Ngày kết thúc">
                                             <Triggers>

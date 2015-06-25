@@ -2603,6 +2603,60 @@
         <Hide Handler="#{btnEditAttachFile}.hide();#{Button10}.show();#{btnUpdateAtachFile}.show();ResetWdAttachFile();" />
     </Listeners>
 </ext:Window>
+<ext:Window runat="server" Hidden="true" Resizable="false" Padding="6" Layout="FormLayout"
+    Modal="true" Width="500" ID="wdThuTucDauVao" Title="Thủ tục đầu vào" Icon="Attach"
+    AutoHeight="true" Constrain="true" LabelWidth="120">
+    <Items>
+        <ext:Hidden runat="server" ID="hdfThuTucID" />
+        <ext:TextField ID="txtTenThuTuc" runat="server" FieldLabel="Tên thủ tục đầu vào<span style='color:red;'>*</span>"
+            CtCls="requiredData" AnchorHorizontal="100%" Icon="Attach">
+        </ext:TextField>
+        <ext:Checkbox ID="chbHoanThanh" runat="server" AnchorHorizontal="100%" FieldLabel="Đã hoàn thành<span style='color:red;'>*</span>"
+            CtCls="requiredData" MaxLength="200" />
+    </Items>
+    <Buttons>
+        <ext:Button ID="btnUpdateThuTuc" runat="server" Icon="Disk" Text="Cập nhật">
+            <DirectEvents>
+                <Click OnEvent="btnUpdateThuTuc_Click">
+                    <EventMask ShowMask="true" Msg="Chờ trong giây lát..." />
+                    <ExtraParams>
+                        <ext:Parameter Name="Close" Value="False" />
+                    </ExtraParams>
+                </Click>
+            </DirectEvents>
+        </ext:Button>
+        <ext:Button ID="btnUpdateCloseThuTuc" runat="server" Icon="Disk" Text="Cập nhật & Đóng lại">
+            <DirectEvents>
+                <Click OnEvent="btnUpdateThuTuc_Click">
+                    <EventMask ShowMask="true" Msg="Chờ trong giây lát..." />
+                    <ExtraParams>
+                        <ext:Parameter Name="Close" Value="True" />
+                    </ExtraParams>
+                </Click>
+            </DirectEvents>
+        </ext:Button>
+        <ext:Button ID="btnUpdateThuTuc1" Hidden="true" runat="server" Icon="Disk" Text="Cập nhật">
+            <DirectEvents>
+                <Click OnEvent="btnUpdateThuTuc_Click">
+                    <EventMask ShowMask="true" Msg="Chờ trong giây lát..." />
+                    <ExtraParams>
+                        <ext:Parameter Name="Command" Value="Update">
+                        </ext:Parameter>
+                    </ExtraParams>
+                </Click>
+            </DirectEvents>
+        </ext:Button>
+        <ext:Button ID="btnCloseThuTuc" runat="server" Text="Đóng lại" Icon="Decline">
+            <Listeners>
+                <Click Handler="#{wdThuTucDauVao}.hide();" />
+            </Listeners>
+        </ext:Button>
+    </Buttons>
+    <Listeners>
+        <BeforeShow Handler="#{file_cv}.enable();" />
+        <Hide Handler="#{btnUpdateThuTuc_Click}.hide();#{btnUpdateCloseThuTuc}.show();#{btnUpdateThuTuc1}.show();resetWdThuTuc();" />
+    </Listeners>
+</ext:Window>
 <ext:Window runat="server" ID="wdAddBangCap" Width="600" EnableViewState="false"
     Title="Quá trình học tập" Resizable="false" Constrain="true" Modal="true" Icon="Add"
     AutoHeight="true" Hidden="true" Padding="6">
@@ -4930,37 +4984,24 @@
                 </ext:GridPanel>
             </Items>
         </ext:Panel>
-        <ext:Panel ID="panelTheNganHang" Title="Thẻ ngân hàng" runat="server" Closable="true"
+        <ext:Panel ID="panelThuTucDauVao" Title="Thủ tục đầu vào" runat="server" Closable="true"
             Hidden="true" CloseAction="Hide" Layout="BorderLayout">
-            <Listeners>
-                <Close Handler="#{mnuATM}.setDisabled(false);" />
-                <Activate Handler="#{btnAddRecordInDetailTable}.enable();
-                                   if(#{hdf_PrKeyHoSo}.getValue()!=#{hdfRecordID}.getValue())
-                                    {
-                                    #{StoregrpATM}.reload();
-                                    #{hdf_PrKeyHoSo}.setValue(#{hdfRecordID}.getValue());
-                                    } 
-                                     #{Storecb_BankID}.reload(); " />
-            </Listeners>
             <Items>
-                <ext:GridPanel ID="grpATM" runat="server" StripeRows="true" Border="false" AutoExpandColumn="Note"
-                    TrackMouseOver="true" AutoScroll="true" AnchorHorizontal="100%" Region="Center">
+                <ext:GridPanel ID="GridThuTucDauVao" runat="server" StripeRows="true" Border="false"
+                    TrackMouseOver="true" AutoExpandColumn="TenThuTuc" AutoScroll="true" AnchorHorizontal="100%"
+                    Region="Center">
                     <Store>
-                        <ext:Store ID="StoregrpATM" AutoSave="true" ShowWarningOnFailure="false" OnBeforeStoreChanged="HandleChangesDelete"
-                            SkipIdForNewRecords="false" RefreshAfterSaving="None" AutoLoad="false" OnRefreshData="StoregrpATM_OnRefreshData"
-                            runat="server">
+                        <ext:Store ID="StoreThuTucDauVao" AutoLoad="false" AutoSave="true" ShowWarningOnFailure="false"
+                            OnBeforeStoreChanged="HandleChangesDelete" SkipIdForNewRecords="false" RefreshAfterSaving="None"
+                            OnRefreshData="grpThuTucDauVaoStore_OnRefreshData" runat="server">
                             <Reader>
                                 <ext:JsonReader IDProperty="ID">
                                     <Fields>
                                         <ext:RecordField Name="ID" />
-                                        <ext:RecordField Name="ATMNumber" />
-                                        <ext:RecordField Name="TEN_NH" />
-                                        <ext:RecordField Name="IsInUsed" />
-                                        <ext:RecordField Name="LastUpdatedDate" />
-                                        <ext:RecordField Name="LastUpdatedBy" />
-                                        <ext:RecordField Name="note" />
-                                        <ext:RecordField Name="DisplayName" />
-                                        <ext:RecordField Name="BankID" />
+                                        <ext:RecordField Name="PrKeyHoSo" />
+                                        <ext:RecordField Name="TenThuTuc" />
+                                        <ext:RecordField Name="HoanThanh" />
+                                        <ext:RecordField Name="CreatedDate" />
                                     </Fields>
                                 </ext:JsonReader>
                             </Reader>
@@ -4969,37 +5010,25 @@
                     <ColumnModel ID="ColumnModel23" runat="server">
                         <Columns>
                             <ext:RowNumbererColumn Header="STT" Width="35" />
-                            <ext:Column ColumnID="ATMNumber" Header="Số tài khoản" Width="150" DataIndex="ATMNumber">
-                            </ext:Column>
-                            <ext:Column ColumnID="TEN_NH" Header="Ngân Hàng" Width="170" DataIndex="TEN_NH">
-                            </ext:Column>
-                            <ext:Column ColumnID="IsInUsed" Width="100" Header="Đang sử dụng" Align="Center"
-                                DataIndex="IsInUsed">
-                                <Renderer Fn="GetBooleanIcon" />
-                            </ext:Column>
-                            <ext:DateColumn ColumnID="DIA_DIEM" Format="dd/MM/yyyy" Header="Cập nhật lần cuối"
-                                Width="100" DataIndex="LastUpdatedDate">
-                            </ext:DateColumn>
-                            <ext:Column ColumnID="DisplayName" Header="Người cập nhật" Width="110" DataIndex="DisplayName">
-                            </ext:Column>
-                            <ext:Column ColumnID="Note" Header="Ghi chú" Width="150" DataIndex="note">
-                            </ext:Column>
+                            <ext:Column ColumnID="TenThuTuc" Width="200" Header="Tên thủ tục" DataIndex="TenThuTuc" />
+                            <ext:CheckColumn ColumnID="HoanThanh" Width="100" Header="Đã hoàn thành" DataIndex="HoanThanh" />
+<%--                            <ext:Column ColumnID="Ghichu" Width="300" Header="Ghi chú" DataIndex="Ghichu" />--%>
+                            <ext:DateColumn Format="dd/MM/yyyy" ColumnID="CreatedDate" Width="150" Header="Ngày tạo"
+                                DataIndex="CreatedDate" />
                         </Columns>
                     </ColumnModel>
                     <LoadMask ShowMask="true" Msg="Đang tải dữ liệu..." />
                     <SelectionModel>
-                        <ext:RowSelectionModel ID="RowSelectionModelATM" runat="server" SingleSelect="true">
+                        <ext:RowSelectionModel ID="RowSelectionThuTuc" runat="server" SingleSelect="true">
                             <Listeners>
-                                <RowSelect Handler="#{btnDeleteRecord}.enable();#{btnEditRecord}.enable();" />
+                                <RowSelect Handler="" />
                             </Listeners>
                         </ext:RowSelectionModel>
                     </SelectionModel>
-                    <Listeners>
-                        <RowDblClick Handler="openEditTheNganHangWindow();" />
-                    </Listeners>
                 </ext:GridPanel>
             </Items>
         </ext:Panel>
+
     </Items>
     <BottomBar>
         <ext:Toolbar ID="Toolbar1sdsds" Hidden="false" runat="server">
@@ -5186,7 +5215,7 @@
                                                         }" />
                                     </Listeners>
                                 </ext:MenuItem>
-                                <ext:MenuItem ID="mnuATM" runat="server" Text="Thẻ ngân hàng">
+<%--                                <ext:MenuItem ID="mnuATM" runat="server" Text="Thẻ ngân hàng">
                                     <Listeners>
                                         <Click Handler="#{TabPanelBottom}.addTab(#{panelTheNganHang});this.setDisabled(true);
                                                         if(#{hdfRecordID}.getValue()!='')
@@ -5194,7 +5223,7 @@
                                                             #{StoregrpATM}.reload();
                                                         }" />
                                     </Listeners>
-                                </ext:MenuItem>
+                                </ext:MenuItem>--%>
                                 <ext:MenuItem ID="MenuItemAttachFile" runat="server" Text="Tệp tin đính kèm">
                                     <Listeners>
                                         <Click Handler="#{TabPanelBottom}.addTab(#{panelTepDinhKem});
@@ -5203,6 +5232,17 @@
                                                         {
                                                             #{grpTepTinDinhKemStore}.reload();
                                                         }" />
+                                    </Listeners>
+                                </ext:MenuItem>
+                                 <ext:MenuItem ID="MenuItemThuTucDauVao" runat="server" Text="Thủ tục đầu vào">
+                                    <Listeners>
+                                        <Click Handler="#{TabPanelBottom}.addTab(#{panelThuTucDauVao});
+                                                        this.setDisabled(true);
+                                                        if(#{hdfRecordID}.getValue()!='')
+                                                        {
+                                                            #{StoreThuTucDauVao}.reload();
+                                                        };
+                                            #{hdfThuTucID}.setValue(#{hdfRecordID}.getValue());" />
                                     </Listeners>
                                 </ext:MenuItem>
                             </Items>

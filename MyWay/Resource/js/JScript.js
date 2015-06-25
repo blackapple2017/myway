@@ -66,6 +66,9 @@
         case "SouthHoSoNhanSu1_panelTheNganHang":
             SouthHoSoNhanSu1_wdTheNganHang.show();
             break;
+        case "SouthHoSoNhanSu1_panelThuTucDauVao":
+            SouthHoSoNhanSu1_wdThuTucDauVao.show();
+            break;
     }
 }
 

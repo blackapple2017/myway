@@ -139,6 +139,17 @@ var checkInputThemMoiKHTD = function () {
         cbx_Ma_DonVi.focus();
         return false;
     }
+    if (df_NgayBatDau.getValue.trim() == '')
+    {
+        alert('bạn chưa nhập ngày bắt đầu kế hoạch');
+        df_NgayBatDau.focus();
+        return false;
+    }
+    if (df_NgayKetThuc.getValue.trim() == '') {
+        alert('bạn chưa nhập ngày kết thúc kế hoạch');
+        df_NgayKetThuc.focus();
+        return false;
+    }
     if (ValidateDateField(df_HanNopHoSo) == false) {
         alert('Định dạng ngày hạn nộp hồ sơ không đúng');
         df_HanNopHoSo.focus();
