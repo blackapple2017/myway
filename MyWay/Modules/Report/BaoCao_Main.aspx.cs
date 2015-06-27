@@ -362,8 +362,10 @@ public partial class Modules_Report_BaoCao_Main : WebBase
                 return BaoCaoNhanVienNghiViecRiengTrongThang();
             case "BaoCaoLamThemGio":
                 return BaoCaoLamThemGio();
-
-
+            case "BaoCaoCBNVLamTheoCa":
+                return BaoCaoCBNVLamCa();
+            case "BaoCaoThuTucDauVao":
+                return BaoCaoThuTucDauVao();
             #endregion
             #region Case đánh giá
             case "BaoCaoDanhSachXepLoaiCanBoNhanVien":
@@ -1915,6 +1917,22 @@ public partial class Modules_Report_BaoCao_Main : WebBase
         rp_austfeed_BaoCaoLamThemGio bcltg = new rp_austfeed_BaoCaoLamThemGio();
         bcltg.BinData(filter);
         return bcltg;
+    }
+
+    private DevExpress.XtraReports.UI.XtraReport BaoCaoCBNVLamCa()
+    {
+        ReportFilter filter = (ReportFilter)Session["rp"];
+        rp_BaoCaoSoLuongCBNVLamTheoCa lamca = new rp_BaoCaoSoLuongCBNVLamTheoCa();
+        lamca.BindData(filter);
+        return lamca;
+    }
+
+    private DevExpress.XtraReports.UI.XtraReport BaoCaoThuTucDauVao()
+    {
+        ReportFilter filter = (ReportFilter)Session["rp"];
+        rp_BaoCaoThuTucDauVao dauvao = new rp_BaoCaoThuTucDauVao();
+        dauvao.BindData(filter);
+        return dauvao;
     }
     
     private DevExpress.XtraReports.UI.XtraReport LichPhanCaThang()

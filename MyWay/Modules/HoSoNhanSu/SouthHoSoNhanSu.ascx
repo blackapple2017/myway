@@ -5012,7 +5012,6 @@
                             <ext:RowNumbererColumn Header="STT" Width="35" />
                             <ext:Column ColumnID="TenThuTuc" Width="200" Header="Tên thủ tục" DataIndex="TenThuTuc" />
                             <ext:CheckColumn ColumnID="HoanThanh" Width="100" Header="Đã hoàn thành" DataIndex="HoanThanh" />
-<%--                            <ext:Column ColumnID="Ghichu" Width="300" Header="Ghi chú" DataIndex="Ghichu" />--%>
                             <ext:DateColumn Format="dd/MM/yyyy" ColumnID="CreatedDate" Width="150" Header="Ngày tạo"
                                 DataIndex="CreatedDate" />
                         </Columns>
