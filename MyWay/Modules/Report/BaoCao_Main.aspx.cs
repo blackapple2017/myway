@@ -362,7 +362,7 @@ public partial class Modules_Report_BaoCao_Main : WebBase
                 return BaoCaoNhanVienNghiViecRiengTrongThang();
             case "BaoCaoLamThemGio":
                 return BaoCaoLamThemGio();
-            case "BaoCaoCBNVLamTheoCa":
+            case "BaoCaoCbnvLamTheoCa":
                 return BaoCaoCBNVLamCa();
             case "BaoCaoThuTucDauVao":
                 return BaoCaoThuTucDauVao();
