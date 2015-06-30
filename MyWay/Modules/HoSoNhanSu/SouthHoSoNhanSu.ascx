@@ -4991,9 +4991,9 @@
                     TrackMouseOver="true" AutoExpandColumn="TenThuTuc" AutoScroll="true" AnchorHorizontal="100%"
                     Region="Center">
                     <Store>
-                        <ext:Store ID="StoreThuTucDauVao" AutoLoad="false" AutoSave="true" ShowWarningOnFailure="false"
+                        <ext:Store runat="server" ID="StoreThuTucDauVao" OnRefreshData="grpThuTucDauVaoStore_OnRefreshData"  AutoLoad="false" AutoSave="true" ShowWarningOnFailure="false"
                             OnBeforeStoreChanged="HandleChangesDelete" SkipIdForNewRecords="false" RefreshAfterSaving="None"
-                            OnRefreshData="grpThuTucDauVaoStore_OnRefreshData" runat="server">
+                            >
                             <Reader>
                                 <ext:JsonReader IDProperty="ID">
                                     <Fields>
@@ -5010,8 +5010,8 @@
                     <ColumnModel ID="ColumnModel23" runat="server">
                         <Columns>
                             <ext:RowNumbererColumn Header="STT" Width="35" />
-                            <ext:Column ColumnID="TenThuTuc" Width="200" Header="Tên thủ tục" DataIndex="TenThuTuc" />
-                            <ext:CheckColumn ColumnID="HoanThanh" Width="100" Header="Đã hoàn thành" DataIndex="HoanThanh" />
+                            <ext:Column ColumnID="IDTenThuTuc" Width="200" Header="Tên thủ tục" DataIndex="TenThuTuc" />
+                            <ext:CheckColumn ColumnID="IDHoanThanh" Width="100" Header="Đã hoàn thành" DataIndex="HoanThanh" />
                             <ext:DateColumn Format="dd/MM/yyyy" ColumnID="CreatedDate" Width="150" Header="Ngày tạo"
                                 DataIndex="CreatedDate" />
                         </Columns>
@@ -5241,7 +5241,7 @@
                                                         {
                                                             #{StoreThuTucDauVao}.reload();
                                                         };
-                                            #{hdfThuTucID}.setValue(#{hdfRecordID}.getValue());" />
+                                            " />
                                     </Listeners>
                                 </ext:MenuItem>
                             </Items>

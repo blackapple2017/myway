@@ -2021,23 +2021,28 @@ public partial class Modules_HoSoNhanSu_SouthHoSoNhanSu : UserControlBase
                 CreatedBy = CurrentUser.ID,
                 CreatedDate = DateTime.Now,
                 TenThuTuc = txtTenThuTuc.Text,
-                HoanThanh = chbHoanThanh.Checked
+                HoanThanh = chbHoanThanh.Checked,
+                PrKeyHoSo = decimal.Parse(hdfRecordID.Text)
             };
             if (e.ExtraParams["Command"] == "Update")
             {
                 thutuc.ID = int.Parse(RowSelectionModelTepTinDinhKem.SelectedRecordID);
                 new HoSoController().UpdateThuTucDauVao(thutuc);
                 wdThuTucDauVao.Hide();
+                GridThuTucDauVao.Reload();
+                Dialog.ShowNotification("Cập nhật thành công");
             }
             else
             {
                 new HoSoController().InsertThuTuc(thutuc);
+                Dialog.ShowNotification("Thêm mới thành công");
                 if (e.ExtraParams["Close"] == "True")
                 {
-                    wdAttachFile.Hide();
+                    wdThuTucDauVao.Hide();
                 }
+                GridThuTucDauVao.Reload();
             }
-            grpTepTinDinhKem.Reload();
+            //grpTepTinDinhKem.Reload();
         }
         catch (Exception ex)
         {

@@ -285,7 +285,7 @@ public class rp_ToKhaiThamGiaBHXH_BHYT : DevExpress.XtraReports.UI.XtraReport
                     label.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Right)
                 | DevExpress.XtraPrinting.BorderSide.Bottom)));
                     label.Font = new System.Drawing.Font("Times New Roman", 10F);
-                    label.LocationFloat = new DevExpress.Utils.PointFloat(371.4584F + (i * 17.7083F), 200.9583F);
+                    label.LocationFloat = new DevExpress.Utils.PointFloat(395.4169F + (i * 17.7083F), 200.1666F);
                     label.Name = "label" + i.ToString();
                     label.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
                     label.SizeF = new System.Drawing.SizeF(17.7083F, 23F);
