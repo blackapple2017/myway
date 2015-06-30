@@ -130,12 +130,21 @@ public class DanhSachCanBoDieuChinhMucLuongPhuCapNopBHXH : XtraReport
             //if (cd.TuNgay != null && cd.DenNgay != null)
             //{
                 //xrl_NgayBaoCao.Text = ReportController.GetInstance().GetFromDateToDate(cd.TuNgay, cd.DenNgay);
-            xrl_NgayBaoCao.Text = "Số 1, tháng " + filter.StartMonth + " năm " + filter.Year ;
+            xrl_NgayBaoCao.Text = "Số 1, tháng " + filter.StartMonth + " năm " + filter.Year;
             //}
-
-            DataSource = DataHandler.GetInstance().ExecuteDataTable("sp_BHD02-TS",
+            if (filter.StartMonth == 0 && filter.Year == 0)
+            {
+                xrl_NgayBaoCao.Text = "Số 1, tháng " + filter.EndDate.Value.Month.ToString() + " năm " + filter.EndDate.Value.Year.ToString();
+                DataSource = DataHandler.GetInstance().ExecuteDataTable("sp_BHD02-TS",
                     "@WhereClause", "@NgayBatDau", "@NgayKetThuc", "@Month", "@StartMonth", "@EndMonth", "@Year", "@MaBoPhan",
-                    filter.WhereClause, filter.StartDate, filter.EndDate, filter.StartMonth, filter.StartMonth, filter.EndMonth, filter.Year, filter.SelectedDepartment);
+                    "1 = 1", filter.StartDate, filter.EndDate, filter.StartMonth, filter.StartMonth, filter.EndMonth, filter.Year, filter.SelectedDepartment);
+            }
+            else
+            {
+                DataSource = DataHandler.GetInstance().ExecuteDataTable("sp_BHD02-TS",
+                    "@WhereClause", "@NgayBatDau", "@NgayKetThuc", "@Month", "@StartMonth", "@EndMonth", "@Year", "@MaBoPhan",
+                    "1 = 1", filter.StartDate, filter.EndDate, filter.StartMonth, filter.StartMonth, filter.EndMonth, filter.Year, filter.SelectedDepartment);
+            }
         }
         else
         {

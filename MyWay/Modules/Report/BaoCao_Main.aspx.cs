@@ -33,6 +33,16 @@ public partial class Modules_Report_BaoCao_Main : WebBase
             ReportFilter RP = new ReportFilter();
             RP.SessionDepartment = Session["MaDonVi"].ToString();
             RP.WhereClause = Request.QueryString.Get("IdBcBaoHiem");
+            if (!string.IsNullOrEmpty(Request.QueryString.Get("TuNgay")))
+            { 
+                RP.StartDate = DateTime.Parse(Request.QueryString.Get("TuNgay"));
+            }
+            if (!string.IsNullOrEmpty(Request.QueryString.Get("DenNgay")))
+            {
+                RP.EndDate = DateTime.Parse(Request.QueryString.Get("DenNgay"));
+                RP.StartMonth = DateTime.Parse(Request.QueryString.Get("DenNgay").ToString()).Month;
+                RP.Year = DateTime.Parse(Request.QueryString.Get("DenNgay").ToString()).Year;
+            }
             var cd = new BHDauPhieuController().GetByIdDauPhieu(Convert.ToInt32(Request.QueryString.Get("IdBcBaoHiem")));
             Session.Add("rp", RP);
 

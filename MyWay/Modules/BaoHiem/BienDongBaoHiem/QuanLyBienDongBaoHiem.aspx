@@ -1186,7 +1186,8 @@
                 </ext:TabPanel>
             </Items>
             <Listeners>
-                <BeforeShow Handler="#{TabPanel2}.remove(0);addHomePage(#{TabPanel2},'Homepage','../../Report/BaoCao_Main.aspx?IdBcBaoHiem='+#{hdfMadauphieu}.getValue(), 'Báo cáo danh sách biến động')" />
+               <%-- <BeforeShow Handler="#{TabPanel2}.remove(0);addHomePage(#{TabPanel2},'Homepage','../../Report/BaoCao_Main.aspx?IdBcBaoHiem='+#{hdfMadauphieu}.getValue(), 'Báo cáo danh sách biến động')" />--%>
+                 <BeforeShow Handler="#{TabPanel2}.remove(0);addHomePage(#{TabPanel2},'Homepage','../../Report/BaoCao_Main.aspx?IdBcBaoHiem='+#{hdfMadauphieu}.getValue()+'&TuNgay='+#{hdfTuNgay}.getValue()+ '&DenNgay='+#{hdfDenNgay}.getValue(), 'Báo cáo danh sách biến động')" />
             </Listeners>
             <Buttons>
                 <ext:Button ID="Button9" runat="server" Text="<%$ Resources:CommonMessage, Close%>"
