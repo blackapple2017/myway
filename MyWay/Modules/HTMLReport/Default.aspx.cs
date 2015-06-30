@@ -363,7 +363,7 @@ public partial class Modules_HTMLReport_Default : System.Web.UI.Page
                                 Replace(CMTND, string.IsNullOrEmpty(hs.SOCMND) ? "..." : hs.SOCMND).
                                 Replace(PHONG_BAN, string.IsNullOrEmpty(hs.PHONGBAN) ? "..." : hs.PHONGBAN).
                                 Replace(LoaiHopDong, hs.LOAIHDONG).
-                                Replace(DIA_CHI, string.IsNullOrEmpty(hs.DIACHILH) ? "..." : hs.DIACHILH).
+                                Replace(DIA_CHI, string.IsNullOrEmpty(hs.HOKHAU) ? "..." : hs.HOKHAU).
                                 Replace(LamTaiViTri, string.IsNullOrEmpty(hs.TENCHUCVU)? "..." : hs.TENCHUCVU).
                                 Replace(CHUC_VU_MOI, string.IsNullOrEmpty(hs.TENCHUCVUMOI) ? "..." : hs.TENCHUCVUMOI).
                                 Replace(NGAY_CAP, hs.NGAYCAPCMND == null ? "..." : hs.NGAYCAPCMND.Value.ToString("dd/MM/yyyy")).
